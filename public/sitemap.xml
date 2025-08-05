@@ -3,13 +3,55 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+    <lastmod>2025-08-05T12:23:04+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/hugo/</loc>
   </url><url>
     <loc>http://localhost:1313/bear/</loc>
   </url><url>
     <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2025-08-05T12:23:04+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/ai/</loc>
+    <lastmod>2025-08-05T12:23:04+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/antirez/</loc>
+    <lastmod>2025-08-05T12:23:04+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/augmenting-programming-with-llms-lessons-from-antirezs-latest-insights/</loc>
+    <lastmod>2025-08-05T12:23:04+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/claude/</loc>
+    <lastmod>2025-08-05T12:23:04+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/collaboration/</loc>
+    <lastmod>2025-08-05T12:23:04+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/developer-productivity/</loc>
+    <lastmod>2025-08-05T12:23:04+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/gemini/</loc>
+    <lastmod>2025-08-05T12:23:04+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/llms/</loc>
+    <lastmod>2025-08-05T12:23:04+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/programming/</loc>
+    <lastmod>2025-08-05T12:23:04+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/software-development/</loc>
+    <lastmod>2025-08-05T12:23:04+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/community/</loc>
+    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/gaming/</loc>
+    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/society/</loc>
+    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/technology/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/the-modern-maple-world/</loc>

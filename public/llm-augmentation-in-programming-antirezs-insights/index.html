@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=57022&amp;path=livereload" data-no-instant defer></script>
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="http://localhost:1313/images/favicon.png" />
+<link rel="shortcut icon" href="http://localhost:57022/images/favicon.png" />
 <title>LLM Augmentation in Programming: Antirez&#39;s Insights | ฅ՞•ﻌ•՞ฅ Bear’s Blog</title>
 <meta name="title" content="LLM Augmentation in Programming: Antirez&#39;s Insights" />
 <meta name="description" content="Commentary on antirez&#39;s post about using LLMs (Gemini, Claude) for programming, emphasizing human oversight and effective collaboration." />
 <meta name="keywords" content="LLMs,programming,AI,collaboration,antirez," />
 
 
-<meta property="og:url" content="http://localhost:1313/llm-augmentation-in-programming-antirezs-insights/">
+<meta property="og:url" content="http://localhost:57022/llm-augmentation-in-programming-antirezs-insights/">
   <meta property="og:site_name" content="ฅ՞•ﻌ•՞ฅ Bear’s Blog">
   <meta property="og:title" content="LLM Augmentation in Programming: Antirez&#39;s Insights">
   <meta property="og:description" content="Commentary on antirez&#39;s post about using LLMs (Gemini, Claude) for programming, emphasizing human oversight and effective collaboration.">
@@ -26,13 +26,13 @@
     <meta property="article:tag" content="AI">
     <meta property="article:tag" content="Collaboration">
     <meta property="article:tag" content="Antirez">
-    <meta property="og:image" content="http://localhost:1313/images/share.png">
+    <meta property="og:image" content="http://localhost:57022/images/share.png">
 
 
 
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/share.png">
+  <meta name="twitter:image" content="http://localhost:57022/images/share.png">
   <meta name="twitter:title" content="LLM Augmentation in Programming: Antirez&#39;s Insights">
   <meta name="twitter:description" content="Commentary on antirez&#39;s post about using LLMs (Gemini, Claude) for programming, emphasizing human oversight and effective collaboration.">
 
@@ -43,8 +43,8 @@
   <meta itemprop="description" content="Commentary on antirez&#39;s post about using LLMs (Gemini, Claude) for programming, emphasizing human oversight and effective collaboration.">
   <meta itemprop="datePublished" content="2025-08-05T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-08-05T00:00:00+00:00">
-  <meta itemprop="wordCount" content="504">
-  <meta itemprop="image" content="http://localhost:1313/images/share.png">
+  <meta itemprop="wordCount" content="498">
+  <meta itemprop="image" content="http://localhost:57022/images/share.png">
   <meta itemprop="keywords" content="LLMs,Programming,AI,Collaboration,Antirez">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -210,7 +210,168 @@
   }
 
 </style>
+<style>
+     
+    :root {
+        --font-main:
+            "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+        --font-size-base: 16px;
+        --font-size-small: 14px;
+        --line-height: 1.6;
+        --width: 720px;
+        --background-color: #fcfcfc;
+        --text-color: #333;
+        --heading-color: #222;
+        --meta-color: #666;
+        --link-color: #555;
+        --tag-bg: #f2f2f2;
+        --tag-color: #666;
+        --tag-hover-bg: #e2e2e2;
+        --tag-hover-color: #444;
+        --border-color: #eee;
+    }
 
+     
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --background-color: #01242e;
+            --text-color: #ddd;
+            --heading-color: #eee;
+            --meta-color: #999;
+            --link-color: #8cc2dd;
+            --tag-bg: #112936;
+            --tag-color: #8cc2dd;
+            --tag-hover-bg: #1a3c4e;
+            --tag-hover-color: #fff;
+            --border-color: #112936;
+        }
+    }
+
+     
+    body {
+        font-family: var(--font-main);
+        font-size: var(--font-size-base);
+        line-height: var(--line-height);
+        color: var(--text-color);
+        background-color: var(--background-color);
+    }
+
+     
+    .post-header {
+        margin-bottom: 2rem;
+    }
+
+    .post-description {
+        font-size: var(--font-size-base);
+        color: var(--meta-color);
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        font-style: italic;
+    }
+
+    .post-meta {
+        font-family: var(--font-main);
+        font-size: var(--font-size-small);
+        color: var(--meta-color);
+    }
+
+    .post-meta time {
+        font-family: var(--font-main);
+        font-size: var(--font-size-small);
+        font-style: normal;
+    }
+
+    .post-content {
+        margin-bottom: 1.5rem;
+    }
+
+    .post-footer {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border-color);
+        text-align: left;
+    }
+
+     
+    .post-tag {
+        display: inline-block;
+        padding: 0.2rem 0.8rem;
+        margin: 0 0.5rem 0.5rem 0;
+        font-size: var(--font-size-small);
+        color: var(--tag-color);
+        background: var(--tag-bg);
+        border-radius: 3px;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    .post-tag:hover {
+        color: var(--tag-hover-color);
+        background: var(--tag-hover-bg);
+        text-decoration: none;
+    }
+
+     
+    a {
+        color: var(--link-color);
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    a:hover {
+        color: var(--heading-color);
+    }
+
+     
+    ul.blog-posts {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    ul.blog-posts li {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    ul.blog-posts li:last-child {
+        border-bottom: none;
+    }
+
+    ul.blog-posts li time {
+        font-family: var(--font-main);
+        font-size: var(--font-size-small);
+        color: var(--meta-color);
+    }
+
+     
+    .title {
+        margin-bottom: 2rem;
+    }
+
+    .title h2 {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    nav {
+        margin-top: 1rem;
+    }
+
+    nav a {
+        margin-right: 1.5rem;
+        font-size: var(--font-size-base);
+    }
+
+     
+    footer {
+        margin-top: 3rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--border-color);
+        color: var(--meta-color);
+        font-size: var(--font-size-small);
+    }
+</style>
 </head>
 
 <body>
@@ -230,18 +391,20 @@
 </header>
   <main>
 
-<h1>LLM Augmentation in Programming: Antirez&#39;s Insights</h1>
-<p>
-  <i>
-    <time datetime='2025-08-05'>
-      05 Aug, 2025
-    </time>
-  </i>
-</p>
-
-<content>
-  <h1 id="llm-augmentation-in-programming-antirezs-insights">LLM Augmentation in Programming: Antirez&rsquo;s Insights</h1>
-<p>Salvatore Sanfilippo, better known as antirez, has once again shared invaluable perspectives on the evolving landscape of software development, this time focusing on the practical integration of Large Language Models (LLMs) into the programmer&rsquo;s workflow. His latest post offers a pragmatic guide to leveraging advanced LLMs like Gemini 2.5 PRO and Claude Opus 4, moving beyond the hype to focus on tangible benefits and essential human-AI collaboration practices.</p>
+<article class="post">
+  <header class="post-header">
+    <h1>LLM Augmentation in Programming: Antirez&#39;s Insights</h1>
+    
+    <p class="post-description">Commentary on antirez&#39;s post about using LLMs (Gemini, Claude) for programming, emphasizing human oversight and effective collaboration.</p>
+    
+    <div class="post-meta">
+      <time datetime='2025-08-05'>
+        05 Aug, 2025
+      </time>
+    </div>
+  </header>
+  <div class="post-content">
+    <p>Salvatore Sanfilippo, better known as antirez, has once again shared invaluable perspectives on the evolving landscape of software development, this time focusing on the practical integration of Large Language Models (LLMs) into the programmer&rsquo;s workflow. His latest post offers a pragmatic guide to leveraging advanced LLMs like Gemini 2.5 PRO and Claude Opus 4, moving beyond the hype to focus on tangible benefits and essential human-AI collaboration practices.</p>
 <h2 id="amplifying-programmer-capabilities">Amplifying Programmer Capabilities</h2>
 <p>Antirez highlights how frontier LLMs act as powerful amplifiers for human developers, with their vast knowledge and ability to process extensive codebases. He outlines key areas where this augmentation is proving transformative:</p>
 <ol>
@@ -278,26 +441,31 @@
 <h2 id="conclusion-retaining-control-for-optimal-impact">Conclusion: Retaining Control for Optimal Impact</h2>
 <p>Antirez&rsquo;s insights show that the current optimal strategy for developers is explicit, controlled interaction with LLMs. This approach maximizes quality and efficiency while serving as a powerful learning tool. By staying in the loop, developers harness AI&rsquo;s power, ensuring code aligns with their vision and standards. It&rsquo;s a call to embrace AI as an augmentation, not a replacement, for human ingenuity and control in software development.</p>
 
-</content>
-<p>
+  </div>
   
-  <a href="http://localhost:1313/blog/llms/">#LLMs</a>
+  <footer class="post-footer">
+    
+    <a href="/tags/llms" class="post-tag">#LLMs</a>
+    
+    <a href="/tags/programming" class="post-tag">#programming</a>
+    
+    <a href="/tags/ai" class="post-tag">#AI</a>
+    
+    <a href="/tags/collaboration" class="post-tag">#collaboration</a>
+    
+    <a href="/tags/antirez" class="post-tag">#antirez</a>
+    
+  </footer>
   
-  <a href="http://localhost:1313/blog/programming/">#Programming</a>
-  
-  <a href="http://localhost:1313/blog/ai/">#AI</a>
-  
-  <a href="http://localhost:1313/blog/collaboration/">#Collaboration</a>
-  
-  <a href="http://localhost:1313/blog/antirez/">#Antirez</a>
-  
-</p>
+</article>
+
 
   </main>
   <footer>
 </footer>
 
   
+
 </body>
 
 </html>

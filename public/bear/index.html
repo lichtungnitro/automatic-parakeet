@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=57022&amp;path=livereload" data-no-instant defer></script>
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="http://localhost:1313/images/favicon.png" />
+<link rel="shortcut icon" href="http://localhost:57022/images/favicon.png" />
 <title>Bear | ฅ՞•ﻌ•՞ฅ Bear’s Blog</title>
 <meta name="title" content="Bear" />
 <meta name="description" content="Bear
@@ -16,7 +16,7 @@ Bear makes it simple to publish content online and grow an audience while keepin
 <meta name="keywords" content="" />
 
 
-<meta property="og:url" content="http://localhost:1313/bear/">
+<meta property="og:url" content="http://localhost:57022/bear/">
   <meta property="og:site_name" content="ฅ՞•ﻌ•՞ฅ Bear’s Blog">
   <meta property="og:title" content="Bear">
   <meta property="og:description" content="Bear Website: https://bearblog.dev
@@ -25,13 +25,13 @@ Bear is all you need to build a fantastic and optimized site or blog. It works p
 Bear makes it simple to publish content online and grow an audience while keeping pages tiny, fast, and optimized for search engines.">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="article">
-    <meta property="og:image" content="http://localhost:1313/images/share.png">
+    <meta property="og:image" content="http://localhost:57022/images/share.png">
 
 
 
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/share.png">
+  <meta name="twitter:image" content="http://localhost:57022/images/share.png">
   <meta name="twitter:title" content="Bear">
   <meta name="twitter:description" content="Bear Website: https://bearblog.dev
 There is a website obesity crisis. Bloated websites are full of scripts, ads, and trackers slowing your readers down every time they try to read your well-crafted content.
@@ -47,7 +47,7 @@ There is a website obesity crisis. Bloated websites are full of scripts, ads, an
 Bear is all you need to build a fantastic and optimized site or blog. It works perfectly on any viewing device. All you need to focus on is writing good content.
 Bear makes it simple to publish content online and grow an audience while keeping pages tiny, fast, and optimized for search engines.">
   <meta itemprop="wordCount" content="94">
-  <meta itemprop="image" content="http://localhost:1313/images/share.png">
+  <meta itemprop="image" content="http://localhost:57022/images/share.png">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   <style>
@@ -212,7 +212,168 @@ Bear makes it simple to publish content online and grow an audience while keepin
   }
 
 </style>
+<style>
+     
+    :root {
+        --font-main:
+            "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+        --font-size-base: 16px;
+        --font-size-small: 14px;
+        --line-height: 1.6;
+        --width: 720px;
+        --background-color: #fcfcfc;
+        --text-color: #333;
+        --heading-color: #222;
+        --meta-color: #666;
+        --link-color: #555;
+        --tag-bg: #f2f2f2;
+        --tag-color: #666;
+        --tag-hover-bg: #e2e2e2;
+        --tag-hover-color: #444;
+        --border-color: #eee;
+    }
 
+     
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --background-color: #01242e;
+            --text-color: #ddd;
+            --heading-color: #eee;
+            --meta-color: #999;
+            --link-color: #8cc2dd;
+            --tag-bg: #112936;
+            --tag-color: #8cc2dd;
+            --tag-hover-bg: #1a3c4e;
+            --tag-hover-color: #fff;
+            --border-color: #112936;
+        }
+    }
+
+     
+    body {
+        font-family: var(--font-main);
+        font-size: var(--font-size-base);
+        line-height: var(--line-height);
+        color: var(--text-color);
+        background-color: var(--background-color);
+    }
+
+     
+    .post-header {
+        margin-bottom: 2rem;
+    }
+
+    .post-description {
+        font-size: var(--font-size-base);
+        color: var(--meta-color);
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        font-style: italic;
+    }
+
+    .post-meta {
+        font-family: var(--font-main);
+        font-size: var(--font-size-small);
+        color: var(--meta-color);
+    }
+
+    .post-meta time {
+        font-family: var(--font-main);
+        font-size: var(--font-size-small);
+        font-style: normal;
+    }
+
+    .post-content {
+        margin-bottom: 1.5rem;
+    }
+
+    .post-footer {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border-color);
+        text-align: left;
+    }
+
+     
+    .post-tag {
+        display: inline-block;
+        padding: 0.2rem 0.8rem;
+        margin: 0 0.5rem 0.5rem 0;
+        font-size: var(--font-size-small);
+        color: var(--tag-color);
+        background: var(--tag-bg);
+        border-radius: 3px;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    .post-tag:hover {
+        color: var(--tag-hover-color);
+        background: var(--tag-hover-bg);
+        text-decoration: none;
+    }
+
+     
+    a {
+        color: var(--link-color);
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    a:hover {
+        color: var(--heading-color);
+    }
+
+     
+    ul.blog-posts {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    ul.blog-posts li {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    ul.blog-posts li:last-child {
+        border-bottom: none;
+    }
+
+    ul.blog-posts li time {
+        font-family: var(--font-main);
+        font-size: var(--font-size-small);
+        color: var(--meta-color);
+    }
+
+     
+    .title {
+        margin-bottom: 2rem;
+    }
+
+    .title h2 {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    nav {
+        margin-top: 1rem;
+    }
+
+    nav a {
+        margin-right: 1.5rem;
+        font-size: var(--font-size-base);
+    }
+
+     
+    footer {
+        margin-top: 3rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--border-color);
+        color: var(--meta-color);
+        font-size: var(--font-size-small);
+    }
+</style>
 </head>
 
 <body>
@@ -232,7 +393,7 @@ Bear makes it simple to publish content online and grow an audience while keepin
 </header>
   <main>
 
-<content>
+<article class="page">
   <h1 id="bear">Bear</h1>
 <p>Website: <a href="https://bearblog.dev">https://bearblog.dev</a></p>
 <p>There is a website obesity crisis. Bloated websites are full of scripts, ads, and trackers slowing your readers down every time they try to read your well-crafted content.</p>
@@ -241,16 +402,15 @@ Bear makes it simple to publish content online and grow an audience while keepin
 <p>Each page is ~5kb.</p>
 <p>Learn more and contribute on <a href="https://github.com/HermanMartinus/bearblog">GitHub</a>.</p>
 
-</content>
-<p>
-  
-</p>
+</article>
+
 
   </main>
   <footer>
 </footer>
 
   
+
 </body>
 
 </html>

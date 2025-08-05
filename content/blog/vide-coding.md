@@ -5,8 +5,6 @@ description = "Commentary on antirez's post about using LLMs (Gemini, Claude) fo
 tags = ["LLMs", "programming", "AI", "collaboration", "antirez"]
 +++
 
-# LLM Augmentation in Programming: Antirez's Insights
-
 Salvatore Sanfilippo, better known as antirez, has once again shared invaluable perspectives on the evolving landscape of software development, this time focusing on the practical integration of Large Language Models (LLMs) into the programmer's workflow. His latest post offers a pragmatic guide to leveraging advanced LLMs like Gemini 2.5 PRO and Claude Opus 4, moving beyond the hype to focus on tangible benefits and essential human-AI collaboration practices.
 
 ## Amplifying Programmer Capabilities

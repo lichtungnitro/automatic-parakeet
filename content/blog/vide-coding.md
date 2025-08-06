@@ -1,4 +1,5 @@
 +++
+author = "Ted Chen"
 title = "LLM Augmentation in Programming: Antirez's Insights"
 date = "2025-08-05"
 description = "Commentary on antirez's post about using LLMs (Gemini, Claude) for programming, emphasizing human oversight and effective collaboration."

@@ -1,4 +1,5 @@
 +++
+author = "Ted Chen"
 title = "Introducing gpt-oss: OpenAI's New Frontier in Open-Weight Models"
 date = "2025-08-05"
 description = "OpenAI releases gpt-oss-120b and gpt-oss-20b, pushing the boundaries of open-weight reasoning models with strong performance, efficiency, and safety."

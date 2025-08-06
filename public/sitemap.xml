@@ -39,9 +39,6 @@
     <loc>http://localhost:1313/blog/programming/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/research/</loc>
-    <lastmod>2025-08-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/blog/technology/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
@@ -49,6 +46,9 @@
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/gaming/</loc>
+    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/philosophy/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/social-dynamics/</loc>
@@ -61,9 +61,6 @@
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/the-modern-maple-world/</loc>
-    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/think/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url>
 </urlset>

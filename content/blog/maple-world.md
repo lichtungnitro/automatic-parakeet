@@ -1,4 +1,5 @@
 +++
+author = "Ted Chen"
 date = '2025-05-11'
 draft = false
 title = 'The Modern Maple World'

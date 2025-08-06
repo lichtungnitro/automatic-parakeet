@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on ฅ՞•ﻌ•՞ฅ Bear’s Blog</title>
-    <link>http://localhost:57022/blog/</link>
+    <link>http://localhost:1313/blog/</link>
     <description>Recent content in Blog on ฅ՞•ﻌ•՞ฅ Bear’s Blog</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2020, Jane Doe.</copyright>
     <lastBuildDate>Tue, 05 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:57022/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LLM Augmentation in Programming: Antirez&#39;s Insights</title>
-      <link>http://localhost:57022/llm-augmentation-in-programming-antirezs-insights/</link>
+      <link>http://localhost:1313/llm-augmentation-in-programming-antirezs-insights/</link>
       <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57022/llm-augmentation-in-programming-antirezs-insights/</guid>
+      <guid>http://localhost:1313/llm-augmentation-in-programming-antirezs-insights/</guid>
       <description>&lt;p&gt;Salvatore Sanfilippo, better known as antirez, has once again shared invaluable perspectives on the evolving landscape of software development, this time focusing on the practical integration of Large Language Models (LLMs) into the programmer&amp;rsquo;s workflow. His latest post offers a pragmatic guide to leveraging advanced LLMs like Gemini 2.5 PRO and Claude Opus 4, moving beyond the hype to focus on tangible benefits and essential human-AI collaboration practices.&lt;/p&gt;&#xA;&lt;h2 id=&#34;amplifying-programmer-capabilities&#34;&gt;Amplifying Programmer Capabilities&lt;/h2&gt;&#xA;&lt;p&gt;Antirez highlights how frontier LLMs act as powerful amplifiers for human developers, with their vast knowledge and ability to process extensive codebases. He outlines key areas where this augmentation is proving transformative:&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Fading Community: Lessons from Maple Story&#39;s Decline</title>
-      <link>http://localhost:57022/the-fading-community-lessons-from-maple-storys-decline/</link>
+      <link>http://localhost:1313/the-fading-community-lessons-from-maple-storys-decline/</link>
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57022/the-fading-community-lessons-from-maple-storys-decline/</guid>
+      <guid>http://localhost:1313/the-fading-community-lessons-from-maple-storys-decline/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;the-fading-echoes-of-community-why-were-stepping-away-from-social-games&#34;&gt;The Fading Echoes of Community: Why We&amp;rsquo;re Stepping Away from Social Games&lt;/h2&gt;&#xA;&lt;p&gt;Our digital landscape is undergoing a subtle but significant shift: individuals are increasingly choosing to step away from social games. What was once a vibrant hub of interaction is now, for many, a source of frustration or a pastime left behind. The journey of Maple Story, a once wildly popular game, offers a compelling microcosm of these broader trends.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Modern Maple World</title>
-      <link>http://localhost:57022/the-modern-maple-world/</link>
+      <link>http://localhost:1313/the-modern-maple-world/</link>
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57022/the-modern-maple-world/</guid>
+      <guid>http://localhost:1313/the-modern-maple-world/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;the-fading-echoes-of-community-why-were-stepping-away-from-social-games&#34;&gt;The Fading Echoes of Community: Why We&amp;rsquo;re Stepping Away from Social Games&lt;/h2&gt;&#xA;&lt;p&gt;Look around our digital landscape today, and a subtle but significant shift is occurring. More and more individuals are actively choosing to step away from the once-enthralling world of social games. What was once a vibrant hub of interaction, competition, and camaraderie is now, for many, a source of frustration or simply a pastime left behind. To understand this phenomenon, let&amp;rsquo;s delve into the life cycle of a once wildly popular game: Maple Story. Its journey offers a compelling microcosm of the broader trends we&amp;rsquo;re witnessing.&lt;/p&gt;</description>
     </item>
   </channel>

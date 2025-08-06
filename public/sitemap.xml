@@ -2,56 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:57022/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/hugo/</loc>
+    <loc>http://localhost:1313/hugo/</loc>
   </url><url>
-    <loc>http://localhost:57022/bear/</loc>
+    <loc>http://localhost:1313/bear/</loc>
   </url><url>
-    <loc>http://localhost:57022/blog/</loc>
+    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/blog/ai/</loc>
+    <loc>http://localhost:1313/blog/ai/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/blog/antirez/</loc>
+    <loc>http://localhost:1313/blog/antirez/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/blog/collaboration/</loc>
+    <loc>http://localhost:1313/blog/collaboration/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/llm-augmentation-in-programming-antirezs-insights/</loc>
+    <loc>http://localhost:1313/llm-augmentation-in-programming-antirezs-insights/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/blog/llms/</loc>
+    <loc>http://localhost:1313/blog/llms/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/blog/programming/</loc>
+    <loc>http://localhost:1313/blog/programming/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/blog/community/</loc>
+    <loc>http://localhost:1313/blog/community/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/blog/gaming/</loc>
+    <loc>http://localhost:1313/blog/gaming/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/blog/social-dynamics/</loc>
+    <loc>http://localhost:1313/blog/social-dynamics/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/blog/society/</loc>
+    <loc>http://localhost:1313/blog/society/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/blog/technology/</loc>
+    <loc>http://localhost:1313/blog/technology/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/the-fading-community-lessons-from-maple-storys-decline/</loc>
+    <loc>http://localhost:1313/the-fading-community-lessons-from-maple-storys-decline/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/the-modern-maple-world/</loc>
+    <loc>http://localhost:1313/the-modern-maple-world/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/blog/think/</loc>
+    <loc>http://localhost:1313/blog/think/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url>
 </urlset>

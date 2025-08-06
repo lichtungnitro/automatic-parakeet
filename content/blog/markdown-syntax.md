@@ -3,7 +3,7 @@ date = '2025-05-11'
 draft = false
 title = "The Fading Community: Lessons from Maple Story's Decline"
 description = "An analysis of Maple Story's community decline, exploring how game mechanics, external pressures, and generational shifts mirror broader societal challenges, with parallels drawn to the impact of AI."
-tags = ['gaming', 'community', 'technology', 'AI', 'social dynamics']
+tags = ['gaming', 'community', 'technology', 'ai', 'social dynamics']
 +++
 
 ---

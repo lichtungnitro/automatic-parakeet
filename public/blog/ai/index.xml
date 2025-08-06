@@ -10,6 +10,13 @@
     <lastBuildDate>Tue, 05 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Introducing gpt-oss: OpenAI&#39;s New Frontier in Open-Weight Models</title>
+      <link>http://localhost:1313/introducing-gpt-oss-openais-new-frontier-in-open-weight-models/</link>
+      <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/introducing-gpt-oss-openais-new-frontier-in-open-weight-models/</guid>
+      <description>&lt;h2 id=&#34;unveiling-gpt-oss-pushing-the-boundaries-of-open-weight-reasoning&#34;&gt;Unveiling &lt;code&gt;gpt-oss&lt;/code&gt;: Pushing the Boundaries of Open-Weight Reasoning&lt;/h2&gt;&#xA;&lt;p&gt;OpenAI has announced a significant advancement in the field of AI with the release of &lt;code&gt;gpt-oss-120b&lt;/code&gt; and &lt;code&gt;gpt-oss-20b&lt;/code&gt;. These new open-weight language models represent a leap forward, offering state-of-the-art performance, remarkable efficiency, and robust safety features, all available under the permissive Apache 2.0 license.&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-power-of-openness-performance-and-efficiency&#34;&gt;The Power of Openness: Performance and Efficiency&lt;/h3&gt;&#xA;&lt;p&gt;&lt;code&gt;gpt-oss-120b&lt;/code&gt; and &lt;code&gt;gpt-oss-20b&lt;/code&gt; are designed to democratize access to powerful AI capabilities. The &lt;code&gt;gpt-oss-120b&lt;/code&gt; model demonstrates near-parity with OpenAI&amp;rsquo;s &lt;code&gt;o4-mini&lt;/code&gt; on core reasoning benchmarks and can operate efficiently on a single 80GB GPU. For developers and researchers prioritizing on-device deployment or resource-constrained environments, the &lt;code&gt;gpt-oss-20b&lt;/code&gt; model offers comparable performance to &lt;code&gt;o3-mini&lt;/code&gt; and can run on devices with as little as 16GB of memory.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>LLM Augmentation in Programming: Antirez&#39;s Insights</title>
       <link>http://localhost:1313/llm-augmentation-in-programming-antirezs-insights/</link>
       <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>

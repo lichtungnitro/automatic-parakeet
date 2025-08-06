@@ -12,6 +12,8 @@ tags = [
 ]
 +++
 
+---
+
 ## Unveiling gpt-oss: Pushing the Boundaries of Open-Weight Reasoning
 
 OpenAI has announced a significant advancement in the field of AI with the release of `gpt-oss-120b` and `gpt-oss-20b`. These new open-weight language models represent a leap forward, offering state-of-the-art performance, remarkable efficiency, and robust safety features, all available under the permissive Apache 2.0 license.

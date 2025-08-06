@@ -3,31 +3,40 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/hugo/</loc>
   </url><url>
     <loc>http://localhost:1313/bear/</loc>
   </url><url>
     <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/ai/</loc>
-    <lastmod>2025-08-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/antirez/</loc>
-    <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/collaboration/</loc>
+    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/development/</loc>
+    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/llms/</loc>
+    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/technology/</loc>
+    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/the-llm-zoo-spec-driven-development-and-multi-agent-collaboration/</loc>
+    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/antirez/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/introducing-gpt-oss-openais-new-frontier-in-open-weight-models/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/llm-augmentation-in-programming-antirezs-insights/</loc>
-    <lastmod>2025-08-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/llms/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/models/</loc>
@@ -37,9 +46,6 @@
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/programming/</loc>
-    <lastmod>2025-08-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/technology/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/community/</loc>

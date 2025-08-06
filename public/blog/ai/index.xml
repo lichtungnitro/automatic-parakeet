@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2020, Jane Doe.</copyright>
-    <lastBuildDate>Tue, 05 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The LLM Zoo: Spec-Driven Development and Multi-Agent Collaboration</title>
+      <link>http://localhost:1313/the-llm-zoo-spec-driven-development-and-multi-agent-collaboration/</link>
+      <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/the-llm-zoo-spec-driven-development-and-multi-agent-collaboration/</guid>
+      <description>&lt;h2 id=&#34;the-evolution-of-ai-assisted-development-from-chat-to-specs&#34;&gt;The Evolution of AI-Assisted Development: From Chat to Specs&lt;/h2&gt;&#xA;&lt;p&gt;The landscape of software development is undergoing a fundamental transformation, moving from traditional step-by-step programming to outcome-focused, specification-driven approaches. This shift, pioneered by frameworks like Amazon&amp;rsquo;s Kiro and implemented across various AI coding platforms, represents a new paradigm where AI agents collaborate in specialized roles to create software through structured, multi-stage workflows.&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-rise-of-spec-driven-development&#34;&gt;The Rise of Spec-Driven Development&lt;/h3&gt;&#xA;&lt;p&gt;Spec-Driven Development (SDD) represents a departure from the immediate coding approach that characterized early AI-assisted development tools. Instead of jumping directly into implementation, SDD follows a rigorous three-stage process:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Introducing gpt-oss: OpenAI&#39;s New Frontier in Open-Weight Models</title>
       <link>http://localhost:1313/introducing-gpt-oss-openais-new-frontier-in-open-weight-models/</link>

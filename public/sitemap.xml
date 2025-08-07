@@ -2,71 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://example.com/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hugo/</loc>
+    <loc>https://example.com/hugo/</loc>
   </url><url>
-    <loc>http://localhost:1313/bear/</loc>
+    <loc>https://example.com/bear/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://example.com/blog/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/ai/</loc>
+    <loc>https://example.com/blog/ai/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/collaboration/</loc>
+    <loc>https://example.com/blog/collaboration/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/development/</loc>
+    <loc>https://example.com/blog/development/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/llms/</loc>
+    <loc>https://example.com/blog/llms/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/technology/</loc>
+    <loc>https://example.com/blog/technology/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/the-llm-zoo-spec-driven-development-and-multi-agent-collaboration/</loc>
+    <loc>https://example.com/the-llm-zoo-spec-driven-development-and-multi-agent-collaboration/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/antirez/</loc>
+    <loc>https://example.com/blog/antirez/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/introducing-gpt-oss-openais-new-frontier-in-open-weight-models/</loc>
+    <loc>https://example.com/introducing-gpt-oss-openais-new-frontier-in-open-weight-models/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/llm-augmentation-in-programming-antirezs-insights/</loc>
+    <loc>https://example.com/llm-augmentation-in-programming-antirezs-insights/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/models/</loc>
+    <loc>https://example.com/blog/models/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/openai/</loc>
+    <loc>https://example.com/blog/openai/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/programming/</loc>
+    <loc>https://example.com/blog/programming/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/community/</loc>
+    <loc>https://example.com/blog/community/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/gaming/</loc>
+    <loc>https://example.com/blog/gaming/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/philosophy/</loc>
+    <loc>https://example.com/blog/philosophy/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/social-dynamics/</loc>
+    <loc>https://example.com/blog/social-dynamics/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/society/</loc>
+    <loc>https://example.com/blog/society/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/the-fading-community-lessons-from-maple-storys-decline/</loc>
+    <loc>https://example.com/the-fading-community-lessons-from-maple-storys-decline/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/the-modern-maple-world/</loc>
+    <loc>https://example.com/the-modern-maple-world/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url>
 </urlset>

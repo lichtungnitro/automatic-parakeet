@@ -1,4 +1,5 @@
 +++
+author = "Ted Chen"
 title = "The LLM Zoo: Spec-Driven Development and Multi-Agent Collaboration"
 date = "2025-08-06"
 description = "Exploring the future of AI-assisted software development through spec-driven workflows and collaborative multi-agent systems."

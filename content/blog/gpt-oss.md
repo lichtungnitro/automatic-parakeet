@@ -24,10 +24,10 @@ OpenAI has announced a significant advancement in the field of AI with the relea
 
 These models excel in various tasks, including:
 
-*   **Reasoning:** Outperforming similarly sized open models on complex reasoning challenges.
-*   **Tool Use:** Exhibiting strong capabilities in function calling and integrating with external tools.
-*   **Efficiency:** Optimized for deployment across a wide range of hardware, from consumer GPUs to edge devices.
-*   **Context Handling:** Supporting context lengths of up to 128k tokens.
+- **Reasoning:** Outperforming similarly sized open models on complex reasoning challenges.
+- **Tool Use:** Exhibiting strong capabilities in function calling and integrating with external tools.
+- **Efficiency:** Optimized for deployment across a wide range of hardware, from consumer GPUs to edge devices.
+- **Context Handling:** Supporting context lengths of up to 128k tokens.
 
 ### Technical Backbone: Architecture and Training
 
@@ -55,4 +55,4 @@ Developers are encouraged to explore these models via the **open model playgroun
 
 ---
 
-This draft aims to capture the essential information from the fetched page while adopting a style similar to your existing blog content. Let me know if you'd like any adjustments or further details added!
+_This draft aims to capture the essential information from the fetched page while adopting a style similar to your existing blog content. Let me know if you'd like any adjustments or further details added!_

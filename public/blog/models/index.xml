@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Models on ฅ՞•ﻌ•՞ฅ Bear’s Blog</title>
-    <link>https://example.com/blog/models/</link>
+    <link>http://localhost:1313/blog/models/</link>
     <description>Recent content in Models on ฅ՞•ﻌ•՞ฅ Bear’s Blog</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2020, Jane Doe.</copyright>
     <lastBuildDate>Tue, 05 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.com/blog/models/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/models/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introducing gpt-oss: OpenAI&#39;s New Frontier in Open-Weight Models</title>
-      <link>https://example.com/introducing-gpt-oss-openais-new-frontier-in-open-weight-models/</link>
+      <link>http://localhost:1313/introducing-gpt-oss-openais-new-frontier-in-open-weight-models/</link>
       <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/introducing-gpt-oss-openais-new-frontier-in-open-weight-models/</guid>
+      <guid>http://localhost:1313/introducing-gpt-oss-openais-new-frontier-in-open-weight-models/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;unveiling-gpt-oss-pushing-the-boundaries-of-open-weight-reasoning&#34;&gt;Unveiling gpt-oss: Pushing the Boundaries of Open-Weight Reasoning&lt;/h2&gt;&#xA;&lt;p&gt;OpenAI has announced a significant advancement in the field of AI with the release of &lt;code&gt;gpt-oss-120b&lt;/code&gt; and &lt;code&gt;gpt-oss-20b&lt;/code&gt;. These new open-weight language models represent a leap forward, offering state-of-the-art performance, remarkable efficiency, and robust safety features, all available under the permissive Apache 2.0 license.&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-power-of-openness-performance-and-efficiency&#34;&gt;The Power of Openness: Performance and Efficiency&lt;/h3&gt;&#xA;&lt;p&gt;&lt;code&gt;gpt-oss-120b&lt;/code&gt; and &lt;code&gt;gpt-oss-20b&lt;/code&gt; are designed to democratize access to powerful AI capabilities. The &lt;code&gt;gpt-oss-120b&lt;/code&gt; model demonstrates near-parity with OpenAI&amp;rsquo;s &lt;code&gt;o4-mini&lt;/code&gt; on core reasoning benchmarks and can operate efficiently on a single 80GB GPU. For developers and researchers prioritizing on-device deployment or resource-constrained environments, the &lt;code&gt;gpt-oss-20b&lt;/code&gt; model offers comparable performance to &lt;code&gt;o3-mini&lt;/code&gt; and can run on devices with as little as 16GB of memory.&lt;/p&gt;</description>
     </item>
   </channel>

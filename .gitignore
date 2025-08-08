@@ -21,5 +21,9 @@ hugo.linux
 .cursor/
 CLAUDE.md
 
-# End of https://www.toptal.com/developers/gitignore/api/hugo
+# Local override: ensure icons are not ignored by global Icon? rule
+!content/static/icons/
+!static/icons/
+!**/icons/*.svg
 
+# End of https://www.toptal.com/developers/gitignore/api/hugo

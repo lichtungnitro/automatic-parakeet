@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: http://localhost:1313/sitemap.xml
+Sitemap: https://automatic-parakeet.netlify.app/sitemap.xml

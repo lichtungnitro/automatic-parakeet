@@ -8,12 +8,12 @@ weight = 20
 
 Website: https://bearblog.dev
 
-There is a website obesity crisis. Bloated websites are full of scripts, ads, and trackers slowing your readers down every time they try to read your well-crafted content.
+There’s a website obesity crisis: bloated scripts, ads, and trackers slow readers down when they just want to read.
 
-Bear is all you need to build a fantastic and optimized site or blog. It works perfectly on **any** viewing device. All you need to focus on is writing good content.
+Bear is all you need to build a fantastic, optimized site or blog. It works perfectly on **any** device so you can focus on writing.
 
-Bear makes it simple to publish content online and grow an audience while keeping pages tiny, fast, and **optimized for search engines.**
+Bear makes it simple to publish content and grow an audience while keeping pages tiny, fast, and **optimized for search engines**.
 
-Each page is ~5kb.
+Each page is ~5 KB.
 
 Learn more and contribute on [GitHub](https://github.com/HermanMartinus/bearblog).

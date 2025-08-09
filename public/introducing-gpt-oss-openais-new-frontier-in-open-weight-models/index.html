@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="icon" type="image/png" href="https://automatic-parakeet.netlify.app/images/favicon.png">
-<link rel="shortcut icon" href="https://automatic-parakeet.netlify.app/images/favicon.png">
-<link rel="apple-touch-icon" href="https://automatic-parakeet.netlify.app/images/favicon.png"><link rel="icon" type="image/x-icon" href="https://automatic-parakeet.netlify.app/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="icon" type="image/png" href="http://localhost:1313/images/favicon.png">
+<link rel="shortcut icon" href="http://localhost:1313/images/favicon.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/images/favicon.png"><link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
 <title>Introducing gpt-oss: OpenAI&#39;s New Frontier in Open-Weight Models | ฅ՞•ﻌ•՞ฅ Alpaca’s Blog</title>
 <meta name="title" content="Introducing gpt-oss: OpenAI&#39;s New Frontier in Open-Weight Models" />
 <meta name="description" content="OpenAI releases gpt-oss-120b and gpt-oss-20b, pushing the boundaries of open-weight reasoning models with strong performance, efficiency, and safety." />
 <meta name="keywords" content="ai,llms,models,technology,openai," />
 
 
-<meta property="og:url" content="https://automatic-parakeet.netlify.app/introducing-gpt-oss-openais-new-frontier-in-open-weight-models/">
+<meta property="og:url" content="http://localhost:1313/introducing-gpt-oss-openais-new-frontier-in-open-weight-models/">
   <meta property="og:site_name" content="ฅ՞•ﻌ•՞ฅ Alpaca’s Blog">
   <meta property="og:title" content="Introducing gpt-oss: OpenAI&#39;s New Frontier in Open-Weight Models">
   <meta property="og:description" content="OpenAI releases gpt-oss-120b and gpt-oss-20b, pushing the boundaries of open-weight reasoning models with strong performance, efficiency, and safety.">
@@ -27,13 +27,13 @@
     <meta property="article:tag" content="Models">
     <meta property="article:tag" content="Technology">
     <meta property="article:tag" content="Openai">
-    <meta property="og:image" content="https://automatic-parakeet.netlify.app/images/share.png">
+    <meta property="og:image" content="http://localhost:1313/images/share.png">
 
 
 
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://automatic-parakeet.netlify.app/images/share.png">
+  <meta name="twitter:image" content="http://localhost:1313/images/share.png">
   <meta name="twitter:title" content="Introducing gpt-oss: OpenAI&#39;s New Frontier in Open-Weight Models">
   <meta name="twitter:description" content="OpenAI releases gpt-oss-120b and gpt-oss-20b, pushing the boundaries of open-weight reasoning models with strong performance, efficiency, and safety.">
 
@@ -44,8 +44,8 @@
   <meta itemprop="description" content="OpenAI releases gpt-oss-120b and gpt-oss-20b, pushing the boundaries of open-weight reasoning models with strong performance, efficiency, and safety.">
   <meta itemprop="datePublished" content="2025-08-05T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-08-05T00:00:00+00:00">
-  <meta itemprop="wordCount" content="669">
-  <meta itemprop="image" content="https://automatic-parakeet.netlify.app/images/share.png">
+  <meta itemprop="wordCount" content="689">
+  <meta itemprop="image" content="http://localhost:1313/images/share.png">
   <meta itemprop="keywords" content="Ai,Llms,Models,Technology,Openai">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -211,11 +211,17 @@
   }
 
 </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
 <style>
      
     :root {
         --font-main:
             "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+        --font-paragraph: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         --font-mono: "Inconsolata", Courier, monospace;
         --font-size-base: 16px;
         --font-size-small: 14px;
@@ -262,6 +268,24 @@
     }
 
      
+    p {
+        font-family: var(--font-paragraph);
+        font-weight: 400;
+    }
+
+     
+    ul:not(.blog-posts) li,
+    ol li {
+        font-family: var(--font-paragraph);
+        font-weight: 400;
+    }
+
+     
+    ul.blog-posts li a {
+        font-family: var(--font-main);
+    }
+
+     
     pre,
     code {
         font-family: var(--font-mono);
@@ -291,11 +315,12 @@
     }
 
     .post-description {
+        font-family: var(--font-main);
         font-size: var(--font-size-base);
         color: var(--meta-color);
         margin-top: 0.5rem;
         margin-bottom: 1rem;
-        font-style: italic;
+        font-style: normal;
     }
 
     .post-meta {
@@ -351,6 +376,40 @@
     }
 
      
+    .post-content a,
+    article.page a,
+    main > p a,
+    main > ul a {
+        color: #0066cc;
+        text-decoration: none;
+    }
+
+    .post-content a:hover,
+    article.page a:hover,
+    main > p a:hover,
+    main > ul a:hover {
+        color: #0052a3;
+        text-decoration: underline;
+    }
+
+     
+    @media (prefers-color-scheme: dark) {
+        .post-content a,
+        article.page a,
+        main > p a,
+        main > ul a {
+            color: #4da6ff;
+        }
+        
+        .post-content a:hover,
+        article.page a:hover,
+        main > p a:hover,
+        main > ul a:hover {
+            color: #66b3ff;
+        }
+    }
+
+     
     ul.blog-posts {
         list-style-type: none;
         padding: 0;
@@ -367,7 +426,7 @@
 
     ul.blog-posts li time {
         font-family: var(--font-main);
-        font-size: var(--font-size-small);
+        font-size: var(--font-size-base);
         color: var(--meta-color);
     }
 
@@ -388,6 +447,72 @@
     nav a {
         margin-right: 1.5rem;
         font-size: var(--font-size-base);
+    }
+
+     
+    table {
+        font-family: var(--font-paragraph);
+        width: auto;
+        max-width: 100%;
+        border-collapse: collapse;
+        margin: 1.5rem 0;
+        font-size: var(--font-size-small);
+        overflow-x: auto;
+        display: block;
+        white-space: nowrap;
+    }
+
+    table thead,
+    table tbody,
+    table tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    th,
+    td {
+        padding: 0.5rem 0.75rem;
+        text-align: left;
+        border-bottom: 1px solid var(--border-color);
+        white-space: normal;
+        word-wrap: break-word;
+    }
+
+    th {
+        font-weight: 500;
+        color: var(--heading-color);
+        border-bottom: 2px solid var(--border-color);
+        background-color: var(--tag-bg);
+    }
+
+    tbody tr:hover {
+        background-color: var(--tag-bg);
+    }
+
+     
+    .post-content table,
+    article.page table,
+    main table {
+        display: table;
+        width: fit-content;
+        max-width: 85%;
+        margin: 1.5rem auto;
+        white-space: normal;
+    }
+
+     
+    @media (max-width: 600px) {
+        .post-content table,
+        article.page table,
+        main table {
+            max-width: 100%;
+            font-size: 13px;
+        }
+        
+        th, td {
+            padding: 0.4rem 0.6rem;
+        }
     }
 
      
@@ -509,7 +634,7 @@
         4 mins read
        &nbsp;&sdot;&nbsp;
       
-      669 words &nbsp;&sdot;&nbsp;
+      689 words &nbsp;&sdot;&nbsp;
       <time datetime='2025-08-05'>
         05 Aug, 2025
       </time>
@@ -518,6 +643,37 @@
   <div class="post-content">
     <hr>
 <h2 id="unveiling-gpt-oss-pushing-the-boundaries-of-open-weight-reasoning">Unveiling gpt-oss: Pushing the Boundaries of Open-Weight Reasoning</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Item</th>
+          <th style="text-align: center">In Stock</th>
+          <th style="text-align: left">Price</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Python Hat</td>
+          <td style="text-align: center">True</td>
+          <td style="text-align: left">23.99</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">SQL Hat</td>
+          <td style="text-align: center">True</td>
+          <td style="text-align: left">23.99</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Codecademy Tee</td>
+          <td style="text-align: center">False</td>
+          <td style="text-align: left">19.99</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Codecademy Hoodie</td>
+          <td style="text-align: center">False</td>
+          <td style="text-align: left">42.99</td>
+      </tr>
+  </tbody>
+</table>
 <p>OpenAI has announced a significant advancement in the field of AI with the release of <code>gpt-oss-120b</code> and <code>gpt-oss-20b</code>. These new open-weight language models represent a leap forward, offering state-of-the-art performance, remarkable efficiency, and robust safety features, all available under the permissive Apache 2.0 license.</p>
 <h3 id="the-power-of-openness-performance-and-efficiency">The Power of Openness: Performance and Efficiency</h3>
 <p><code>gpt-oss-120b</code> and <code>gpt-oss-20b</code> are designed to democratize access to powerful AI capabilities. The <code>gpt-oss-120b</code> model demonstrates near-parity with OpenAI&rsquo;s <code>o4-mini</code> on core reasoning benchmarks and can operate efficiently on a single 80GB GPU. For developers and researchers prioritizing on-device deployment or resource-constrained environments, the <code>gpt-oss-20b</code> model offers comparable performance to <code>o3-mini</code> and can run on devices with as little as 16GB of memory.</p>

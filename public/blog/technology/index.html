@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="icon" type="image/png" href="https://automatic-parakeet.netlify.app/images/favicon.png">
-<link rel="shortcut icon" href="https://automatic-parakeet.netlify.app/images/favicon.png">
-<link rel="apple-touch-icon" href="https://automatic-parakeet.netlify.app/images/favicon.png"><link rel="icon" type="image/x-icon" href="https://automatic-parakeet.netlify.app/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="icon" type="image/png" href="http://localhost:1313/images/favicon.png">
+<link rel="shortcut icon" href="http://localhost:1313/images/favicon.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/images/favicon.png"><link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
 <title>Technology | ฅ՞•ﻌ•՞ฅ Alpaca’s Blog</title>
 <meta name="title" content="Technology" />
 <meta name="description" content="Maple World Deep Dive" />
 <meta name="keywords" content="ai,antirez,collaboration,community,development,gaming,llms,models,openai,philosophy,programming,social dynamics,society,technology," />
 
 
-<meta property="og:url" content="https://automatic-parakeet.netlify.app/blog/technology/">
+<meta property="og:url" content="http://localhost:1313/blog/technology/">
   <meta property="og:site_name" content="ฅ՞•ﻌ•՞ฅ Alpaca’s Blog">
   <meta property="og:title" content="Technology">
   <meta property="og:description" content="Maple World Deep Dive">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
-    <meta property="og:image" content="https://automatic-parakeet.netlify.app/images/share.png">
+    <meta property="og:image" content="http://localhost:1313/images/share.png">
 
 
 
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://automatic-parakeet.netlify.app/images/share.png">
+  <meta name="twitter:image" content="http://localhost:1313/images/share.png">
   <meta name="twitter:title" content="Technology">
   <meta name="twitter:description" content="Maple World Deep Dive">
 
@@ -36,10 +36,10 @@
   <meta itemprop="description" content="Maple World Deep Dive">
   <meta itemprop="datePublished" content="2025-08-06T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-08-06T00:00:00+00:00">
-  <meta itemprop="image" content="https://automatic-parakeet.netlify.app/images/share.png">
+  <meta itemprop="image" content="http://localhost:1313/images/share.png">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  <link rel="alternate" type="application/rss+xml" href="https://automatic-parakeet.netlify.app/blog/technology/index.xml" title="ฅ՞•ﻌ•՞ฅ Alpaca’s Blog" />
+  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/blog/technology/index.xml" title="ฅ՞•ﻌ•՞ฅ Alpaca’s Blog" />
   <style>
   :root {
     --width: 720px;
@@ -202,11 +202,17 @@
   }
 
 </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
 <style>
      
     :root {
         --font-main:
             "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+        --font-paragraph: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         --font-mono: "Inconsolata", Courier, monospace;
         --font-size-base: 16px;
         --font-size-small: 14px;
@@ -253,6 +259,24 @@
     }
 
      
+    p {
+        font-family: var(--font-paragraph);
+        font-weight: 400;
+    }
+
+     
+    ul:not(.blog-posts) li,
+    ol li {
+        font-family: var(--font-paragraph);
+        font-weight: 400;
+    }
+
+     
+    ul.blog-posts li a {
+        font-family: var(--font-main);
+    }
+
+     
     pre,
     code {
         font-family: var(--font-mono);
@@ -282,11 +306,12 @@
     }
 
     .post-description {
+        font-family: var(--font-main);
         font-size: var(--font-size-base);
         color: var(--meta-color);
         margin-top: 0.5rem;
         margin-bottom: 1rem;
-        font-style: italic;
+        font-style: normal;
     }
 
     .post-meta {
@@ -358,7 +383,7 @@
 
     ul.blog-posts li time {
         font-family: var(--font-main);
-        font-size: var(--font-size-small);
+        font-size: var(--font-size-base);
         color: var(--meta-color);
     }
 
@@ -502,7 +527,7 @@
           </time>
         </i>
       </span>
-      <a href="https://automatic-parakeet.netlify.app/the-llm-zoo-spec-driven-development-and-multi-agent-collaboration/">The LLM Zoo: Spec-Driven Development and Multi-Agent Collaboration</a>
+      <a href="http://localhost:1313/the-llm-zoo-spec-driven-development-and-multi-agent-collaboration/">The LLM Zoo: Spec-Driven Development and Multi-Agent Collaboration</a>
     </li>
     
     <li>
@@ -513,7 +538,7 @@
           </time>
         </i>
       </span>
-      <a href="https://automatic-parakeet.netlify.app/introducing-gpt-oss-openais-new-frontier-in-open-weight-models/">Introducing gpt-oss: OpenAI&#39;s New Frontier in Open-Weight Models</a>
+      <a href="http://localhost:1313/introducing-gpt-oss-openais-new-frontier-in-open-weight-models/">Introducing gpt-oss: OpenAI&#39;s New Frontier in Open-Weight Models</a>
     </li>
     
     <li>
@@ -524,7 +549,7 @@
           </time>
         </i>
       </span>
-      <a href="https://automatic-parakeet.netlify.app/the-fading-community-lessons-from-maple-storys-decline/">The Fading Community: Lessons from Maple Story&#39;s Decline</a>
+      <a href="http://localhost:1313/the-fading-community-lessons-from-maple-storys-decline/">The Fading Community: Lessons from Maple Story&#39;s Decline</a>
     </li>
     
     <li>
@@ -535,7 +560,7 @@
           </time>
         </i>
       </span>
-      <a href="https://automatic-parakeet.netlify.app/the-modern-maple-world/">The Modern Maple World</a>
+      <a href="http://localhost:1313/the-modern-maple-world/">The Modern Maple World</a>
     </li>
     
   </ul>

@@ -21,6 +21,16 @@
         {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
       </time>
     </div>
+    {{ if and .Params.audio (gt (len .Params.audio) 0) }}
+    <div class="audio-player-container">
+      <audio class="audio-player" controls preload="metadata">
+        <source src="{{ index .Params.audio 0 | relURL }}" type="audio/aac">
+        <source src="{{ index .Params.audio 0 | relURL }}" type="audio/mpeg">
+        <source src="{{ index .Params.audio 0 | relURL }}" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    {{ end }}
   </header>
   <div class="post-content">
     {{ .Content }}

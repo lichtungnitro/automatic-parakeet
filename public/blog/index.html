@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="icon" type="image/png" href="http://localhost:1313/images/favicon.png">
-<link rel="shortcut icon" href="http://localhost:1313/images/favicon.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/images/favicon.png"><link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="icon" type="image/png" href="https://automatic-parakeet.netlify.app/images/favicon.png">
+<link rel="shortcut icon" href="https://automatic-parakeet.netlify.app/images/favicon.png">
+<link rel="apple-touch-icon" href="https://automatic-parakeet.netlify.app/images/favicon.png"><link rel="icon" type="image/x-icon" href="https://automatic-parakeet.netlify.app/favicon.ico">
 <title>Blog | ฅ՞•ﻌ•՞ฅ Mandelbrot&#39;z Blog</title>
 <meta name="title" content="Blog" />
 <meta name="description" content="Maple world deep diver" />
-<meta name="keywords" content="ai,collaboration,community,development,gaming,llms,markdown,models,openai,philosophy,programming,society,syntax,technology," />
+<meta name="keywords" content="ai,audio,collaboration,community,development,feature,gaming,llms,markdown,models,openai,philosophy,programming,society,syntax,technology,test," />
 
 
-<meta property="og:url" content="http://localhost:1313/blog/">
+<meta property="og:url" content="https://automatic-parakeet.netlify.app/blog/">
   <meta property="og:site_name" content="ฅ՞•ﻌ•՞ฅ Mandelbrot&#39;z Blog">
   <meta property="og:title" content="Blog">
   <meta property="og:description" content="Maple world deep diver">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
-    <meta property="og:image" content="http://localhost:1313/images/share.png">
+    <meta property="og:image" content="https://automatic-parakeet.netlify.app/images/share.png">
 
 
 
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/share.png">
+  <meta name="twitter:image" content="https://automatic-parakeet.netlify.app/images/share.png">
   <meta name="twitter:title" content="Blog">
   <meta name="twitter:description" content="Maple world deep diver">
 
@@ -34,12 +34,12 @@
 
   <meta itemprop="name" content="Blog">
   <meta itemprop="description" content="Maple world deep diver">
-  <meta itemprop="datePublished" content="2025-08-06T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2025-08-06T00:00:00+00:00">
-  <meta itemprop="image" content="http://localhost:1313/images/share.png">
+  <meta itemprop="datePublished" content="2025-08-10T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-08-10T00:00:00+00:00">
+  <meta itemprop="image" content="https://automatic-parakeet.netlify.app/images/share.png">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/blog/index.xml" title="ฅ՞•ﻌ•՞ฅ Mandelbrot'z Blog" />
+  <link rel="alternate" type="application/rss+xml" href="https://automatic-parakeet.netlify.app/blog/index.xml" title="ฅ՞•ﻌ•՞ฅ Mandelbrot'z Blog" />
   <style>
   :root {
     --width: 720px;
@@ -206,6 +206,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
 
 <style>
      
@@ -775,6 +778,82 @@
         color: var(--meta-color);
         font-size: var(--font-size-small);
     }
+
+     
+    .audio-player-container {
+        margin: 0.75rem 0;
+        padding: 0;
+    }
+
+    .audio-player {
+        width: 100%;
+        max-width: 100%;
+        background: none;
+    }
+
+     
+    .plyr {
+        border-radius: 6px;
+        background: var(--tag-bg);
+        border: 1px solid var(--border-color);
+        margin: 0.5rem 0;
+    }
+
+    .plyr--audio .plyr__controls {
+        background: var(--tag-bg);
+        border-radius: 6px;
+        padding: 0.75rem;
+        color: var(--text-color);
+    }
+
+    .plyr__control {
+        color: var(--text-color);
+    }
+
+    .plyr__control:hover {
+        background: var(--tag-hover-bg);
+    }
+
+    .plyr__control.plyr__tab-focus {
+        box-shadow: 0 0 0 2px var(--link-color);
+    }
+
+    .plyr__progress {
+        background: var(--border-color);
+    }
+
+    .plyr__progress--played {
+        background: var(--link-color);
+    }
+
+    .plyr__time {
+        color: var(--meta-color);
+        font-family: var(--font-mono);
+        font-size: 0.8rem;
+    }
+
+     
+    @media (prefers-color-scheme: dark) {
+        .plyr--audio .plyr__controls {
+            background: var(--tag-bg);
+        }
+        
+        .plyr__control {
+            color: var(--text-color);
+        }
+        
+        .plyr__control:hover {
+            background: var(--tag-hover-bg);
+        }
+        
+        .plyr__progress {
+            background: var(--border-color);
+        }
+        
+        .plyr__progress--played {
+            background: var(--link-color);
+        }
+    }
 </style>
 </head>
 
@@ -901,12 +980,23 @@
     <li>
       <span>
         <i>
+          <time datetime='2025-08-10'>
+            10 Aug, 2025
+          </time>
+        </i>
+      </span>
+      <a href="https://automatic-parakeet.netlify.app/audio-blog-feature-test/">Audio Blog Feature Test</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
           <time datetime='2025-08-06'>
             06 Aug, 2025
           </time>
         </i>
       </span>
-      <a href="http://localhost:1313/the-llm-zoo-spec-driven-development-and-multi-agent-collaboration/">The LLM Zoo: Spec-Driven Development and Multi-Agent Collaboration</a>
+      <a href="https://automatic-parakeet.netlify.app/the-llm-zoo-spec-driven-development-and-multi-agent-collaboration/">The LLM Zoo: Spec-Driven Development and Multi-Agent Collaboration</a>
     </li>
     
     <li>
@@ -917,7 +1007,7 @@
           </time>
         </i>
       </span>
-      <a href="http://localhost:1313/introducing-gpt-oss-openais-new-frontier-in-open-weight-models/">Introducing gpt-oss: OpenAI&#39;s New Frontier in Open-Weight Models</a>
+      <a href="https://automatic-parakeet.netlify.app/introducing-gpt-oss-openais-new-frontier-in-open-weight-models/">Introducing gpt-oss: OpenAI&#39;s New Frontier in Open-Weight Models</a>
     </li>
     
     <li>
@@ -928,7 +1018,7 @@
           </time>
         </i>
       </span>
-      <a href="http://localhost:1313/llm-augmentation-in-programming-antirezs-insights/">LLM Augmentation in Programming: Antirez&#39;s Insights</a>
+      <a href="https://automatic-parakeet.netlify.app/llm-augmentation-in-programming-antirezs-insights/">LLM Augmentation in Programming: Antirez&#39;s Insights</a>
     </li>
     
     <li>
@@ -939,7 +1029,7 @@
           </time>
         </i>
       </span>
-      <a href="http://localhost:1313/the-fading-community-lessons-from-maple-storys-decline/">The Fading Community: Lessons from Maple Story&#39;s Decline</a>
+      <a href="https://automatic-parakeet.netlify.app/the-fading-community-lessons-from-maple-storys-decline/">The Fading Community: Lessons from Maple Story&#39;s Decline</a>
     </li>
     
     <li>
@@ -950,7 +1040,7 @@
           </time>
         </i>
       </span>
-      <a href="http://localhost:1313/the-modern-maple-world/">The Modern Maple World</a>
+      <a href="https://automatic-parakeet.netlify.app/the-modern-maple-world/">The Modern Maple World</a>
     </li>
     
   </ul>
@@ -958,102 +1048,123 @@
   <small>
     <div>
       
-      <a href="http://localhost:1313/blog/ai/" style="display: inline-flex; align-items: center; margin-right: 8px;">
+      <a href="https://automatic-parakeet.netlify.app/blog/ai/" style="display: inline-flex; align-items: center; margin-right: 8px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M2.12264 12.816C2.41018 13.8186 3.18295 14.5914 4.72848 16.1369L6.55812 17.9665C9.24711 20.6555 10.5916 22 12.2623 22C13.933 22 15.2775 20.6555 17.9665 17.9665C20.6555 15.2775 22 13.933 22 12.2623C22 10.5916 20.6555 9.24711 17.9665 6.55812L16.1369 4.72848C14.5914 3.18295 13.8186 2.41018 12.816 2.12264C11.8134 1.83509 10.7485 2.08083 8.61875 2.57231L7.39057 2.85574C5.5988 3.26922 4.70292 3.47597 4.08944 4.08944C3.47597 4.70292 3.26922 5.59881 2.85574 7.39057L2.57231 8.61875C2.08083 10.7485 1.83509 11.8134 2.12264 12.816ZM10.1234 7.27098C10.911 8.05856 10.911 9.33549 10.1234 10.1231C9.33581 10.9107 8.05888 10.9107 7.27129 10.1231C6.48371 9.33549 6.48371 8.05856 7.27129 7.27098C8.05888 6.48339 9.33581 6.48339 10.1234 7.27098ZM19.0511 12.0511L12.0721 19.0303C11.7792 19.3232 11.3043 19.3232 11.0114 19.0303C10.7185 18.7375 10.7185 18.2626 11.0114 17.9697L17.9904 10.9904C18.2833 10.6975 18.7582 10.6975 19.0511 10.9904C19.344 11.2833 19.344 11.7582 19.0511 12.0511Z"/>
         </svg>
         Ai
       </a>
       
-      <a href="http://localhost:1313/blog/collaboration/" style="display: inline-flex; align-items: center; margin-right: 8px;">
+      <a href="https://automatic-parakeet.netlify.app/blog/audio/" style="display: inline-flex; align-items: center; margin-right: 8px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M2.12264 12.816C2.41018 13.8186 3.18295 14.5914 4.72848 16.1369L6.55812 17.9665C9.24711 20.6555 10.5916 22 12.2623 22C13.933 22 15.2775 20.6555 17.9665 17.9665C20.6555 15.2775 22 13.933 22 12.2623C22 10.5916 20.6555 9.24711 17.9665 6.55812L16.1369 4.72848C14.5914 3.18295 13.8186 2.41018 12.816 2.12264C11.8134 1.83509 10.7485 2.08083 8.61875 2.57231L7.39057 2.85574C5.5988 3.26922 4.70292 3.47597 4.08944 4.08944C3.47597 4.70292 3.26922 5.59881 2.85574 7.39057L2.57231 8.61875C2.08083 10.7485 1.83509 11.8134 2.12264 12.816ZM10.1234 7.27098C10.911 8.05856 10.911 9.33549 10.1234 10.1231C9.33581 10.9107 8.05888 10.9107 7.27129 10.1231C6.48371 9.33549 6.48371 8.05856 7.27129 7.27098C8.05888 6.48339 9.33581 6.48339 10.1234 7.27098ZM19.0511 12.0511L12.0721 19.0303C11.7792 19.3232 11.3043 19.3232 11.0114 19.0303C10.7185 18.7375 10.7185 18.2626 11.0114 17.9697L17.9904 10.9904C18.2833 10.6975 18.7582 10.6975 19.0511 10.9904C19.344 11.2833 19.344 11.7582 19.0511 12.0511Z"/>
+        </svg>
+        Audio
+      </a>
+      
+      <a href="https://automatic-parakeet.netlify.app/blog/collaboration/" style="display: inline-flex; align-items: center; margin-right: 8px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M2.12264 12.816C2.41018 13.8186 3.18295 14.5914 4.72848 16.1369L6.55812 17.9665C9.24711 20.6555 10.5916 22 12.2623 22C13.933 22 15.2775 20.6555 17.9665 17.9665C20.6555 15.2775 22 13.933 22 12.2623C22 10.5916 20.6555 9.24711 17.9665 6.55812L16.1369 4.72848C14.5914 3.18295 13.8186 2.41018 12.816 2.12264C11.8134 1.83509 10.7485 2.08083 8.61875 2.57231L7.39057 2.85574C5.5988 3.26922 4.70292 3.47597 4.08944 4.08944C3.47597 4.70292 3.26922 5.59881 2.85574 7.39057L2.57231 8.61875C2.08083 10.7485 1.83509 11.8134 2.12264 12.816ZM10.1234 7.27098C10.911 8.05856 10.911 9.33549 10.1234 10.1231C9.33581 10.9107 8.05888 10.9107 7.27129 10.1231C6.48371 9.33549 6.48371 8.05856 7.27129 7.27098C8.05888 6.48339 9.33581 6.48339 10.1234 7.27098ZM19.0511 12.0511L12.0721 19.0303C11.7792 19.3232 11.3043 19.3232 11.0114 19.0303C10.7185 18.7375 10.7185 18.2626 11.0114 17.9697L17.9904 10.9904C18.2833 10.6975 18.7582 10.6975 19.0511 10.9904C19.344 11.2833 19.344 11.7582 19.0511 12.0511Z"/>
         </svg>
         Collaboration
       </a>
       
-      <a href="http://localhost:1313/blog/community/" style="display: inline-flex; align-items: center; margin-right: 8px;">
+      <a href="https://automatic-parakeet.netlify.app/blog/community/" style="display: inline-flex; align-items: center; margin-right: 8px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M2.12264 12.816C2.41018 13.8186 3.18295 14.5914 4.72848 16.1369L6.55812 17.9665C9.24711 20.6555 10.5916 22 12.2623 22C13.933 22 15.2775 20.6555 17.9665 17.9665C20.6555 15.2775 22 13.933 22 12.2623C22 10.5916 20.6555 9.24711 17.9665 6.55812L16.1369 4.72848C14.5914 3.18295 13.8186 2.41018 12.816 2.12264C11.8134 1.83509 10.7485 2.08083 8.61875 2.57231L7.39057 2.85574C5.5988 3.26922 4.70292 3.47597 4.08944 4.08944C3.47597 4.70292 3.26922 5.59881 2.85574 7.39057L2.57231 8.61875C2.08083 10.7485 1.83509 11.8134 2.12264 12.816ZM10.1234 7.27098C10.911 8.05856 10.911 9.33549 10.1234 10.1231C9.33581 10.9107 8.05888 10.9107 7.27129 10.1231C6.48371 9.33549 6.48371 8.05856 7.27129 7.27098C8.05888 6.48339 9.33581 6.48339 10.1234 7.27098ZM19.0511 12.0511L12.0721 19.0303C11.7792 19.3232 11.3043 19.3232 11.0114 19.0303C10.7185 18.7375 10.7185 18.2626 11.0114 17.9697L17.9904 10.9904C18.2833 10.6975 18.7582 10.6975 19.0511 10.9904C19.344 11.2833 19.344 11.7582 19.0511 12.0511Z"/>
         </svg>
         Community
       </a>
       
-      <a href="http://localhost:1313/blog/development/" style="display: inline-flex; align-items: center; margin-right: 8px;">
+      <a href="https://automatic-parakeet.netlify.app/blog/development/" style="display: inline-flex; align-items: center; margin-right: 8px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M2.12264 12.816C2.41018 13.8186 3.18295 14.5914 4.72848 16.1369L6.55812 17.9665C9.24711 20.6555 10.5916 22 12.2623 22C13.933 22 15.2775 20.6555 17.9665 17.9665C20.6555 15.2775 22 13.933 22 12.2623C22 10.5916 20.6555 9.24711 17.9665 6.55812L16.1369 4.72848C14.5914 3.18295 13.8186 2.41018 12.816 2.12264C11.8134 1.83509 10.7485 2.08083 8.61875 2.57231L7.39057 2.85574C5.5988 3.26922 4.70292 3.47597 4.08944 4.08944C3.47597 4.70292 3.26922 5.59881 2.85574 7.39057L2.57231 8.61875C2.08083 10.7485 1.83509 11.8134 2.12264 12.816ZM10.1234 7.27098C10.911 8.05856 10.911 9.33549 10.1234 10.1231C9.33581 10.9107 8.05888 10.9107 7.27129 10.1231C6.48371 9.33549 6.48371 8.05856 7.27129 7.27098C8.05888 6.48339 9.33581 6.48339 10.1234 7.27098ZM19.0511 12.0511L12.0721 19.0303C11.7792 19.3232 11.3043 19.3232 11.0114 19.0303C10.7185 18.7375 10.7185 18.2626 11.0114 17.9697L17.9904 10.9904C18.2833 10.6975 18.7582 10.6975 19.0511 10.9904C19.344 11.2833 19.344 11.7582 19.0511 12.0511Z"/>
         </svg>
         Development
       </a>
       
-      <a href="http://localhost:1313/blog/gaming/" style="display: inline-flex; align-items: center; margin-right: 8px;">
+      <a href="https://automatic-parakeet.netlify.app/blog/feature/" style="display: inline-flex; align-items: center; margin-right: 8px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M2.12264 12.816C2.41018 13.8186 3.18295 14.5914 4.72848 16.1369L6.55812 17.9665C9.24711 20.6555 10.5916 22 12.2623 22C13.933 22 15.2775 20.6555 17.9665 17.9665C20.6555 15.2775 22 13.933 22 12.2623C22 10.5916 20.6555 9.24711 17.9665 6.55812L16.1369 4.72848C14.5914 3.18295 13.8186 2.41018 12.816 2.12264C11.8134 1.83509 10.7485 2.08083 8.61875 2.57231L7.39057 2.85574C5.5988 3.26922 4.70292 3.47597 4.08944 4.08944C3.47597 4.70292 3.26922 5.59881 2.85574 7.39057L2.57231 8.61875C2.08083 10.7485 1.83509 11.8134 2.12264 12.816ZM10.1234 7.27098C10.911 8.05856 10.911 9.33549 10.1234 10.1231C9.33581 10.9107 8.05888 10.9107 7.27129 10.1231C6.48371 9.33549 6.48371 8.05856 7.27129 7.27098C8.05888 6.48339 9.33581 6.48339 10.1234 7.27098ZM19.0511 12.0511L12.0721 19.0303C11.7792 19.3232 11.3043 19.3232 11.0114 19.0303C10.7185 18.7375 10.7185 18.2626 11.0114 17.9697L17.9904 10.9904C18.2833 10.6975 18.7582 10.6975 19.0511 10.9904C19.344 11.2833 19.344 11.7582 19.0511 12.0511Z"/>
+        </svg>
+        Feature
+      </a>
+      
+      <a href="https://automatic-parakeet.netlify.app/blog/gaming/" style="display: inline-flex; align-items: center; margin-right: 8px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M2.12264 12.816C2.41018 13.8186 3.18295 14.5914 4.72848 16.1369L6.55812 17.9665C9.24711 20.6555 10.5916 22 12.2623 22C13.933 22 15.2775 20.6555 17.9665 17.9665C20.6555 15.2775 22 13.933 22 12.2623C22 10.5916 20.6555 9.24711 17.9665 6.55812L16.1369 4.72848C14.5914 3.18295 13.8186 2.41018 12.816 2.12264C11.8134 1.83509 10.7485 2.08083 8.61875 2.57231L7.39057 2.85574C5.5988 3.26922 4.70292 3.47597 4.08944 4.08944C3.47597 4.70292 3.26922 5.59881 2.85574 7.39057L2.57231 8.61875C2.08083 10.7485 1.83509 11.8134 2.12264 12.816ZM10.1234 7.27098C10.911 8.05856 10.911 9.33549 10.1234 10.1231C9.33581 10.9107 8.05888 10.9107 7.27129 10.1231C6.48371 9.33549 6.48371 8.05856 7.27129 7.27098C8.05888 6.48339 9.33581 6.48339 10.1234 7.27098ZM19.0511 12.0511L12.0721 19.0303C11.7792 19.3232 11.3043 19.3232 11.0114 19.0303C10.7185 18.7375 10.7185 18.2626 11.0114 17.9697L17.9904 10.9904C18.2833 10.6975 18.7582 10.6975 19.0511 10.9904C19.344 11.2833 19.344 11.7582 19.0511 12.0511Z"/>
         </svg>
         Gaming
       </a>
       
-      <a href="http://localhost:1313/blog/llms/" style="display: inline-flex; align-items: center; margin-right: 8px;">
+      <a href="https://automatic-parakeet.netlify.app/blog/llms/" style="display: inline-flex; align-items: center; margin-right: 8px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M2.12264 12.816C2.41018 13.8186 3.18295 14.5914 4.72848 16.1369L6.55812 17.9665C9.24711 20.6555 10.5916 22 12.2623 22C13.933 22 15.2775 20.6555 17.9665 17.9665C20.6555 15.2775 22 13.933 22 12.2623C22 10.5916 20.6555 9.24711 17.9665 6.55812L16.1369 4.72848C14.5914 3.18295 13.8186 2.41018 12.816 2.12264C11.8134 1.83509 10.7485 2.08083 8.61875 2.57231L7.39057 2.85574C5.5988 3.26922 4.70292 3.47597 4.08944 4.08944C3.47597 4.70292 3.26922 5.59881 2.85574 7.39057L2.57231 8.61875C2.08083 10.7485 1.83509 11.8134 2.12264 12.816ZM10.1234 7.27098C10.911 8.05856 10.911 9.33549 10.1234 10.1231C9.33581 10.9107 8.05888 10.9107 7.27129 10.1231C6.48371 9.33549 6.48371 8.05856 7.27129 7.27098C8.05888 6.48339 9.33581 6.48339 10.1234 7.27098ZM19.0511 12.0511L12.0721 19.0303C11.7792 19.3232 11.3043 19.3232 11.0114 19.0303C10.7185 18.7375 10.7185 18.2626 11.0114 17.9697L17.9904 10.9904C18.2833 10.6975 18.7582 10.6975 19.0511 10.9904C19.344 11.2833 19.344 11.7582 19.0511 12.0511Z"/>
         </svg>
         Llms
       </a>
       
-      <a href="http://localhost:1313/blog/markdown/" style="display: inline-flex; align-items: center; margin-right: 8px;">
+      <a href="https://automatic-parakeet.netlify.app/blog/markdown/" style="display: inline-flex; align-items: center; margin-right: 8px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M2.12264 12.816C2.41018 13.8186 3.18295 14.5914 4.72848 16.1369L6.55812 17.9665C9.24711 20.6555 10.5916 22 12.2623 22C13.933 22 15.2775 20.6555 17.9665 17.9665C20.6555 15.2775 22 13.933 22 12.2623C22 10.5916 20.6555 9.24711 17.9665 6.55812L16.1369 4.72848C14.5914 3.18295 13.8186 2.41018 12.816 2.12264C11.8134 1.83509 10.7485 2.08083 8.61875 2.57231L7.39057 2.85574C5.5988 3.26922 4.70292 3.47597 4.08944 4.08944C3.47597 4.70292 3.26922 5.59881 2.85574 7.39057L2.57231 8.61875C2.08083 10.7485 1.83509 11.8134 2.12264 12.816ZM10.1234 7.27098C10.911 8.05856 10.911 9.33549 10.1234 10.1231C9.33581 10.9107 8.05888 10.9107 7.27129 10.1231C6.48371 9.33549 6.48371 8.05856 7.27129 7.27098C8.05888 6.48339 9.33581 6.48339 10.1234 7.27098ZM19.0511 12.0511L12.0721 19.0303C11.7792 19.3232 11.3043 19.3232 11.0114 19.0303C10.7185 18.7375 10.7185 18.2626 11.0114 17.9697L17.9904 10.9904C18.2833 10.6975 18.7582 10.6975 19.0511 10.9904C19.344 11.2833 19.344 11.7582 19.0511 12.0511Z"/>
         </svg>
         Markdown
       </a>
       
-      <a href="http://localhost:1313/blog/models/" style="display: inline-flex; align-items: center; margin-right: 8px;">
+      <a href="https://automatic-parakeet.netlify.app/blog/models/" style="display: inline-flex; align-items: center; margin-right: 8px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M2.12264 12.816C2.41018 13.8186 3.18295 14.5914 4.72848 16.1369L6.55812 17.9665C9.24711 20.6555 10.5916 22 12.2623 22C13.933 22 15.2775 20.6555 17.9665 17.9665C20.6555 15.2775 22 13.933 22 12.2623C22 10.5916 20.6555 9.24711 17.9665 6.55812L16.1369 4.72848C14.5914 3.18295 13.8186 2.41018 12.816 2.12264C11.8134 1.83509 10.7485 2.08083 8.61875 2.57231L7.39057 2.85574C5.5988 3.26922 4.70292 3.47597 4.08944 4.08944C3.47597 4.70292 3.26922 5.59881 2.85574 7.39057L2.57231 8.61875C2.08083 10.7485 1.83509 11.8134 2.12264 12.816ZM10.1234 7.27098C10.911 8.05856 10.911 9.33549 10.1234 10.1231C9.33581 10.9107 8.05888 10.9107 7.27129 10.1231C6.48371 9.33549 6.48371 8.05856 7.27129 7.27098C8.05888 6.48339 9.33581 6.48339 10.1234 7.27098ZM19.0511 12.0511L12.0721 19.0303C11.7792 19.3232 11.3043 19.3232 11.0114 19.0303C10.7185 18.7375 10.7185 18.2626 11.0114 17.9697L17.9904 10.9904C18.2833 10.6975 18.7582 10.6975 19.0511 10.9904C19.344 11.2833 19.344 11.7582 19.0511 12.0511Z"/>
         </svg>
         Models
       </a>
       
-      <a href="http://localhost:1313/blog/openai/" style="display: inline-flex; align-items: center; margin-right: 8px;">
+      <a href="https://automatic-parakeet.netlify.app/blog/openai/" style="display: inline-flex; align-items: center; margin-right: 8px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M2.12264 12.816C2.41018 13.8186 3.18295 14.5914 4.72848 16.1369L6.55812 17.9665C9.24711 20.6555 10.5916 22 12.2623 22C13.933 22 15.2775 20.6555 17.9665 17.9665C20.6555 15.2775 22 13.933 22 12.2623C22 10.5916 20.6555 9.24711 17.9665 6.55812L16.1369 4.72848C14.5914 3.18295 13.8186 2.41018 12.816 2.12264C11.8134 1.83509 10.7485 2.08083 8.61875 2.57231L7.39057 2.85574C5.5988 3.26922 4.70292 3.47597 4.08944 4.08944C3.47597 4.70292 3.26922 5.59881 2.85574 7.39057L2.57231 8.61875C2.08083 10.7485 1.83509 11.8134 2.12264 12.816ZM10.1234 7.27098C10.911 8.05856 10.911 9.33549 10.1234 10.1231C9.33581 10.9107 8.05888 10.9107 7.27129 10.1231C6.48371 9.33549 6.48371 8.05856 7.27129 7.27098C8.05888 6.48339 9.33581 6.48339 10.1234 7.27098ZM19.0511 12.0511L12.0721 19.0303C11.7792 19.3232 11.3043 19.3232 11.0114 19.0303C10.7185 18.7375 10.7185 18.2626 11.0114 17.9697L17.9904 10.9904C18.2833 10.6975 18.7582 10.6975 19.0511 10.9904C19.344 11.2833 19.344 11.7582 19.0511 12.0511Z"/>
         </svg>
         Openai
       </a>
       
-      <a href="http://localhost:1313/blog/philosophy/" style="display: inline-flex; align-items: center; margin-right: 8px;">
+      <a href="https://automatic-parakeet.netlify.app/blog/philosophy/" style="display: inline-flex; align-items: center; margin-right: 8px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M2.12264 12.816C2.41018 13.8186 3.18295 14.5914 4.72848 16.1369L6.55812 17.9665C9.24711 20.6555 10.5916 22 12.2623 22C13.933 22 15.2775 20.6555 17.9665 17.9665C20.6555 15.2775 22 13.933 22 12.2623C22 10.5916 20.6555 9.24711 17.9665 6.55812L16.1369 4.72848C14.5914 3.18295 13.8186 2.41018 12.816 2.12264C11.8134 1.83509 10.7485 2.08083 8.61875 2.57231L7.39057 2.85574C5.5988 3.26922 4.70292 3.47597 4.08944 4.08944C3.47597 4.70292 3.26922 5.59881 2.85574 7.39057L2.57231 8.61875C2.08083 10.7485 1.83509 11.8134 2.12264 12.816ZM10.1234 7.27098C10.911 8.05856 10.911 9.33549 10.1234 10.1231C9.33581 10.9107 8.05888 10.9107 7.27129 10.1231C6.48371 9.33549 6.48371 8.05856 7.27129 7.27098C8.05888 6.48339 9.33581 6.48339 10.1234 7.27098ZM19.0511 12.0511L12.0721 19.0303C11.7792 19.3232 11.3043 19.3232 11.0114 19.0303C10.7185 18.7375 10.7185 18.2626 11.0114 17.9697L17.9904 10.9904C18.2833 10.6975 18.7582 10.6975 19.0511 10.9904C19.344 11.2833 19.344 11.7582 19.0511 12.0511Z"/>
         </svg>
         Philosophy
       </a>
       
-      <a href="http://localhost:1313/blog/programming/" style="display: inline-flex; align-items: center; margin-right: 8px;">
+      <a href="https://automatic-parakeet.netlify.app/blog/programming/" style="display: inline-flex; align-items: center; margin-right: 8px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M2.12264 12.816C2.41018 13.8186 3.18295 14.5914 4.72848 16.1369L6.55812 17.9665C9.24711 20.6555 10.5916 22 12.2623 22C13.933 22 15.2775 20.6555 17.9665 17.9665C20.6555 15.2775 22 13.933 22 12.2623C22 10.5916 20.6555 9.24711 17.9665 6.55812L16.1369 4.72848C14.5914 3.18295 13.8186 2.41018 12.816 2.12264C11.8134 1.83509 10.7485 2.08083 8.61875 2.57231L7.39057 2.85574C5.5988 3.26922 4.70292 3.47597 4.08944 4.08944C3.47597 4.70292 3.26922 5.59881 2.85574 7.39057L2.57231 8.61875C2.08083 10.7485 1.83509 11.8134 2.12264 12.816ZM10.1234 7.27098C10.911 8.05856 10.911 9.33549 10.1234 10.1231C9.33581 10.9107 8.05888 10.9107 7.27129 10.1231C6.48371 9.33549 6.48371 8.05856 7.27129 7.27098C8.05888 6.48339 9.33581 6.48339 10.1234 7.27098ZM19.0511 12.0511L12.0721 19.0303C11.7792 19.3232 11.3043 19.3232 11.0114 19.0303C10.7185 18.7375 10.7185 18.2626 11.0114 17.9697L17.9904 10.9904C18.2833 10.6975 18.7582 10.6975 19.0511 10.9904C19.344 11.2833 19.344 11.7582 19.0511 12.0511Z"/>
         </svg>
         Programming
       </a>
       
-      <a href="http://localhost:1313/blog/society/" style="display: inline-flex; align-items: center; margin-right: 8px;">
+      <a href="https://automatic-parakeet.netlify.app/blog/society/" style="display: inline-flex; align-items: center; margin-right: 8px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M2.12264 12.816C2.41018 13.8186 3.18295 14.5914 4.72848 16.1369L6.55812 17.9665C9.24711 20.6555 10.5916 22 12.2623 22C13.933 22 15.2775 20.6555 17.9665 17.9665C20.6555 15.2775 22 13.933 22 12.2623C22 10.5916 20.6555 9.24711 17.9665 6.55812L16.1369 4.72848C14.5914 3.18295 13.8186 2.41018 12.816 2.12264C11.8134 1.83509 10.7485 2.08083 8.61875 2.57231L7.39057 2.85574C5.5988 3.26922 4.70292 3.47597 4.08944 4.08944C3.47597 4.70292 3.26922 5.59881 2.85574 7.39057L2.57231 8.61875C2.08083 10.7485 1.83509 11.8134 2.12264 12.816ZM10.1234 7.27098C10.911 8.05856 10.911 9.33549 10.1234 10.1231C9.33581 10.9107 8.05888 10.9107 7.27129 10.1231C6.48371 9.33549 6.48371 8.05856 7.27129 7.27098C8.05888 6.48339 9.33581 6.48339 10.1234 7.27098ZM19.0511 12.0511L12.0721 19.0303C11.7792 19.3232 11.3043 19.3232 11.0114 19.0303C10.7185 18.7375 10.7185 18.2626 11.0114 17.9697L17.9904 10.9904C18.2833 10.6975 18.7582 10.6975 19.0511 10.9904C19.344 11.2833 19.344 11.7582 19.0511 12.0511Z"/>
         </svg>
         Society
       </a>
       
-      <a href="http://localhost:1313/blog/syntax/" style="display: inline-flex; align-items: center; margin-right: 8px;">
+      <a href="https://automatic-parakeet.netlify.app/blog/syntax/" style="display: inline-flex; align-items: center; margin-right: 8px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M2.12264 12.816C2.41018 13.8186 3.18295 14.5914 4.72848 16.1369L6.55812 17.9665C9.24711 20.6555 10.5916 22 12.2623 22C13.933 22 15.2775 20.6555 17.9665 17.9665C20.6555 15.2775 22 13.933 22 12.2623C22 10.5916 20.6555 9.24711 17.9665 6.55812L16.1369 4.72848C14.5914 3.18295 13.8186 2.41018 12.816 2.12264C11.8134 1.83509 10.7485 2.08083 8.61875 2.57231L7.39057 2.85574C5.5988 3.26922 4.70292 3.47597 4.08944 4.08944C3.47597 4.70292 3.26922 5.59881 2.85574 7.39057L2.57231 8.61875C2.08083 10.7485 1.83509 11.8134 2.12264 12.816ZM10.1234 7.27098C10.911 8.05856 10.911 9.33549 10.1234 10.1231C9.33581 10.9107 8.05888 10.9107 7.27129 10.1231C6.48371 9.33549 6.48371 8.05856 7.27129 7.27098C8.05888 6.48339 9.33581 6.48339 10.1234 7.27098ZM19.0511 12.0511L12.0721 19.0303C11.7792 19.3232 11.3043 19.3232 11.0114 19.0303C10.7185 18.7375 10.7185 18.2626 11.0114 17.9697L17.9904 10.9904C18.2833 10.6975 18.7582 10.6975 19.0511 10.9904C19.344 11.2833 19.344 11.7582 19.0511 12.0511Z"/>
         </svg>
         Syntax
       </a>
       
-      <a href="http://localhost:1313/blog/technology/" style="display: inline-flex; align-items: center; margin-right: 8px;">
+      <a href="https://automatic-parakeet.netlify.app/blog/technology/" style="display: inline-flex; align-items: center; margin-right: 8px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M2.12264 12.816C2.41018 13.8186 3.18295 14.5914 4.72848 16.1369L6.55812 17.9665C9.24711 20.6555 10.5916 22 12.2623 22C13.933 22 15.2775 20.6555 17.9665 17.9665C20.6555 15.2775 22 13.933 22 12.2623C22 10.5916 20.6555 9.24711 17.9665 6.55812L16.1369 4.72848C14.5914 3.18295 13.8186 2.41018 12.816 2.12264C11.8134 1.83509 10.7485 2.08083 8.61875 2.57231L7.39057 2.85574C5.5988 3.26922 4.70292 3.47597 4.08944 4.08944C3.47597 4.70292 3.26922 5.59881 2.85574 7.39057L2.57231 8.61875C2.08083 10.7485 1.83509 11.8134 2.12264 12.816ZM10.1234 7.27098C10.911 8.05856 10.911 9.33549 10.1234 10.1231C9.33581 10.9107 8.05888 10.9107 7.27129 10.1231C6.48371 9.33549 6.48371 8.05856 7.27129 7.27098C8.05888 6.48339 9.33581 6.48339 10.1234 7.27098ZM19.0511 12.0511L12.0721 19.0303C11.7792 19.3232 11.3043 19.3232 11.0114 19.0303C10.7185 18.7375 10.7185 18.2626 11.0114 17.9697L17.9904 10.9904C18.2833 10.6975 18.7582 10.6975 19.0511 10.9904C19.344 11.2833 19.344 11.7582 19.0511 12.0511Z"/>
         </svg>
         Technology
+      </a>
+      
+      <a href="https://automatic-parakeet.netlify.app/blog/test/" style="display: inline-flex; align-items: center; margin-right: 8px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M2.12264 12.816C2.41018 13.8186 3.18295 14.5914 4.72848 16.1369L6.55812 17.9665C9.24711 20.6555 10.5916 22 12.2623 22C13.933 22 15.2775 20.6555 17.9665 17.9665C20.6555 15.2775 22 13.933 22 12.2623C22 10.5916 20.6555 9.24711 17.9665 6.55812L16.1369 4.72848C14.5914 3.18295 13.8186 2.41018 12.816 2.12264C11.8134 1.83509 10.7485 2.08083 8.61875 2.57231L7.39057 2.85574C5.5988 3.26922 4.70292 3.47597 4.08944 4.08944C3.47597 4.70292 3.26922 5.59881 2.85574 7.39057L2.57231 8.61875C2.08083 10.7485 1.83509 11.8134 2.12264 12.816ZM10.1234 7.27098C10.911 8.05856 10.911 9.33549 10.1234 10.1231C9.33581 10.9107 8.05888 10.9107 7.27129 10.1231C6.48371 9.33549 6.48371 8.05856 7.27129 7.27098C8.05888 6.48339 9.33581 6.48339 10.1234 7.27098ZM19.0511 12.0511L12.0721 19.0303C11.7792 19.3232 11.3043 19.3232 11.0114 19.0303C10.7185 18.7375 10.7185 18.2626 11.0114 17.9697L17.9904 10.9904C18.2833 10.6975 18.7582 10.6975 19.0511 10.9904C19.344 11.2833 19.344 11.7582 19.0511 12.0511Z"/>
+        </svg>
+        Test
       </a>
       
     </div>
@@ -1067,7 +1178,25 @@
 </footer>
 
   
-
+<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    
+    const players = Plyr.setup('.audio-player', {
+      controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume'],
+      settings: [],
+      tooltips: { controls: true },
+      keyboard: { focused: true, global: false },
+      clickToPlay: true,
+      hideControls: false,
+      resetOnEnd: false,
+      ratio: null, 
+      volume: 0.8,
+      speed: { selected: 1, options: [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2] },
+      quality: { default: 'auto' }
+    });
+  });
+</script>
 </body>
 
 </html>

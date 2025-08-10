@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="icon" type="image/png" href="http://localhost:1313/images/favicon.png">
-<link rel="shortcut icon" href="http://localhost:1313/images/favicon.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/images/favicon.png"><link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="icon" type="image/png" href="https://automatic-parakeet.netlify.app/images/favicon.png">
+<link rel="shortcut icon" href="https://automatic-parakeet.netlify.app/images/favicon.png">
+<link rel="apple-touch-icon" href="https://automatic-parakeet.netlify.app/images/favicon.png"><link rel="icon" type="image/x-icon" href="https://automatic-parakeet.netlify.app/favicon.ico">
 <title>Bear | ฅ՞•ﻌ•՞ฅ Mandelbrot&#39;z Blog</title>
 <meta name="title" content="Bear" />
 <meta name="description" content="Bear
@@ -18,7 +18,7 @@ Each page is ~5 KB." />
 <meta name="keywords" content="" />
 
 
-<meta property="og:url" content="http://localhost:1313/bear/">
+<meta property="og:url" content="https://automatic-parakeet.netlify.app/bear/">
   <meta property="og:site_name" content="ฅ՞•ﻌ•՞ฅ Mandelbrot&#39;z Blog">
   <meta property="og:title" content="Bear">
   <meta property="og:description" content="Bear Website: https://bearblog.dev
@@ -28,13 +28,13 @@ Bear makes it simple to publish content and grow an audience while keeping pages
 Each page is ~5 KB.">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="article">
-    <meta property="og:image" content="http://localhost:1313/images/share.png">
+    <meta property="og:image" content="https://automatic-parakeet.netlify.app/images/share.png">
 
 
 
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/share.png">
+  <meta name="twitter:image" content="https://automatic-parakeet.netlify.app/images/share.png">
   <meta name="twitter:title" content="Bear">
   <meta name="twitter:description" content="Bear Website: https://bearblog.dev
 There’s a website obesity crisis: bloated scripts, ads, and trackers slow readers down when they just want to read.
@@ -52,7 +52,7 @@ Bear is all you need to build a fantastic, optimized site or blog. It works perf
 Bear makes it simple to publish content and grow an audience while keeping pages tiny, fast, and optimized for search engines.
 Each page is ~5 KB.">
   <meta itemprop="wordCount" content="79">
-  <meta itemprop="image" content="http://localhost:1313/images/share.png">
+  <meta itemprop="image" content="https://automatic-parakeet.netlify.app/images/share.png">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   <style>
@@ -221,6 +221,9 @@ Each page is ~5 KB.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
 
 <style>
      
@@ -790,6 +793,82 @@ Each page is ~5 KB.">
         color: var(--meta-color);
         font-size: var(--font-size-small);
     }
+
+     
+    .audio-player-container {
+        margin: 0.75rem 0;
+        padding: 0;
+    }
+
+    .audio-player {
+        width: 100%;
+        max-width: 100%;
+        background: none;
+    }
+
+     
+    .plyr {
+        border-radius: 6px;
+        background: var(--tag-bg);
+        border: 1px solid var(--border-color);
+        margin: 0.5rem 0;
+    }
+
+    .plyr--audio .plyr__controls {
+        background: var(--tag-bg);
+        border-radius: 6px;
+        padding: 0.75rem;
+        color: var(--text-color);
+    }
+
+    .plyr__control {
+        color: var(--text-color);
+    }
+
+    .plyr__control:hover {
+        background: var(--tag-hover-bg);
+    }
+
+    .plyr__control.plyr__tab-focus {
+        box-shadow: 0 0 0 2px var(--link-color);
+    }
+
+    .plyr__progress {
+        background: var(--border-color);
+    }
+
+    .plyr__progress--played {
+        background: var(--link-color);
+    }
+
+    .plyr__time {
+        color: var(--meta-color);
+        font-family: var(--font-mono);
+        font-size: 0.8rem;
+    }
+
+     
+    @media (prefers-color-scheme: dark) {
+        .plyr--audio .plyr__controls {
+            background: var(--tag-bg);
+        }
+        
+        .plyr__control {
+            color: var(--text-color);
+        }
+        
+        .plyr__control:hover {
+            background: var(--tag-hover-bg);
+        }
+        
+        .plyr__progress {
+            background: var(--border-color);
+        }
+        
+        .plyr__progress--played {
+            background: var(--link-color);
+        }
+    }
 </style>
 </head>
 
@@ -928,7 +1007,25 @@ Each page is ~5 KB.">
 </footer>
 
   
-
+<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    
+    const players = Plyr.setup('.audio-player', {
+      controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume'],
+      settings: [],
+      tooltips: { controls: true },
+      keyboard: { focused: true, global: false },
+      clickToPlay: true,
+      hideControls: false,
+      resetOnEnd: false,
+      ratio: null, 
+      volume: 0.8,
+      speed: { selected: 1, options: [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2] },
+      quality: { default: 'auto' }
+    });
+  });
+</script>
 </body>
 
 </html>

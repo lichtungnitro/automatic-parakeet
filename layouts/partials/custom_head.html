@@ -3,6 +3,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
+<!-- Plyr.io CSS for audio player -->
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+
 <style>
     /* Base variables */
     :root {
@@ -570,5 +573,81 @@
         margin-top: 3rem;
         color: var(--meta-color);
         font-size: var(--font-size-small);
+    }
+
+    /* Audio Player Styling */
+    .audio-player-container {
+        margin: 0.75rem 0;
+        padding: 0;
+    }
+
+    .audio-player {
+        width: 100%;
+        max-width: 100%;
+        background: none;
+    }
+
+    /* Plyr customizations to match theme */
+    .plyr {
+        border-radius: 6px;
+        background: var(--tag-bg);
+        border: 1px solid var(--border-color);
+        margin: 0.5rem 0;
+    }
+
+    .plyr--audio .plyr__controls {
+        background: var(--tag-bg);
+        border-radius: 6px;
+        padding: 0.75rem;
+        color: var(--text-color);
+    }
+
+    .plyr__control {
+        color: var(--text-color);
+    }
+
+    .plyr__control:hover {
+        background: var(--tag-hover-bg);
+    }
+
+    .plyr__control.plyr__tab-focus {
+        box-shadow: 0 0 0 2px var(--link-color);
+    }
+
+    .plyr__progress {
+        background: var(--border-color);
+    }
+
+    .plyr__progress--played {
+        background: var(--link-color);
+    }
+
+    .plyr__time {
+        color: var(--meta-color);
+        font-family: var(--font-mono);
+        font-size: 0.8rem;
+    }
+
+    /* Dark mode adjustments */
+    @media (prefers-color-scheme: dark) {
+        .plyr--audio .plyr__controls {
+            background: var(--tag-bg);
+        }
+        
+        .plyr__control {
+            color: var(--text-color);
+        }
+        
+        .plyr__control:hover {
+            background: var(--tag-hover-bg);
+        }
+        
+        .plyr__progress {
+            background: var(--border-color);
+        }
+        
+        .plyr__progress--played {
+            background: var(--link-color);
+        }
     }
 </style>

@@ -1,2 +1,20 @@
-<!-- Empty custom_body.html for minimal, fast loading -->
-<!-- Any scripts or custom elements would go here if needed in the future -->
+<!-- Plyr.io JavaScript for audio player -->
+<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Initialize Plyr for all audio elements with class 'audio-player'
+    const players = Plyr.setup('.audio-player', {
+      controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume'],
+      settings: [],
+      tooltips: { controls: true },
+      keyboard: { focused: true, global: false },
+      clickToPlay: true,
+      hideControls: false,
+      resetOnEnd: false,
+      ratio: null, // Only for video
+      volume: 0.8,
+      speed: { selected: 1, options: [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2] },
+      quality: { default: 'auto' }
+    });
+  });
+</script>

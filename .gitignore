@@ -30,7 +30,8 @@ Thumbs.db
 .env
 .env.local
 
-# Ensure icons are not ignored
-!content/static/icons/
+# Ensure static assets are not ignored
 !static/icons/
+!static/images/
+!static/audio/
 !**/icons/*.svg

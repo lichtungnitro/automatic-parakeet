@@ -2,71 +2,83 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://automatic-parakeet.netlify.app/</loc>
+    <lastmod>2025-08-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://automatic-parakeet.netlify.app/hugo/</loc>
+  </url><url>
+    <loc>https://automatic-parakeet.netlify.app/bear/</loc>
+  </url><url>
+    <loc>https://automatic-parakeet.netlify.app/blog/</loc>
+    <lastmod>2025-08-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://automatic-parakeet.netlify.app/blog/audio/</loc>
+    <lastmod>2025-08-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://automatic-parakeet.netlify.app/audio-blog-feature-test/</loc>
+    <lastmod>2025-08-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://automatic-parakeet.netlify.app/blog/feature/</loc>
+    <lastmod>2025-08-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://automatic-parakeet.netlify.app/blog/test/</loc>
+    <lastmod>2025-08-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://automatic-parakeet.netlify.app/blog/ai/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hugo/</loc>
-  </url><url>
-    <loc>http://localhost:1313/bear/</loc>
-  </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://automatic-parakeet.netlify.app/blog/collaboration/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/ai/</loc>
+    <loc>https://automatic-parakeet.netlify.app/blog/development/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/collaboration/</loc>
+    <loc>https://automatic-parakeet.netlify.app/blog/llms/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/development/</loc>
+    <loc>https://automatic-parakeet.netlify.app/blog/technology/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/llms/</loc>
+    <loc>https://automatic-parakeet.netlify.app/the-llm-zoo-spec-driven-development-and-multi-agent-collaboration/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/technology/</loc>
-    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/the-llm-zoo-spec-driven-development-and-multi-agent-collaboration/</loc>
-    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/introducing-gpt-oss-openais-new-frontier-in-open-weight-models/</loc>
+    <loc>https://automatic-parakeet.netlify.app/introducing-gpt-oss-openais-new-frontier-in-open-weight-models/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/llm-augmentation-in-programming-antirezs-insights/</loc>
+    <loc>https://automatic-parakeet.netlify.app/llm-augmentation-in-programming-antirezs-insights/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/models/</loc>
+    <loc>https://automatic-parakeet.netlify.app/blog/models/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/openai/</loc>
+    <loc>https://automatic-parakeet.netlify.app/blog/openai/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/programming/</loc>
+    <loc>https://automatic-parakeet.netlify.app/blog/programming/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/community/</loc>
+    <loc>https://automatic-parakeet.netlify.app/blog/community/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/gaming/</loc>
+    <loc>https://automatic-parakeet.netlify.app/blog/gaming/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/markdown/</loc>
+    <loc>https://automatic-parakeet.netlify.app/blog/markdown/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/philosophy/</loc>
+    <loc>https://automatic-parakeet.netlify.app/blog/philosophy/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/society/</loc>
+    <loc>https://automatic-parakeet.netlify.app/blog/society/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/syntax/</loc>
+    <loc>https://automatic-parakeet.netlify.app/blog/syntax/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/the-fading-community-lessons-from-maple-storys-decline/</loc>
+    <loc>https://automatic-parakeet.netlify.app/the-fading-community-lessons-from-maple-storys-decline/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/the-modern-maple-world/</loc>
+    <loc>https://automatic-parakeet.netlify.app/the-modern-maple-world/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url>
 </urlset>

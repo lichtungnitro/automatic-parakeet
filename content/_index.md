@@ -12,6 +12,13 @@ I'm a vibe‑coding fan and a friendly coder. I like building with curiosity and
 - LLM philosopher
 - LLM game, gambling, constellation experiments
 
+My philosophy is imple which looks like:
+
+- Stay private, work hard and dress well
+- Eat healthy and talk less
+- Do more, live life once, be kind and stay humble
+- Avoid drama, keep chasing goals
+
 If that sounds interesting, have a look around and check out my latest posts.
 
 <ul>

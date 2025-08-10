@@ -1,29 +1,36 @@
-# Created by https://www.toptal.com/developers/gitignore/api/hugo
-# Edit at https://www.toptal.com/developers/gitignore?templates=hugo
-
-### Hugo ###
-# Generated files by hugo
+# Hugo generated files
 /public/
 /resources/_gen/
 /assets/jsconfig.json
 hugo_stats.json
+/.hugo_build.lock
 
-# Executable may be added to repository
+# Hugo executables
 hugo.exe
 hugo.darwin
 hugo.linux
 
-# Temporary lock file while building
-/.hugo_build.lock
-
-# Code assistant
+# Development tools
 .vscode/
 .cursor/
 CLAUDE.md
 
-# Local override: ensure icons are not ignored by global Icon? rule
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Local environment files
+.env
+.env.local
+
+# Ensure icons are not ignored
 !content/static/icons/
 !static/icons/
 !**/icons/*.svg
-
-# End of https://www.toptal.com/developers/gitignore/api/hugo

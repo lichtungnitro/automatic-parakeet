@@ -1,10 +1,7 @@
-<!-- Import Inter font for paragraphs -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
-    rel="stylesheet"
-/>
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
     /* Base variables */
@@ -483,9 +480,22 @@
         margin-top: 1rem;
     }
 
-    nav a {
+    .nav-link {
+        display: inline-flex;
+        align-items: center;
+        padding: 0 4px;
         margin-right: 1.5rem;
         font-size: var(--font-size-base);
+    }
+
+    .nav-link svg {
+        fill: currentColor;
+        margin: -4px 4px 0 0;
+    }
+
+    .nav-separator {
+        padding: 0 2px;
+        color: currentColor;
     }
 
     /* Table styling */

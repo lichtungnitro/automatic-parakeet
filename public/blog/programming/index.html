@@ -7,16 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="icon" type="image/png" href="http://localhost:1313/images/favicon.png">
 <link rel="shortcut icon" href="http://localhost:1313/images/favicon.png">
 <link rel="apple-touch-icon" href="http://localhost:1313/images/favicon.png"><link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
-<title>Programming | ฅ՞•ﻌ•՞ฅ Alpaca’s Blog</title>
+<title>Programming | ฅ՞•ﻌ•՞ฅ Mandelbrot&#39;z Blog</title>
 <meta name="title" content="Programming" />
-<meta name="description" content="Maple World Deep Dive" />
+<meta name="description" content="Maple world deep diver" />
 <meta name="keywords" content="ai,collaboration,community,development,gaming,llms,markdown,models,openai,philosophy,programming,society,syntax,technology," />
 
 
 <meta property="og:url" content="http://localhost:1313/blog/programming/">
-  <meta property="og:site_name" content="ฅ՞•ﻌ•՞ฅ Alpaca’s Blog">
+  <meta property="og:site_name" content="ฅ՞•ﻌ•՞ฅ Mandelbrot&#39;z Blog">
   <meta property="og:title" content="Programming">
-  <meta property="og:description" content="Maple World Deep Dive">
+  <meta property="og:description" content="Maple world deep diver">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
     <meta property="og:image" content="http://localhost:1313/images/share.png">
@@ -27,19 +27,19 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/images/share.png">
   <meta name="twitter:title" content="Programming">
-  <meta name="twitter:description" content="Maple World Deep Dive">
+  <meta name="twitter:description" content="Maple world deep diver">
 
 
 
 
   <meta itemprop="name" content="Programming">
-  <meta itemprop="description" content="Maple World Deep Dive">
+  <meta itemprop="description" content="Maple world deep diver">
   <meta itemprop="datePublished" content="2025-08-05T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-08-05T00:00:00+00:00">
   <meta itemprop="image" content="http://localhost:1313/images/share.png">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/blog/programming/index.xml" title="ฅ՞•ﻌ•՞ฅ Alpaca’s Blog" />
+  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/blog/programming/index.xml" title="ฅ՞•ﻌ•՞ฅ Mandelbrot'z Blog" />
   <style>
   :root {
     --width: 720px;
@@ -203,16 +203,20 @@
 
 </style>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    rel="stylesheet"
+/>
 
 <style>
      
     :root {
         --font-main:
             "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif;
-        --font-paragraph: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        --font-paragraph:
+            "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         --font-mono: "Inconsolata", Courier, monospace;
         --font-size-base: 16px;
         --font-size-small: 14px;
@@ -326,11 +330,24 @@
     }
 
      
+    kbd {
+        font-family: var(--font-mono);
+        font-size: var(--font-size-code);
+        background-color: var(--code-bg);
+        color: var(--text-color);
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
+        border: 1px solid var(--border-color);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    }
+
+     
     .chroma .k,     
     .chroma .kn,    
     .chroma .kp,    
     .chroma .kr,    
-    .chroma .kt {   
+    .chroma .kt {
+         
         color: #0066cc;
         font-weight: 500;
     }
@@ -348,7 +365,8 @@
     .chroma .sx,    
     .chroma .sr,    
     .chroma .s1,    
-    .chroma .ss {   
+    .chroma .ss {
+         
         color: #2c5aa0;
     }
 
@@ -356,22 +374,26 @@
     .chroma .ch,    
     .chroma .cm,    
     .chroma .c1,    
-    .chroma .cs {   
+    .chroma .cs {
+         
         color: var(--meta-color);
         font-style: italic;
     }
 
-    .chroma .nt {   
+    .chroma .nt {
+         
         color: #2c5aa0;
         font-weight: 500;
     }
 
-    .chroma .na {   
+    .chroma .na {
+         
         color: #0066cc;
     }
 
     .chroma .nb,    
-    .chroma .bp {   
+    .chroma .bp {
+         
         color: #0066cc;
     }
 
@@ -381,36 +403,58 @@
     .chroma .mh,    
     .chroma .mi,    
     .chroma .il,    
-    .chroma .mo {   
+    .chroma .mo {
+         
         color: #d73e48;
     }
 
      
     @media (prefers-color-scheme: dark) {
-        .chroma .k, .chroma .kn, .chroma .kp, .chroma .kr, .chroma .kt {
+        .chroma .k,
+        .chroma .kn,
+        .chroma .kp,
+        .chroma .kr,
+        .chroma .kt {
             color: #8cc2dd;
         }
-        
-        .chroma .s, .chroma .sa, .chroma .sb, .chroma .sc, .chroma .dl,
-        .chroma .sd, .chroma .s2, .chroma .se, .chroma .sh, .chroma .si,
-        .chroma .sx, .chroma .sr, .chroma .s1, .chroma .ss {
+
+        .chroma .s,
+        .chroma .sa,
+        .chroma .sb,
+        .chroma .sc,
+        .chroma .dl,
+        .chroma .sd,
+        .chroma .s2,
+        .chroma .se,
+        .chroma .sh,
+        .chroma .si,
+        .chroma .sx,
+        .chroma .sr,
+        .chroma .s1,
+        .chroma .ss {
             color: #a8cc8c;
         }
-        
+
         .chroma .nt {
             color: #8cc2dd;
         }
-        
+
         .chroma .na {
             color: #a8cc8c;
         }
-        
-        .chroma .nb, .chroma .bp {
+
+        .chroma .nb,
+        .chroma .bp {
             color: #8cc2dd;
         }
-        
-        .chroma .m, .chroma .mb, .chroma .mf, .chroma .mh,
-        .chroma .mi, .chroma .il, .chroma .mo {
+
+        .chroma .m,
+        .chroma .mb,
+        .chroma .mf,
+        .chroma .mh,
+        .chroma .mi,
+        .chroma .il,
+        .chroma .mo {
             color: #ff7b7b;
         }
     }
@@ -516,6 +560,7 @@
     .footnote-backref:hover {
         color: #0052a3;
         text-decoration: underline;
+        text-decoration-style: dotted;
     }
 
      
@@ -530,8 +575,8 @@
      
     sup[id^="fnref:"] {
         vertical-align: super;
-        font-size: 0.75em;
-        margin-left: 0.2em;
+        font-size: 0.65em;
+        margin-left: 0.05em;
         line-height: 0;
     }
 
@@ -544,6 +589,48 @@
     }
 
      
+    .footnotes {
+        margin-top: 3rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--border-color);
+        font-size: var(--font-size-small);
+        color: var(--meta-color);
+    }
+
+    .footnotes ol {
+        padding-left: 1.5rem;
+        margin: 0;
+    }
+
+    .footnotes li {
+        font-family: var(--font-paragraph);
+        margin-bottom: 0.25rem;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    .footnotes li:last-child {
+        margin-bottom: 0;
+    }
+
+    .footnotes p {
+        margin: 0;
+        font-size: inherit;
+        color: inherit;
+        font-family: inherit;
+    }
+
+    .footnote-backref {
+        margin-left: 0.3em;
+        font-size: 0.9em;
+        text-decoration: none;
+    }
+
+    .footnote-backref:hover {
+        text-decoration: none;
+    }
+
+     
     @media (prefers-color-scheme: dark) {
         .post-content a,
         article.page a,
@@ -553,7 +640,7 @@
         .footnote-backref {
             color: #4da6ff;
         }
-        
+
         .post-content a:hover,
         article.page a:hover,
         main > p a:hover,
@@ -561,6 +648,7 @@
         .footnote-ref:hover,
         .footnote-backref:hover {
             color: #66b3ff;
+            text-decoration-style: dotted;
         }
     }
 
@@ -664,8 +752,9 @@
             max-width: 100%;
             font-size: 13px;
         }
-        
-        th, td {
+
+        th,
+        td {
             padding: 0.4rem 0.6rem;
         }
     }
@@ -681,7 +770,7 @@
 
 <body>
   <header><a href="/" class="title">
-  <h2>ฅ՞•ﻌ•՞ฅ Alpaca’s Blog</h2>
+  <h2>ฅ՞•ﻌ•՞ฅ Mandelbrot&#39;z Blog</h2>
 </a>
 <nav> 
 <a
@@ -954,7 +1043,8 @@
 </content>
 
   </main>
-  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+  <footer>Empowered by
+<a href="https://github.com/janraasch/hugo-bearblog/">Hugo ฅ՞•ﻌ•՞ฅ Bear</a>
 </footer>
 
   

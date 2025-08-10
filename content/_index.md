@@ -10,14 +10,14 @@ I'm a vibe‑coding fan and a friendly coder. I like building with curiosity and
 
 - LLM‑driven R&D team
 - LLM philosopher
-- LLM game / gambling / constellation experiments
+- LLM game, gambling, constellation experiments
 
 If that sounds interesting, have a look around and check out my latest posts.
 
 <ul>
-<li><img src="/icons/at-sign.svg" alt="Email" width="18" height="18" style="vertical-align:text-bottom;margin-right:6px;" /> <a href="mailto:john_doe@example.com">john_doe@example.com</a></li>
-<li><img src="/icons/x.svg" alt="X" width="18" height="18" style="vertical-align:text-bottom;margin-right:6px;" /> <a href="https://x.com/john_doe">x.com/john_doe</a></li>
-<li><img src="/icons/github.svg" alt="GitHub" width="18" height="18" style="vertical-align:text-bottom;margin-right:6px;" /> <a href="https://github.com/john_doe">github.com/john_doe</a></li>
+<li><img src="/icons/at-sign.svg" alt="Email" width="17" height="17" style="vertical-align:text-bottom;margin-right:6px;" /> <a href="mailto:john_doe@example.com">john_doe@example.com</a></li>
+<li><img src="/icons/x.svg" alt="X" width="17" height="17" style="vertical-align:text-bottom;margin-right:6px;" /> <a href="https://x.com/john_doe">x.com/john_doe</a></li>
+<li><img src="/icons/github.svg" alt="GitHub" width="17" height="17" style="vertical-align:text-bottom;margin-right:6px;" /> <a href="https://github.com/john_doe">github.com/john_doe</a></li>
 </ul>
 
 ---
@@ -32,14 +32,12 @@ Hugo Bear Blog gives you a fast, optimized site that works on **any** device—s
 
 ---
 
-What happens when you combine the world’s fastest, most lightweight static site generator with a theme built for no‑nonsense, super‑fast blogging?
+What happens when you combine the world’s fastest, most lightweight static site generator with a theme built for no‑nonsense, super‑fast blogging? Use this theme, and find out!
 
-**Use this theme, and find out!**
-
-Made with 💟 by [Jan Raasch](https://www.janraasch.com).
+Made with by [Jan Raasch](https://www.janraasch.com).
 
 ---
 
-Publish simply, grow an audience, and keep pages tiny, fast, and **optimized for search engines**.
+Publish simply, grow an audience, and keep pages tiny, fast, and _optimized for search engines_.
 
-Each page is ~5 KB, and you can **host your blog yourself**.
+Each page is ~5 KB, and you can host your blog yourself.

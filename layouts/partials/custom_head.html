@@ -1,14 +1,18 @@
 <!-- Import Inter font for paragraphs -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    rel="stylesheet"
+/>
 
 <style>
     /* Base variables */
     :root {
         --font-main:
             "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif;
-        --font-paragraph: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        --font-paragraph:
+            "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         --font-mono: "Inconsolata", Courier, monospace;
         --font-size-base: 16px;
         --font-size-small: 14px;
@@ -25,7 +29,7 @@
         --tag-hover-bg: #e2e2e2;
         --tag-hover-color: #444;
         --border-color: #eee;
-        --code-bg: #f5f5f5;
+        --code-bg: #f2f2f2;
     }
 
     /* Dark mode */
@@ -96,6 +100,161 @@
         background-color: transparent;
     }
 
+    /* Syntax highlighting - minimal and clean */
+    .highlight {
+        background-color: var(--code-bg) !important;
+        border-radius: 3px;
+        margin: 1rem 0;
+    }
+
+    .highlight pre {
+        margin: 0;
+        background-color: var(--code-bg) !important;
+        padding: 1rem;
+        overflow-x: auto;
+        line-height: 1.4;
+    }
+
+    /* Override inline styles from Hugo highlight shortcode */
+    .highlight pre[style] {
+        background-color: var(--code-bg) !important;
+    }
+
+    .highlight code {
+        background-color: transparent !important;
+        padding: 0;
+    }
+
+    /* Keyboard input styling to match inline code */
+    kbd {
+        font-family: var(--font-mono);
+        font-size: var(--font-size-code);
+        background-color: var(--code-bg);
+        color: var(--text-color);
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
+        border: 1px solid var(--border-color);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Chroma syntax highlighting styles - minimal theme colors */
+    .chroma .k,    /* keywords */
+    .chroma .kn,   /* keyword.namespace */
+    .chroma .kp,   /* keyword.pseudo */
+    .chroma .kr,   /* keyword.reserved */
+    .chroma .kt {
+        /* keyword.type */
+        color: #0066cc;
+        font-weight: 500;
+    }
+
+    .chroma .s,    /* string */
+    .chroma .sa,   /* string.affix */
+    .chroma .sb,   /* string.backtick */
+    .chroma .sc,   /* string.char */
+    .chroma .dl,   /* string.delimiter */
+    .chroma .sd,   /* string.doc */
+    .chroma .s2,   /* string.double */
+    .chroma .se,   /* string.escape */
+    .chroma .sh,   /* string.heredoc */
+    .chroma .si,   /* string.interpol */
+    .chroma .sx,   /* string.other */
+    .chroma .sr,   /* string.regex */
+    .chroma .s1,   /* string.single */
+    .chroma .ss {
+        /* string.symbol */
+        color: #2c5aa0;
+    }
+
+    .chroma .c,    /* comment */
+    .chroma .ch,   /* comment.hashbang */
+    .chroma .cm,   /* comment.multiline */
+    .chroma .c1,   /* comment.single */
+    .chroma .cs {
+        /* comment.special */
+        color: var(--meta-color);
+        font-style: italic;
+    }
+
+    .chroma .nt {
+        /* name.tag */
+        color: #2c5aa0;
+        font-weight: 500;
+    }
+
+    .chroma .na {
+        /* name.attribute */
+        color: #0066cc;
+    }
+
+    .chroma .nb,   /* name.builtin */
+    .chroma .bp {
+        /* name.builtin.pseudo */
+        color: #0066cc;
+    }
+
+    .chroma .m,    /* literal.number */
+    .chroma .mb,   /* literal.number.bin */
+    .chroma .mf,   /* literal.number.float */
+    .chroma .mh,   /* literal.number.hex */
+    .chroma .mi,   /* literal.number.integer */
+    .chroma .il,   /* literal.number.integer.long */
+    .chroma .mo {
+        /* literal.number.oct */
+        color: #d73e48;
+    }
+
+    /* Dark mode syntax highlighting */
+    @media (prefers-color-scheme: dark) {
+        .chroma .k,
+        .chroma .kn,
+        .chroma .kp,
+        .chroma .kr,
+        .chroma .kt {
+            color: #8cc2dd;
+        }
+
+        .chroma .s,
+        .chroma .sa,
+        .chroma .sb,
+        .chroma .sc,
+        .chroma .dl,
+        .chroma .sd,
+        .chroma .s2,
+        .chroma .se,
+        .chroma .sh,
+        .chroma .si,
+        .chroma .sx,
+        .chroma .sr,
+        .chroma .s1,
+        .chroma .ss {
+            color: #a8cc8c;
+        }
+
+        .chroma .nt {
+            color: #8cc2dd;
+        }
+
+        .chroma .na {
+            color: #a8cc8c;
+        }
+
+        .chroma .nb,
+        .chroma .bp {
+            color: #8cc2dd;
+        }
+
+        .chroma .m,
+        .chroma .mb,
+        .chroma .mf,
+        .chroma .mh,
+        .chroma .mi,
+        .chroma .il,
+        .chroma .mo {
+            color: #ff7b7b;
+        }
+    }
+
     /* Article styling */
     .post-header {
         margin-bottom: 2rem;
@@ -151,6 +310,22 @@
         text-decoration: none;
     }
 
+    /* Mark/highlight styling */
+    mark {
+        background: #e6f3ff;
+        color: #2c5aa0;
+        padding: 0.1rem 0.2rem;
+        border-radius: 2px;
+        font-weight: normal;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        mark {
+            background: #1a2b3d;
+            color: #8cc2dd;
+        }
+    }
+
     /* Link styling */
     a {
         color: var(--link-color);
@@ -166,7 +341,9 @@
     .post-content a,
     article.page a,
     main > p a,
-    main > ul a {
+    main > ul a,
+    .footnote-ref,
+    .footnote-backref {
         color: #0066cc;
         text-decoration: none;
     }
@@ -174,9 +351,79 @@
     .post-content a:hover,
     article.page a:hover,
     main > p a:hover,
-    main > ul a:hover {
+    main > ul a:hover,
+    .footnote-ref:hover,
+    .footnote-backref:hover {
         color: #0052a3;
         text-decoration: underline;
+        text-decoration-style: dotted;
+    }
+
+    /* Footnote reference styling */
+    sup {
+        margin-left: 0.2em;
+    }
+
+    .footnote-ref {
+        margin-left: 0.1em;
+    }
+
+    /* Change footnote format from superscript to [1] style */
+    sup[id^="fnref:"] {
+        vertical-align: super;
+        font-size: 0.65em;
+        margin-left: 0.05em;
+        line-height: 0;
+    }
+
+    sup[id^="fnref:"] .footnote-ref::before {
+        content: "[";
+    }
+
+    sup[id^="fnref:"] .footnote-ref::after {
+        content: "]";
+    }
+
+    /* Footnotes section styling */
+    .footnotes {
+        margin-top: 3rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--border-color);
+        font-size: var(--font-size-small);
+        color: var(--meta-color);
+    }
+
+    .footnotes ol {
+        padding-left: 1.5rem;
+        margin: 0;
+    }
+
+    .footnotes li {
+        font-family: var(--font-paragraph);
+        margin-bottom: 0.25rem;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    .footnotes li:last-child {
+        margin-bottom: 0;
+    }
+
+    .footnotes p {
+        margin: 0;
+        font-size: inherit;
+        color: inherit;
+        font-family: inherit;
+    }
+
+    .footnote-backref {
+        margin-left: 0.3em;
+        font-size: 0.9em;
+        text-decoration: none;
+    }
+
+    .footnote-backref:hover {
+        text-decoration: none;
     }
 
     /* Dark mode article links */
@@ -184,15 +431,20 @@
         .post-content a,
         article.page a,
         main > p a,
-        main > ul a {
+        main > ul a,
+        .footnote-ref,
+        .footnote-backref {
             color: #4da6ff;
         }
-        
+
         .post-content a:hover,
         article.page a:hover,
         main > p a:hover,
-        main > ul a:hover {
+        main > ul a:hover,
+        .footnote-ref:hover,
+        .footnote-backref:hover {
             color: #66b3ff;
+            text-decoration-style: dotted;
         }
     }
 
@@ -296,8 +548,9 @@
             max-width: 100%;
             font-size: 13px;
         }
-        
-        th, td {
+
+        th,
+        td {
             padding: 0.4rem 0.6rem;
         }
     }

@@ -10,7 +10,7 @@
 <title>Social Dynamics | ฅ՞•ﻌ•՞ฅ Alpaca’s Blog</title>
 <meta name="title" content="Social Dynamics" />
 <meta name="description" content="Maple World Deep Dive" />
-<meta name="keywords" content="ai,antirez,collaboration,community,development,gaming,llms,models,openai,philosophy,programming,social dynamics,society,technology," />
+<meta name="keywords" content="ai,collaboration,community,development,gaming,llms,models,openai,philosophy,programming,social dynamics,society,technology," />
 
 
 <meta property="og:url" content="http://localhost:1313/blog/social-dynamics/">
@@ -367,6 +367,40 @@
     }
 
      
+    .post-content a,
+    article.page a,
+    main > p a,
+    main > ul a {
+        color: #0066cc;
+        text-decoration: none;
+    }
+
+    .post-content a:hover,
+    article.page a:hover,
+    main > p a:hover,
+    main > ul a:hover {
+        color: #0052a3;
+        text-decoration: underline;
+    }
+
+     
+    @media (prefers-color-scheme: dark) {
+        .post-content a,
+        article.page a,
+        main > p a,
+        main > ul a {
+            color: #4da6ff;
+        }
+        
+        .post-content a:hover,
+        article.page a:hover,
+        main > p a:hover,
+        main > ul a:hover {
+            color: #66b3ff;
+        }
+    }
+
+     
     ul.blog-posts {
         list-style-type: none;
         padding: 0;
@@ -404,6 +438,72 @@
     nav a {
         margin-right: 1.5rem;
         font-size: var(--font-size-base);
+    }
+
+     
+    table {
+        font-family: var(--font-paragraph);
+        width: auto;
+        max-width: 100%;
+        border-collapse: collapse;
+        margin: 1.5rem 0;
+        font-size: var(--font-size-small);
+        overflow-x: auto;
+        display: block;
+        white-space: nowrap;
+    }
+
+    table thead,
+    table tbody,
+    table tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    th,
+    td {
+        padding: 0.5rem 0.75rem;
+        text-align: left;
+        border-bottom: 1px solid var(--border-color);
+        white-space: normal;
+        word-wrap: break-word;
+    }
+
+    th {
+        font-weight: 500;
+        color: var(--heading-color);
+        border-bottom: 2px solid var(--border-color);
+        background-color: var(--tag-bg);
+    }
+
+    tbody tr:hover {
+        background-color: var(--tag-bg);
+    }
+
+     
+    .post-content table,
+    article.page table,
+    main table {
+        display: table;
+        width: fit-content;
+        max-width: 85%;
+        margin: 1.5rem auto;
+        white-space: normal;
+    }
+
+     
+    @media (max-width: 600px) {
+        .post-content table,
+        article.page table,
+        main table {
+            max-width: 100%;
+            font-size: 13px;
+        }
+        
+        th, td {
+            padding: 0.4rem 0.6rem;
+        }
     }
 
      

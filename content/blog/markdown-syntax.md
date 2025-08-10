@@ -4,55 +4,139 @@ date = '2025-05-11'
 draft = false
 title = "The Fading Community: Lessons from Maple Story's Decline"
 description = "An analysis of Maple Story's community decline, exploring how game mechanics, external pressures, and generational shifts mirror broader societal challenges, with parallels drawn to the impact of AI."
-tags = ['gaming', 'community', 'technology', 'ai', 'social dynamics']
+tags = ['markdown', 'syntax']
 +++
 
 ---
 
-## The Fading Echoes of Community: Why We're Stepping Away from Social Games
+This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+<!--more-->
 
-Our digital landscape is undergoing a subtle but significant shift: individuals are increasingly choosing to step away from social games. What was once a vibrant hub of interaction is now, for many, a source of frustration or a pastime left behind. The journey of Maple Story, a once wildly popular game, offers a compelling microcosm of these broader trends.
+## Headings
 
-**The Golden Age: A Flourishing Social Ecosystem**
+The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
 
-In its early days, Maple Story thrived on its social elements. The captivating game mode drew a growing player base, fostering intricate social connections. Players formed parties, traded items, and enjoyed each other's company, forging friendships and a strong sense of community through shared experiences.
+# H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
 
-**The Emergence of "Identity" and Class: A Shift in Motivation**
+## Paragraph
 
-This idyllic period gradually gave way to social hierarchies. Competition evolved into a system where high-level players derived satisfaction from prestigious equipment, "popularity points," and in-game advantages. Status and individual achievement began to overshadow pure social interaction for some.
+Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
 
-**Aggressive Yet Playful Updates: Seemingly Sustainable Growth**
+Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
 
-Up to this point, Maple Story continued to flourish. Players found enjoyment through collaborative gameplay, individual progression, or exploration. Version updates brought new maps and coveted equipment, injecting fresh content and maintaining progress.
+## Blockquotes
 
-**The Tides Turn: Cheaters, Monopoly, and a Collapsing Ecosystem**
+The blockquote element[^2] represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
 
-The turning point arrived with the relentless intrusion of third-party cheats, eroding fair play and undermining legitimate players' efforts. Simultaneously, professional gaming studios emerged, strategically monopolizing resource-rich maps. This created an uneven playing field, stifled individual progress, and gradually collapsed the game's internal economy. While progression became faster, the genuine sense of accomplishment dwindled.
+#### Blockquote without attribution
 
-**The Rise of "Retro" and the Absence of New Blood: A Nostalgic Retreat**
+> Tiam, ad mint andaepu dandae nostion secatur sequo quae.
+> **Note** that you can use *Markdown syntax* within a blockquote.
 
-Faced with a compromised official environment, many players abandoned main servers for "classic" or "retro" servers, seeking a nostalgic return to earlier, purer versions. However, despite the yearning for the past, these private servers failed to recapture the vibrant popularity of the game's original heyday. The joy of collective achievement and building social connections through shared struggles had largely been lost.
+#### Blockquote with attribution
 
-**A Generation That "Refuses to Take Over": The Silence of the Newcomers**
+> Don't communicate by sharing memory, share memory by communicating.<br>
+> — <cite>Rob Pike[^1]</cite>
 
-Interestingly, new players on "classic" servers haven't revitalized the social landscape. Untainted by historical context and perhaps overwhelmed by established dynamics, this new generation seems hesitant to engage with existing social norms. While older, disillusioned players might be willing to pass the torch, newcomers largely remain silent and passive, often choosing perceived helplessness over active participation and change.
+[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
+[^2]: Markdown is good.
 
-**Lessons from a Virtual World: Echoes in Our Reality**
+## Tables
 
-The story of Maple Story reflects broader societal trends, mirroring how technology, while initially fostering connection, can inadvertently lead to isolation and the erosion of community spirit.
+Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
 
-**The AI Parallel: Today's Cheaters Script**
+   Name | Age
+--------|------
+    Bob | 27
+  Alice | 23
 
-In today's context, AI tools are becoming the "cheaters' scripts" of our social and professional "games." They possess an overwhelming advantage in processing information and generating output, often surpassing human capabilities, even if their reasoning lacks true depth.
+#### Inline Markdown within tables
 
-**Diminished Respect and Frustrated Newcomers:**
+| Italics   | Bold     | Code   |
+| --------  | -------- | ------ |
+| *italics* | **bold** | `code` |
 
-This technological shift mirrors the frustration felt towards new entrants in various industries. While seasoned professionals retain nuanced skills AI cannot replicate, rapid AI advancements often devalue their expertise and the respect they deserve.
+## Code Blocks
 
-**A Reluctant New Generation:**
+#### Code block with backticks
 
-Furthermore, the new generation's reluctance to engage with social responsibilities echoes the passivity of new Maple Story players. Having grown up with readily available information and facing shorter, intense growth trajectories, they may prioritize individual achievement and efficiency over building strong social foundations. Their learning often begins with established "best practices," potentially hindering independent curiosity and critical thinking.
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example HTML5 Document</title>
+</head>
+<body>
+  <p>Test</p>
+</body>
+</html>
+```
 
-**A Call for Re-evaluation:**
+#### Code block indented with four spaces
 
-The fading community in social games serves as a cautionary tale. As technology reshapes our interactions, we must be mindful of potential isolation and the erosion of meaningful social engagement. We need to foster environments that encourage genuine connection, value experience alongside innovation, and empower the next generation to embrace social responsibilities with curiosity and a willingness to shape the future. The joy of collective growth and shared experience is a fundamental human need, one we risk losing if we fail to learn from our digital worlds.
+    <!doctype html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Example HTML5 Document</title>
+    </head>
+    <body>
+      <p>Test</p>
+    </body>
+    </html>
+
+#### Code block with Hugo's internal highlight shortcode
+{{< highlight html >}}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example HTML5 Document</title>
+</head>
+<body>
+  <p>Test</p>
+</body>
+</html>
+{{< /highlight >}}
+
+## List Types
+
+#### Ordered List
+
+1. First item
+2. Second item
+3. Third item
+
+#### Unordered List
+
+* List item
+* Another item
+* And another item
+
+#### Nested list
+
+* Fruit
+  * Apple
+  * Orange
+  * Banana
+* Dairy
+  * Milk
+  * Cheese
+
+## Other Elements — abbr, sub, sup, kbd, mark
+
+<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
+
+H<sub>2</sub>O
+
+X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
+
+Press <kbd>Command + Shift + D</kbd> to end the session.
+
+Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.

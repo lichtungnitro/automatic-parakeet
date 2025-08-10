@@ -4,7 +4,7 @@ date = '2025-05-11'
 draft = false
 title = 'The Modern Maple World'
 description = "Sample article showcasing of a storytelling, but real one."
-tags = ['philosophy', 'gaming', 'community', 'technology', 'society']
+tags = ['philosophy', 'gaming', 'community', 'society']
 +++
 
 ---

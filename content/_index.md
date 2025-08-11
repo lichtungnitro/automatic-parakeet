@@ -25,6 +25,7 @@ If that sounds interesting, have a look around and check out my latest posts.
 <li><img src="/icons/at-sign.svg" alt="Email" width="17" height="17" style="vertical-align:text-bottom;margin-right:6px;" /> <a href="mailto:john_doe@example.com">john_doe@example.com</a></li>
 <li><img src="/icons/x.svg" alt="X" width="17" height="17" style="vertical-align:text-bottom;margin-right:6px;" /> <a href="https://x.com/john_doe">x.com/john_doe</a></li>
 <li><img src="/icons/github.svg" alt="GitHub" width="17" height="17" style="vertical-align:text-bottom;margin-right:6px;" /> <a href="https://github.com/john_doe">github.com/john_doe</a></li>
+<li><img src="/icons/notion.svg" alt="Notion" width="17" height="17" style="vertical-align:text-bottom;margin-right:6px;" /> <a href="https://notion.com/john_doe">notion.com/john_doe</a></li>
 </ul>
 
 ---

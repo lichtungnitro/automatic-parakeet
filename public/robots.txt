@@ -1,2 +1,0 @@
-User-Agent: *
-Sitemap: https://automatic-parakeet.netlify.app/sitemap.xml

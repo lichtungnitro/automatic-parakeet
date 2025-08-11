@@ -1,0 +1,5 @@
+# Redirect netlify subdomain to custom domain
+https://automatic-parakeet.netlify.app/* https://mandelbrotz.com/:splat 301!
+
+# Handle www redirect
+https://www.mandelbrotz.com/* https://mandelbrotz.com/:splat 301!

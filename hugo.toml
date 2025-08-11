@@ -21,6 +21,7 @@ ignoreErrors = ["error-disable-taxonomy"]
   images = ["images/share.png"]
   title = "Hugo ฅ՞•ﻌ•՞ฅ Bear"
   hideMadeWithLine = false
+  disqusShortname = "https-mandelbrotz-com"
 
 [markup]
   [markup.highlight]

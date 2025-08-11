@@ -650,4 +650,85 @@
             background: var(--link-color);
         }
     }
+
+    /* Comments Section Styling */
+    .comments-section {
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .comments-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .comments-header h3 {
+        font-family: var(--font-main);
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: var(--heading-color);
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .comments-noscript {
+        font-family: var(--font-paragraph);
+        font-size: var(--font-size-small);
+        color: var(--meta-color);
+        text-align: center;
+        padding: 2rem;
+        background: var(--tag-bg);
+        border-radius: 6px;
+        border: 1px solid var(--border-color);
+    }
+
+    .comments-noscript a {
+        color: var(--link-color);
+        text-decoration: none;
+    }
+
+    .comments-noscript a:hover {
+        color: var(--heading-color);
+        text-decoration: underline;
+    }
+
+    .comments-dev-notice {
+        font-family: var(--font-paragraph);
+        font-size: var(--font-size-small);
+        color: var(--meta-color);
+        text-align: center;
+        padding: 1.5rem;
+        background: var(--tag-bg);
+        border-radius: 6px;
+        border: 1px solid var(--border-color);
+        margin-top: 1rem;
+    }
+
+    .comments-dev-notice p {
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+    }
+
+    /* Disqus container styling */
+    #disqus_thread {
+        margin-top: 1rem;
+    }
+
+    /* Override some Disqus default styles to match theme */
+    #disqus_thread iframe {
+        border-radius: 6px;
+    }
+
+    /* Dark mode adjustments for comments */
+    @media (prefers-color-scheme: dark) {
+        .comments-noscript a {
+            color: #4da6ff;
+        }
+
+        .comments-noscript a:hover {
+            color: #66b3ff;
+        }
+    }
 </style>

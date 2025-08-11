@@ -4,9 +4,10 @@ menu = "main"
 weight = 1
 +++
 
-# Hi, I'm John Doe
+# Vibe Blogging As A Service
 
-I'm a vibe‑coding fan and a friendly coder. I like building with curiosity and shipping with care. Right now I'm exploring a few LLM‑driven projects:
+I'm a vibe‑coding fan and a friendly coder. Word vibe actually reminds us to return to foundamentalism of the world model. If I am building with curiosity and shipping with care, the model should be responsive to your request, which sounds like, hopefully, cyber-buddism. I am really attached to this
+Right now I'm exploring a few LLM‑driven projects:
 
 - LLM‑driven R&D team
 - LLM philosopher

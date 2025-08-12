@@ -6,8 +6,7 @@ weight = 1
 
 # Vibe Blogging As A Service
 
-I'm a vibe‑coding fan and a friendly coder. Word vibe actually reminds us to return to foundamentalism of the world model. If I am building with curiosity and shipping with care, the model should be responsive to your request, which sounds like, hopefully, cyber-buddism. I am really attached to this
-Right now I'm exploring a few LLM‑driven projects:
+I’m a vibe-coding enthusiast and a friendly coder. The word "vibe" serves as a reminder to return to the fundamentals of the world model. When I build with curiosity and ship with care, the model should be responsive to your requests—kind of like a form of cyber-buddhism, or at least that’s how I see it. I’m deeply attached to this philosophy. Right now, I’m exploring a few LLM-driven projects:
 
 - LLM‑driven R&D team
 - LLM philosopher

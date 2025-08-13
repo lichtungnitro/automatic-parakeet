@@ -1,7 +1,7 @@
 baseURL = "https://mandelbrotz.com"
 theme = 'hugo-bearblog'
 
-title = "ฅ՞•ﻌ•՞ฅ Mandelbrotz"
+title = "ฅ՞•ﻌ•՞ฅ Mandelbrot’z"
 author = "John Doe"
 copyright = "Copyright © 2023-2025, Mandelbrot."
 languageCode = "en-US"
@@ -24,7 +24,7 @@ hideMadeWithLine = false
 disqusShortname = "https-mandelbrotz-com"
 
 [params.Author]
-email = "john_doe@example.com" # Replace with your actual email
+email = "lichtung_nitro@outlook.com"
 
 [params.RSS]
 enableRSS = true

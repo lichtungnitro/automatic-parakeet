@@ -12,16 +12,7 @@ tags = [
 ]
 +++
 
----
-
 ## Unveiling gpt-oss: Pushing the Boundaries of Open-Weight Reasoning
-
-| Item              | In Stock | Price |
-| :---------------- | :------: | :---- |
-| Python Hat        |   True   | 23.99 |
-| SQL Hat           |   True   | 23.99 |
-| Codecademy Tee    |  False   | 19.99 |
-| Codecademy Hoodie |  False   | 42.99 |
 
 OpenAI has announced a significant advancement in the field of AI with the release of `gpt-oss-120b` and `gpt-oss-20b`. These new open-weight language models represent a leap forward, offering state-of-the-art performance, remarkable efficiency, and robust safety features, all available under the permissive Apache 2.0 license.
 
@@ -31,10 +22,10 @@ OpenAI has announced a significant advancement in the field of AI with the relea
 
 These models excel in various tasks, including:
 
-- **Reasoning:** Outperforming similarly sized open models on complex reasoning challenges.
-- **Tool Use:** Exhibiting strong capabilities in function calling and integrating with external tools.
-- **Efficiency:** Optimized for deployment across a wide range of hardware, from consumer GPUs to edge devices.
-- **Context Handling:** Supporting context lengths of up to 128k tokens.
+- **Reasoning** - Outperforming similarly sized open models on complex reasoning challenges.
+- **Tool Use** - Exhibiting strong capabilities in function calling and integrating with external tools.
+- **Efficiency** - Optimized for deployment across a wide range of hardware, from consumer GPUs to edge devices.
+- **Context Handling** - Supporting context lengths of up to 128k tokens.
 
 ### Technical Backbone: Architecture and Training
 

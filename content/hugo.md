@@ -4,24 +4,26 @@ menu = "main"
 weight = 10
 +++
 
-# Hugo
+## Why Choose Hugo
 
-Website: https://gohugo.io
+This version breaks down the information into clear, benefit-oriented sections, which is great for readability and SEO.
 
-Written in Go, Hugo is an open‑source static site generator available under the [Apache License 2.0](https://github.com/gohugoio/hugo/blob/master/LICENSE). It supports TOML, YAML, and JSON data files, Markdown and HTML content, and uses shortcodes for rich embeds. Notable features include taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification, and Sass/SCSS workflows.
+## Fastest Framework for Building Websites
 
-Hugo builds on a variety of open‑source projects:
+Written in Go, Hugo is an open-source static site generator licensed under Apache License 2.0. It's designed for speed and flexibility, making it an ideal choice for everything from blogs to corporate websites and online magazines.
 
-- https://github.com/yuin/goldmark
-- https://github.com/alecthomas/chroma
-- https://github.com/muesli/smartcrop
-- https://github.com/spf13/cobra
-- https://github.com/spf13/viper
+## Key Features
 
-Hugo is ideal for blogs, corporate sites, creative portfolios, online magazines, single‑page apps, or even sites with thousands of pages.
+Hugo is a versatile tool that supports:
 
-It’s for people who want to hand‑code their website without wrestling with complex runtimes, dependencies, or databases.
+- **Content Formats** - TOML, YAML, JSON, Markdown, and HTML.
+- **Rich Content** - Use shortcodes for rich embeds, image processing, and multilingual mode.
+- **Advanced Workflows** - Includes taxonomies, custom output formats, HTML/CSS/JS minification, and Sass/SCSS workflows.
 
-Sites built with Hugo are fast, secure, and can be deployed anywhere—AWS, GitHub Pages, Heroku, Netlify, or your own server.
+Hugo is perfect for anyone who wants to hand-code a website without dealing with complex runtimes, dependencies, or databases. Sites built with Hugo are fast, secure, and easy to deploy on platforms like AWS, GitHub Pages, Heroku, Netlify, or your own server.
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+Hugo is built on a variety of fantastic open-source projects, including Goldmark, Chroma, Smartcrop, Cobra, and Viper.
+
+<ul>
+<li><img src="/icons/web-application.svg" width="17" height="17" style="vertical-align:text-bottom;margin-right:6px;" /> <a href="https://gohugo.io">https://gohugo.io</a></li>
+</ul>

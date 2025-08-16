@@ -6,7 +6,7 @@ weight = 1
 
 ## Vibe Blogging As a Service
 
-I’m a vibe-coding enthusiast and a friendly coder. The word "vibe" serves as a reminder to return to the fundamentals of the world model. When I build with curiosity and ship with care, the model should be responsive to your requests—kind of like a form of _cyber-buddhism_, or at least that’s how I see it. I’m deeply attached to this philosophy. Right now, I’m exploring a few LLM-driven projects:
+I’m a vibe-coding enthusiast and a friendly coder. The word "vibe" serves as a reminder to return to the fundamentals of the world model. When I build with curiosity and ship with care, the model should be responsive to your requests—kind of like a form of **cyber-buddhism**, or at least that’s how I see it. I’m deeply attached to this philosophy. Right now, I’m exploring a few LLM-driven projects:
 
 - [12-factor oriented logic](https://github.com/humanlayer/12-factor-agents) agents development
 - True language model philosopher who thinks

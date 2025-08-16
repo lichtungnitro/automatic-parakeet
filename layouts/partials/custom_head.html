@@ -3,6 +3,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
+
+
 <!-- Plyr.io CSS for audio player -->
 <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
 
@@ -10,15 +12,32 @@
 <script defer src="https://cloud.umami.is/script.js" data-website-id="ed0503cb-6782-44b7-85ee-408fb7361603"></script>
 
 <style>
+    /* ========================================
+       FONT SYSTEM & TYPOGRAPHY
+       ========================================
+
+       Font Variables:
+       - --font-main: Palatino serif for headings, main text, and blog title
+       - --font-paragraph: Tiempos Text for body text and paragraphs
+       - --font-mono: Inconsolata for code and monospace text
+
+       Font Sizes:
+       - --font-size-base: 18px (main text)
+       - --font-size-small: 15px (meta text, tags)
+       - --font-size-code: 15px (code blocks and inline code)
+
+       ======================================== */
+
     /* Base variables */
     :root {
         --font-main:
             "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif;
         --font-paragraph:
-            "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            "Tiempos Text", "Times New Roman", sans-serif;
         --font-mono: "Inconsolata", Courier, monospace;
-        --font-size-base: 16px;
-        --font-size-small: 14px;
+
+        --font-size-base: 18px;
+        --font-size-small: 15px;
         --font-size-code: 15px;
         --line-height: 1.6;
         --width: 720px;
@@ -61,13 +80,13 @@
         background-color: var(--background-color);
     }
 
-    /* Apply Inter font to paragraphs and content lists */
+    /* Paragraph styling with Tiempos Text font */
     p {
         font-family: var(--font-paragraph);
         font-weight: 400;
     }
 
-    /* Apply Inter to list content but not blog post list */
+    /* List content styling with Tiempos Text font (excluding blog post lists) */
     ul:not(.blog-posts) li,
     ol li {
         font-family: var(--font-paragraph);
@@ -78,6 +97,8 @@
     ul.blog-posts li a {
         font-family: var(--font-main);
     }
+
+
 
     /* Code blocks */
     pre,
@@ -627,19 +648,19 @@
         .plyr--audio .plyr__controls {
             background: var(--tag-bg);
         }
-        
+
         .plyr__control {
             color: var(--text-color);
         }
-        
+
         .plyr__control:hover {
             background: var(--tag-hover-bg);
         }
-        
+
         .plyr__progress {
             background: var(--border-color);
         }
-        
+
         .plyr__progress--played {
             background: var(--link-color);
         }

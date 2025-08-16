@@ -1,6 +1,6 @@
 +++
 author = "Ted Chen"
-title = "Monism Agents: Implementing Mixture of Ego with LangChain and LangGraph"
+title = "Monism Agents By Implementing Mixture of Ego"
 date = "2025-08-13"
 description = "Exploring Monism Agents through the Mixture of Ego framework—unifying multiple personas within a single LLM agent using LangChain, LangGraph, and ReAct agents."
 tags = [

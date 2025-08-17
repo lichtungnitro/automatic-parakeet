@@ -1,7 +1,7 @@
 baseURL = "https://mandelbrotz.com"
 theme = 'hugo-bearblog'
 
-title = "ฅ՞•ﻌ•՞ฅ Mandelbrot’z"
+title = "MANDELBROT"
 author = "John Doe"
 copyright = "Copyright © 2023-2025, Mandelbrot."
 languageCode = "en-US"
@@ -38,7 +38,7 @@ hideSitemap = false
 [markup]
 [markup.highlight]
 style = 'github'
-lineNos = true
+lineNos = false
 lineNumbersInTable = false
 codeFences = true
 

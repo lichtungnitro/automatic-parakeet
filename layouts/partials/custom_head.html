@@ -3,6 +3,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
+<!-- Anthropic Font - Styrene A -->
+<link rel="preconnect" href="https://fonts.cdnfonts.com">
+<link href="https://fonts.cdnfonts.com/css/styrene-a" rel="stylesheet">
+
 
 
 <!-- Plyr.io CSS for audio player -->
@@ -35,6 +39,7 @@
         --font-paragraph:
             "Tiempos Text", "Times New Roman", sans-serif;
         --font-mono: "Inconsolata", Courier, monospace;
+        --font-anthropic: "Styrene A", Arial, sans-serif;
 
         --font-size-base: 18px;
         --font-size-small: 15px;
@@ -67,7 +72,7 @@
             --tag-hover-bg: #1a3c4e;
             --tag-hover-color: #fff;
             --border-color: #112936;
-            --code-bg: #002b36;
+            --code-bg: #1a3c4e;
         }
     }
 
@@ -122,6 +127,55 @@
     pre code {
         padding: 0;
         background-color: transparent;
+    }
+
+    /* Fix for Hugo highlight shortcode font size consistency */
+    .highlight code,
+    .highlight pre,
+    .highlight .chroma {
+        font-size: var(--font-size-code) !important;
+        line-height: 1.4 !important;
+    }
+
+    /* Ensure all code elements within highlight have consistent font size */
+    .highlight * {
+        font-size: inherit !important;
+    }
+
+    /* Fix for language-specific code blocks */
+    code[class*="language-"],
+    pre[class*="language-"] {
+        font-size: var(--font-size-code) !important;
+        line-height: 1.4 !important;
+    }
+
+    /* Override any inline styles that might cause font size issues */
+    .highlight pre[style*="font-size"],
+    .highlight code[style*="font-size"] {
+        font-size: var(--font-size-code) !important;
+    }
+
+    /* Mobile-specific code block fixes */
+    @media (max-width: 768px) {
+        .highlight,
+        pre,
+        code {
+            font-size: 14px !important;
+            line-height: 1.15 !important;
+        }
+
+        .highlight pre,
+        pre {
+            padding: 0.75rem;
+            margin: 0.75rem 0;
+        }
+
+        /* Ensure horizontal scrolling on mobile */
+        .highlight,
+        pre {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
     }
 
     /* Syntax highlighting - minimal and clean */
@@ -235,7 +289,7 @@
         .chroma .kp,
         .chroma .kr,
         .chroma .kt {
-            color: #8cc2dd;
+            color: #66b3ff;
         }
 
         .chroma .s,
@@ -256,7 +310,7 @@
         }
 
         .chroma .nt {
-            color: #8cc2dd;
+            color: #66b3ff;
         }
 
         .chroma .na {
@@ -265,7 +319,7 @@
 
         .chroma .nb,
         .chroma .bp {
-            color: #8cc2dd;
+            color: #66b3ff;
         }
 
         .chroma .m,
@@ -276,6 +330,20 @@
         .chroma .il,
         .chroma .mo {
             color: #ff7b7b;
+        }
+
+        /* Ensure code text is readable in dark mode */
+        .highlight,
+        pre,
+        code {
+            color: #e6e6e6;
+        }
+
+        /* Better contrast for inline code in dark mode */
+        :not(pre) > code {
+            background-color: #2a4a5a;
+            color: #e6e6e6;
+            border: 1px solid #3a5a6a;
         }
     }
 
@@ -486,16 +554,44 @@
 
     /* Header and navigation refinements */
     .title {
-        margin-bottom: 2rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .title-content {
+        display: flex;
+        align-items: center;
+        gap: 1.15rem;
+    }
+
+    .blog-logo {
+        flex-shrink: 0;
+        color: var(--heading-color);
+        align-self: flex-end;
+        margin-bottom: 1.9rem;
+        margin-top: 0.1rem;
     }
 
     .title h2 {
         margin: 0;
         font-size: 2rem;
+        /* Anthropic-style blog title */
+        font-family: var(--font-anthropic);
+        font-size: clamp(2.5rem, 2.0408163265306123rem + 1.9591836734693877vw, 4rem);
+        line-height: 0.9;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        margin-bottom: clamp(1.75rem, 1.6734693877551021rem + 0.326530612244898vw, 2rem);
+        margin-top: clamp(2rem, 1.846938775510204rem + 0.653061224489796vw, 2.5rem);
+        text-transform: none;
+        text-wrap: balance;
+        display: flow-root;
+        text-decoration: line-through;
+        text-decoration-color: currentColor;
+        text-decoration-thickness: 0.1em;
     }
 
     nav {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
 
     .nav-link {
@@ -504,6 +600,7 @@
         padding: 0 4px;
         margin-right: 1.5rem;
         font-size: var(--font-size-base);
+        font-weight: 600;
     }
 
     .nav-link svg {
@@ -514,6 +611,7 @@
     .nav-separator {
         padding: 0 2px;
         color: currentColor;
+        font-weight: 600;
     }
 
     /* Table styling */
@@ -679,7 +777,7 @@
 
     .comments-header h3 {
         font-family: var(--font-main);
-        font-size: 1.2rem;
+        font-size: 1.15rem;
         font-weight: 500;
         color: var(--heading-color);
         margin: 0;
@@ -745,5 +843,391 @@
         .comments-noscript a:hover {
             color: #66b3ff;
         }
+    }
+
+    /* Fix for display:flex spans that cause font size issues */
+    .highlight span[style*="display:flex"],
+    .highlight span[style*="display: flex"] {
+        font-size: var(--font-size-code) !important;
+        line-height: 1.4 !important;
+        display: inline !important;
+    }
+
+    /* Override any problematic inline styles */
+    .highlight span[style] {
+        font-size: inherit !important;
+        line-height: inherit !important;
+    }
+
+    /* Ensure consistent font sizing across all code elements */
+    .highlight .chroma *,
+    .highlight .chroma *::before,
+    .highlight .chroma *::after {
+        font-size: inherit !important;
+        line-height: inherit !important;
+    }
+
+    /* Fix spacing between syntax-highlighted spans */
+    .highlight .chroma span[style*="display:flex"],
+    .highlight .chroma span[style*="display: flex"] {
+        margin: 0 !important;
+        padding: 0 !important;
+        line-height: 1.15 !important;
+    }
+
+    /* Reduce line spacing in syntax-highlighted code blocks */
+    .highlight .chroma {
+        line-height: 1.15 !important;
+    }
+
+    .highlight .chroma pre {
+        line-height: 1.15 !important;
+    }
+
+    /* Ensure minimal spacing between flex spans */
+    .highlight span[style*="display:flex"] + span[style*="display:flex"],
+    .highlight span[style*="display: flex"] + span[style*="display: flex"] {
+        margin-top: -0.1em !important;
+    }
+
+    /* More aggressive spacing fixes for Chroma */
+    .highlight .chroma span[style*="display:flex"] {
+        margin: 0 !important;
+        padding: 0 !important;
+        line-height: 1.15 !important;
+        display: block !important;
+    }
+
+    .highlight .chroma span[style*="display: flex"] {
+        margin: 0 !important;
+        padding: 0 !important;
+        line-height: 1.15 !important;
+        display: block !important;
+    }
+
+    /* Force tighter line spacing */
+    .highlight .chroma pre,
+    .highlight .chroma code {
+        line-height: 1.15 !important;
+    }
+
+    /* Override any margin/padding on flex spans */
+    .highlight span[style*="margin"] {
+        margin: 0 !important;
+    }
+
+    .highlight span[style*="padding"] {
+        padding: 0 !important;
+    }
+
+    /* GitHub highlight style overrides for Hugo */
+    .highlight .chroma {
+        line-height: 1.15 !important;
+    }
+
+    .highlight .chroma pre {
+        line-height: 1.15 !important;
+        margin: 0 !important;
+        padding: 0.5rem !important;
+    }
+
+    .highlight .chroma code {
+        line-height: 1.15 !important;
+    }
+
+    /* Target GitHub style specifically */
+    .highlight[class*="github"] .chroma {
+        line-height: 1.15 !important;
+    }
+
+    .highlight[class*="github"] .chroma pre {
+        line-height: 1.15 !important;
+    }
+
+    .highlight[class*="github"] .chroma code {
+        line-height: 1.15 !important;
+    }
+
+    /* Force compact spacing on all highlight elements */
+    .highlight,
+    .highlight pre,
+    .highlight code {
+        line-height: 1.15 !important;
+    }
+
+    /* Target specific Hugo Chroma inline styles */
+    .highlight span[style*="display:flex"],
+    .highlight span[style*="display: flex"] {
+        line-height: 1.15 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Override Hugo's generated styles with maximum specificity */
+    .highlight .chroma span[style*="display:flex"] {
+        line-height: 1.15 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    .highlight .chroma span[style*="display: flex"] {
+        line-height: 1.15 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    /* Force all code block elements to have balanced spacing */
+    .highlight *,
+    .highlight *::before,
+    .highlight *::after {
+        line-height: 1.15 !important;
+    }
+
+    /* Comprehensive Hugo rendering safeguards */
+
+    /* 1. Override ALL possible Hugo-generated inline styles */
+    .highlight [style*="font-size"],
+    .highlight [style*="font-size:"] {
+        font-size: var(--font-size-code) !important;
+    }
+
+    .highlight [style*="line-height"],
+    .highlight [style*="line-height:"] {
+        line-height: 1.4 !important;
+    }
+
+    .highlight [style*="display"],
+    .highlight [style*="display:"] {
+        display: inline !important;
+    }
+
+    /* 2. Language-specific overrides for all programming languages */
+    .highlight[class*="language-"],
+    .highlight[class*="lang-"],
+    pre[class*="language-"],
+    pre[class*="lang-"] {
+        font-size: var(--font-size-code) !important;
+        line-height: 1.15 !important;
+    }
+
+    /* 3. Chroma-specific fixes for Hugo's syntax highlighter */
+    .chroma,
+    .chroma *,
+    .chroma *::before,
+    .chroma *::after {
+        font-size: inherit !important;
+        line-height: inherit !important;
+    }
+
+    /* 4. Override any future Hugo/Chroma updates */
+    .highlight *[style],
+    pre *[style],
+    code *[style] {
+        font-size: inherit !important;
+        line-height: inherit !important;
+    }
+
+    /* 5. Mobile-specific overrides for all devices */
+    @media (max-width: 768px) {
+        .highlight *,
+        pre *,
+        code *,
+        .chroma * {
+            font-size: 14px !important;
+            line-height: 1.15 !important;
+        }
+
+        /* Force consistent sizing on all mobile devices */
+        .highlight,
+        pre,
+        code,
+        .chroma {
+            font-size: 14px !important;
+            line-height: 1.15 !important;
+        }
+    }
+
+    /* 6. High DPI and retina display fixes */
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .highlight,
+        pre,
+        code {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    }
+
+    /* 7. Print media fixes */
+    @media print {
+        .highlight,
+        pre,
+        code {
+            font-size: 12px !important;
+            line-height: 1.15 !important;
+            page-break-inside: avoid;
+        }
+    }
+
+    /* 8. Proactive fixes for common Hugo rendering issues */
+
+    /* Table overflow protection */
+    .post-content table,
+    article.page table,
+    main table {
+        max-width: 100%;
+        overflow-x: auto;
+        display: block;
+        white-space: nowrap;
+    }
+
+    /* Image responsiveness without breaking layout */
+    .post-content img,
+    article.page img,
+    main img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 1rem auto;
+    }
+
+    /* Prevent Hugo shortcode conflicts */
+    .shortcode,
+    .shortcode * {
+        font-size: inherit !important;
+        line-height: inherit !important;
+    }
+
+    /* Fix potential list styling conflicts */
+    .post-content ul,
+    .post-content ol,
+    article.page ul,
+    article.page ol {
+        padding-left: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    /* Prevent Hugo taxonomy conflicts */
+    .taxonomy-list,
+    .taxonomy-list * {
+        font-size: inherit !important;
+        line-height: inherit !important;
+    }
+
+    /* Fix potential blockquote conflicts */
+    .post-content blockquote,
+    article.page blockquote {
+        border-left: 3px solid var(--border-color);
+        padding-left: 1rem;
+        margin: 1rem 0;
+        font-style: italic;
+        color: var(--meta-color);
+    }
+
+    /* Prevent Hugo menu conflicts */
+    .menu,
+    .menu * {
+        font-size: inherit !important;
+        line-height: inherit !important;
+    }
+
+    /* Fix potential form element conflicts */
+    .post-content input,
+    .post-content textarea,
+    .post-content select,
+    article.page input,
+    article.page textarea,
+    article.page select {
+        font-family: var(--font-paragraph);
+        font-size: var(--font-size-base);
+        line-height: var(--line-height);
+    }
+
+    /* Prevent Hugo partial conflicts */
+    .partial,
+    .partial * {
+        font-size: inherit !important;
+        line-height: inherit !important;
+    }
+
+    /* Fix potential iframe conflicts */
+    .post-content iframe,
+    article.page iframe {
+        max-width: 100%;
+        border: none;
+        border-radius: 6px;
+    }
+
+    /* Prevent Hugo data conflicts */
+    [data-hugo],
+    [data-hugo] * {
+        font-size: inherit !important;
+        line-height: inherit !important;
+    }
+
+    /* Fix potential SVG conflicts */
+    .post-content svg,
+    article.page svg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Prevent Hugo template conflicts */
+    .template,
+    .template * {
+        font-size: inherit !important;
+        line-height: inherit !important;
+    }
+
+    /* Fix icon rendering and alignment issues */
+    .post-content img[src*="/icons/"],
+    article.page img[src*="/icons/"],
+    main img[src*="/icons/"] {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+        width: auto;
+        height: auto;
+        max-width: none;
+        max-height: none;
+    }
+
+    /* Ensure proper icon sizing - only for icon images */
+    img[src*="/icons/"] {
+        width: 17px !important;
+        height: 17px !important;
+        vertical-align: text-bottom !important;
+        margin: 0 6px 0 0 !important;
+    }
+
+    /* Fix list item icon alignment - only for lists with icons */
+    .post-content ul li:has(img[src*="/icons/"]),
+    article.page ul li:has(img[src*="/icons/"]),
+    main ul li:has(img[src*="/icons/"]) {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .post-content ul li:has(img[src*="/icons/"]) img,
+    article.page ul li:has(img[src*="/icons/"]) img,
+    main ul li:has(img[src*="/icons/"]) img {
+        flex-shrink: 0;
+        margin: 0 6px 0 0 !important;
+    }
+
+    .post-content ul li:has(img[src*="/icons/"]) a,
+    article.page ul li:has(img[src*="/icons/"]) a,
+    main ul li:has(img[src*="/icons/"]) a {
+        flex: 1;
+    }
+
+    /* Ensure normal lists render correctly */
+    .post-content ul:not(:has(img[src*="/icons/"])) li,
+    article.page ul:not(:has(img[src*="/icons/"])) li,
+    main ul:not(:has(img[src*="/icons/"])) li {
+        display: list-item;
+        margin-bottom: 0.5rem;
     }
 </style>

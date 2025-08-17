@@ -17,10 +17,15 @@ This comprehensive guide demonstrates the full range of Markdown syntax and them
 The following sections demonstrate the six levels of section headings available. `<h1>` is the highest section level while `<h6>` is the lowest.
 
 # H1
+
 ## H2
+
 ### H3
+
 #### H4
+
 ##### H5
+
 ###### H6
 
 ## Paragraphs & Text Flow
@@ -38,7 +43,7 @@ The blockquote element represents content that is quoted from another source, op
 #### Blockquote without attribution
 
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> **Note** that you can use *Markdown syntax* within a blockquote.
+> **Note** that you can use _Markdown syntax_ within a blockquote.
 
 #### Blockquote with attribution
 
@@ -51,16 +56,16 @@ The blockquote element represents content that is quoted from another source, op
 
 Tables aren't part of the core Markdown spec, but Hugo supports them out-of-the-box. Here are examples of different table formatting options:
 
-   Name | Age
---------|------
-    Bob | 27
-  Alice | 23
+| Name  | Age |
+| ----- | --- |
+| Bob   | 27  |
+| Alice | 23  |
 
 #### Inline Markdown within tables
 
 | Italics   | Bold     | Code   |
-| --------  | -------- | ------ |
-| *italics* | **bold** | `code` |
+| --------- | -------- | ------ |
+| _italics_ | **bold** | `code` |
 
 ## Code Blocks & Syntax Highlighting
 
@@ -69,15 +74,15 @@ This theme supports multiple ways to display code, each with its own styling and
 #### Code block with backticks
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Example HTML5 Document</title>
+  </head>
+  <body>
+    <p>Test</p>
+  </body>
 </html>
 ```
 
@@ -95,7 +100,9 @@ This theme supports multiple ways to display code, each with its own styling and
     </html>
 
 #### Code block with Hugo's internal highlight shortcode
+
 {{< highlight html >}}
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -120,19 +127,19 @@ Different list types help organize content hierarchically and provide clear stru
 
 #### Unordered List
 
-* List item
-* Another item
-* And another item
+- List item
+- Another item
+- And another item
 
 #### Nested list
 
-* Fruit
-  * Apple
-  * Orange
-  * Banana
-* Dairy
-  * Milk
-  * Cheese
+- Fruit
+  - Apple
+  - Orange
+  - Banana
+- Dairy
+  - Milk
+  - Cheese
 
 ## Special HTML Elements
 
@@ -147,6 +154,59 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 Press <kbd>Command + Shift + D</kbd> to end the session.
 
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+
+## Images & Media
+
+This section demonstrates how to add images to your blog posts using Markdown syntax.
+
+#### Basic image with alt text
+
+```markdown
+![Sample Image](https://via.placeholder.com/400x200/4A90E2/FFFFFF?text=Sample+Image)
+```
+
+_What you'll see: A blue placeholder image with the text "Sample Image" displayed inline with your content._
+
+#### Image with link
+
+```markdown
+![Clickable Image](https://via.placeholder.com/300x150/50C878/FFFFFF?text=Click+Me)](https://example.com)
+```
+
+![Clickable Image](https://www.shutterstock.com/shutterstock/photos/2477913981/display_1500/stock-vector-line-shape-marker-underline-arrow-heart-brush-element-set-hand-drawn-sketch-marker-underline-2477913981.jpg)
+_What you'll see: A green placeholder image that acts as a clickable link to the specified URL._
+
+#### Image with custom styling
+
+```markdown
+<img src="https://via.placeholder.com/350x200/E74C3C/FFFFFF?text=Styled+Image" 
+     alt="Styled image with border" 
+     style="border: 3px solid #2C3E50; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+```
+
+<img src="https://www.shutterstock.com/shutterstock/photos/2477913981/display_1500/stock-vector-line-shape-marker-underline-arrow-heart-brush-element-set-hand-drawn-sketch-marker-underline-2477913981.jpg" 
+     alt="Styled image with border" 
+     style="border: 3px solid #2C3E50; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+
+_What you'll see: A red placeholder image with a dark border, rounded corners, and a subtle shadow effect._
+
+#### Image with caption
+
+```markdown
+<figure>
+  <img src="https://via.placeholder.com/450x250/9B59B6/FFFFFF?text=Figure+Caption" alt="Image with figure caption" />
+  <figcaption><em>Figure: An image with proper semantic captioning</em></figcaption>
+</figure>
+```
+
+<figure>
+  <img src="https://www.shutterstock.com/shutterstock/photos/2477913981/display_1500/stock-vector-line-shape-marker-underline-arrow-heart-brush-element-set-hand-drawn-sketch-marker-underline-2477913981.jpg" alt="Image with figure caption" />
+  <figcaption><em>Figure: Line shaped marker with underline, arrow and heart</em></figcaption>
+</figure>
+
+_What you'll see: A purple placeholder image wrapped in a semantic figure element with an italicized caption below it._
+
+The last but not the least, examples above use placeholder images for demonstration. In your actual posts, replace the URLs with real image paths from your Hugo static directory (e.g., `/images/your-image.jpg`) or external sources with proper attribution.
 
 ## Audio Player Features
 
@@ -169,6 +229,7 @@ audio = "/audio/my-audio-file.aac"
 ```
 
 The audio player supports common audio formats:
+
 - AAC (.aac)
 - MP3 (.mp3)
 - WAV (.wav)

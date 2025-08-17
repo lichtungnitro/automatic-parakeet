@@ -86,7 +86,7 @@
     /* Code blocks */
     pre, code {
         font-family: var(--font-mono);
-        font-size: var(--font-size-code);
+        font-size: var(--font-size-code) !important;
         background-color: var(--code-bg);
         border-radius: 3px;
     }
@@ -95,15 +95,18 @@
         padding: 1rem;
         overflow-x: auto;
         line-height: 1.4;
+        font-size: var(--font-size-code) !important;
     }
 
     code {
         padding: 0.2em 0.4em;
+        font-size: var(--font-size-code) !important;
     }
 
     pre code {
         padding: 0;
         background-color: transparent;
+        font-size: var(--font-size-code) !important;
     }
 
     /* Syntax highlighting */
@@ -112,6 +115,7 @@
         border-radius: 3px;
         margin: 1rem 0;
         line-height: 1.4 !important;
+        font-size: var(--font-size-code) !important;
     }
 
     .highlight pre {
@@ -120,76 +124,129 @@
         padding: 1rem;
         overflow-x: auto;
         line-height: 1.4 !important;
+        font-size: var(--font-size-code) !important;
     }
 
     .highlight code {
         background-color: transparent !important;
         padding: 0;
         line-height: 1.4 !important;
+        font-size: var(--font-size-code) !important;
     }
 
     /* Chroma syntax highlighting */
     .chroma .k, .chroma .kn, .chroma .kp, .chroma .kr, .chroma .kt {
         color: #0066cc;
         font-weight: 500;
+        font-size: var(--font-size-code) !important;
     }
 
     .chroma .s, .chroma .sa, .chroma .sb, .chroma .sc, .chroma .dl,
     .chroma .sd, .chroma .s2, .chroma .se, .chroma .sh, .chroma .si,
     .chroma .sx, .chroma .sr, .chroma .s1, .chroma .ss {
         color: #2c5aa0;
+        font-size: var(--font-size-code) !important;
     }
 
     .chroma .c, .chroma .ch, .chroma .cm, .chroma .c1, .chroma .cs {
         color: var(--meta-color);
         font-style: italic;
+        font-size: var(--font-size-code) !important;
     }
 
     .chroma .nt {
         color: #2c5aa0;
         font-weight: 500;
+        font-size: var(--font-size-code) !important;
     }
 
     .chroma .na {
         color: #0066cc;
+        font-size: var(--font-size-code) !important;
     }
 
     .chroma .nb, .chroma .bp {
         color: #0066cc;
+        font-size: var(--font-size-code) !important;
     }
 
     .chroma .m, .chroma .mb, .chroma .mf, .chroma .mh, .chroma .mi,
     .chroma .il, .chroma .mo {
         color: #d73e48;
+        font-size: var(--font-size-code) !important;
+    }
+
+    /* Ensure all Chroma elements have consistent font sizing */
+    .chroma * {
+        font-size: var(--font-size-code) !important;
+        font-family: var(--font-mono) !important;
+    }
+
+    /* Additional Chroma classes that might be used */
+    .chroma .o, .chroma .ow {
+        color: #d73e48;
+        font-size: var(--font-size-code) !important;
+    }
+
+    .chroma .p {
+        color: #333;
+        font-size: var(--font-size-code) !important;
+    }
+
+    .chroma .cp, .chroma .cpf {
+        color: #6a737d;
+        font-size: var(--font-size-code) !important;
     }
 
     /* Dark mode syntax highlighting */
     @media (prefers-color-scheme: dark) {
         .chroma .k, .chroma .kn, .chroma .kp, .chroma .kr, .chroma .kt {
             color: #66b3ff;
+            font-size: var(--font-size-code) !important;
         }
 
         .chroma .s, .chroma .sa, .chroma .sb, .chroma .sc, .chroma .dl,
         .chroma .sd, .chroma .s2, .chroma .se, .chroma .sh, .chroma .si,
         .chroma .sx, .chroma .sr, .chroma .s1, .chroma .ss {
             color: #a8cc8c;
+            font-size: var(--font-size-code) !important;
         }
 
         .chroma .nt {
             color: #66b3ff;
+            font-size: var(--font-size-code) !important;
         }
 
         .chroma .na {
             color: #a8cc8c;
+            font-size: var(--font-size-code) !important;
         }
 
         .chroma .nb, .chroma .bp {
-            color: #66b3ff;
+            color: #66b6ff;
+            font-size: var(--font-size-code) !important;
         }
 
         .chroma .m, .chroma .mb, .chroma .mf, .chroma .mh, .chroma .mi,
         .chroma .il, .chroma .mo {
             color: #ff7b7b;
+            font-size: var(--font-size-code) !important;
+        }
+
+        /* Additional Chroma classes for dark mode */
+        .chroma .o, .chroma .ow {
+            color: #ff7b7b;
+            font-size: var(--font-size-code) !important;
+        }
+
+        .chroma .p {
+            color: #e6e6e6;
+            font-size: var(--font-size-code) !important;
+        }
+
+        .chroma .cp, .chroma .cpf {
+            color: #8cc2dd;
+            font-size: var(--font-size-code) !important;
         }
 
         .highlight, pre, code {
@@ -757,6 +814,11 @@
         .highlight, pre {
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;
+        }
+
+        /* Ensure Chroma syntax highlighting maintains consistent font size on mobile */
+        .chroma * {
+            font-size: 14px !important;
         }
     }
 

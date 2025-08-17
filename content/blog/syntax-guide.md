@@ -162,30 +162,33 @@ This section demonstrates how to add images to your blog posts using Markdown sy
 #### Basic image with alt text
 
 ```markdown
-![Sample Image](https://via.placeholder.com/400x200/4A90E2/FFFFFF?text=Sample+Image)
+![Sample Image](https://via.placeholder.com/400x200/4A90E2/FFFFFF?text=Sample+Image "Image with alt text")
 ```
+
+![Sample Image](https://s2.loli.net/2025/08/17/QvXF78VWeygn5zT.jpg "Image with alt text")
 
 _What you'll see: A blue placeholder image with the text "Sample Image" displayed inline with your content._
 
 #### Image with link
 
 ```markdown
-![Clickable Image](https://via.placeholder.com/300x150/50C878/FFFFFF?text=Click+Me)](https://example.com)
+![Clickable Image](https://via.placeholder.com/300x150/50C878/FFFFFF?text=Click+Me)
 ```
 
-![Clickable Image](https://www.shutterstock.com/shutterstock/photos/2477913981/display_1500/stock-vector-line-shape-marker-underline-arrow-heart-brush-element-set-hand-drawn-sketch-marker-underline-2477913981.jpg)
+![Clickable Image](https://s2.loli.net/2025/08/17/QvXF78VWeygn5zT.jpg)
+
 _What you'll see: A green placeholder image that acts as a clickable link to the specified URL._
 
 #### Image with custom styling
 
 ```markdown
-<img src="https://via.placeholder.com/350x200/E74C3C/FFFFFF?text=Styled+Image" 
-     alt="Styled image with border" 
+<img src="https://via.placeholder.com/350x200/E74C3C/FFFFFF?text=Styled+Image"
+     alt="Styled image with border"
      style="border: 3px solid #2C3E50; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
 ```
 
-<img src="https://www.shutterstock.com/shutterstock/photos/2477913981/display_1500/stock-vector-line-shape-marker-underline-arrow-heart-brush-element-set-hand-drawn-sketch-marker-underline-2477913981.jpg" 
-     alt="Styled image with border" 
+<img src="https://s2.loli.net/2025/08/17/QvXF78VWeygn5zT.jpg"
+     alt="Styled image with border"
      style="border: 3px solid #2C3E50; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
 
 _What you'll see: A red placeholder image with a dark border, rounded corners, and a subtle shadow effect._
@@ -200,8 +203,8 @@ _What you'll see: A red placeholder image with a dark border, rounded corners, a
 ```
 
 <figure>
-  <img src="https://www.shutterstock.com/shutterstock/photos/2477913981/display_1500/stock-vector-line-shape-marker-underline-arrow-heart-brush-element-set-hand-drawn-sketch-marker-underline-2477913981.jpg" alt="Image with figure caption" />
-  <figcaption><em>Figure: Line shaped marker with underline, arrow and heart</em></figcaption>
+  <img src="https://s2.loli.net/2025/08/17/QvXF78VWeygn5zT.jpg" alt="Image with figure caption" />
+  <figcaption><em>Figure: An image with proper semantic captioning</em></figcaption>
 </figure>
 
 _What you'll see: A purple placeholder image wrapped in a semantic figure element with an italicized caption below it._

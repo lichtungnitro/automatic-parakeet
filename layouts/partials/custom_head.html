@@ -2,12 +2,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-
-<!-- Anthropic Font - Styrene A -->
-<link rel="preconnect" href="https://fonts.cdnfonts.com">
-<link href="https://fonts.cdnfonts.com/css/styrene-a" rel="stylesheet">
-
-
+<link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:wght@400;700&display=swap" rel="stylesheet">
 
 <!-- Plyr.io CSS for audio player -->
 <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
@@ -16,30 +11,11 @@
 <script defer src="https://cloud.umami.is/script.js" data-website-id="ed0503cb-6782-44b7-85ee-408fb7361603"></script>
 
 <style>
-    /* ========================================
-       FONT SYSTEM & TYPOGRAPHY
-       ========================================
-
-       Font Variables:
-       - --font-main: Palatino serif for headings, main text, and blog title
-       - --font-paragraph: Tiempos Text for body text and paragraphs
-       - --font-mono: Inconsolata for code and monospace text
-
-       Font Sizes:
-       - --font-size-base: 18px (main text)
-       - --font-size-small: 15px (meta text, tags)
-       - --font-size-code: 15px (code blocks and inline code)
-
-       ======================================== */
-
-    /* Base variables */
     :root {
-        --font-main:
-            "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif;
-        --font-paragraph:
-            "Tiempos Text", "Times New Roman", sans-serif;
+        --font-main: "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+        --font-paragraph: "Tiempos Text", "Times New Roman", sans-serif;
         --font-mono: "Inconsolata", Courier, monospace;
-        --font-anthropic: "Styrene A", Arial, sans-serif;
+        --font-anthropic: "Intel One Mono", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace;
 
         --font-size-base: 18px;
         --font-size-small: 15px;
@@ -59,7 +35,6 @@
         --code-bg: #f2f2f2;
     }
 
-    /* Dark mode */
     @media (prefers-color-scheme: dark) {
         :root {
             --background-color: #01242e;
@@ -76,7 +51,7 @@
         }
     }
 
-    /* Typography overrides */
+    /* Typography */
     body {
         font-family: var(--font-main);
         font-size: var(--font-size-base);
@@ -85,29 +60,31 @@
         background-color: var(--background-color);
     }
 
-    /* Paragraph styling with Tiempos Text font */
     p {
         font-family: var(--font-paragraph);
         font-weight: 400;
     }
 
-    /* List content styling with Tiempos Text font (excluding blog post lists) */
     ul:not(.blog-posts) li,
     ol li {
         font-family: var(--font-paragraph);
         font-weight: 400;
+        margin-bottom: 0.4rem;
+        line-height: 1.5;
     }
 
-    /* Ensure blog post titles keep main font */
-    ul.blog-posts li a {
-        font-family: var(--font-main);
+    ul:not(.blog-posts) {
+        padding-left: 1.5rem;
+        margin: 0.75rem 0;
     }
 
-
+    ol {
+        padding-left: 1.5rem;
+        margin: 0.75rem 0;
+    }
 
     /* Code blocks */
-    pre,
-    code {
+    pre, code {
         font-family: var(--font-mono);
         font-size: var(--font-size-code);
         background-color: var(--code-bg);
@@ -129,60 +106,12 @@
         background-color: transparent;
     }
 
-    /* Fix for Hugo highlight shortcode font size consistency */
-    .highlight code,
-    .highlight pre,
-    .highlight .chroma {
-        font-size: var(--font-size-code) !important;
-        line-height: 1.4 !important;
-    }
-
-    /* Ensure all code elements within highlight have consistent font size */
-    .highlight * {
-        font-size: inherit !important;
-    }
-
-    /* Fix for language-specific code blocks */
-    code[class*="language-"],
-    pre[class*="language-"] {
-        font-size: var(--font-size-code) !important;
-        line-height: 1.4 !important;
-    }
-
-    /* Override any inline styles that might cause font size issues */
-    .highlight pre[style*="font-size"],
-    .highlight code[style*="font-size"] {
-        font-size: var(--font-size-code) !important;
-    }
-
-    /* Mobile-specific code block fixes */
-    @media (max-width: 768px) {
-        .highlight,
-        pre,
-        code {
-            font-size: 14px !important;
-            line-height: 1.15 !important;
-        }
-
-        .highlight pre,
-        pre {
-            padding: 0.75rem;
-            margin: 0.75rem 0;
-        }
-
-        /* Ensure horizontal scrolling on mobile */
-        .highlight,
-        pre {
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-        }
-    }
-
-    /* Syntax highlighting - minimal and clean */
+    /* Syntax highlighting */
     .highlight {
         background-color: var(--code-bg) !important;
         border-radius: 3px;
         margin: 1rem 0;
+        line-height: 1.4 !important;
     }
 
     .highlight pre {
@@ -190,122 +119,59 @@
         background-color: var(--code-bg) !important;
         padding: 1rem;
         overflow-x: auto;
-        line-height: 1.4;
-    }
-
-    /* Override inline styles from Hugo highlight shortcode */
-    .highlight pre[style] {
-        background-color: var(--code-bg) !important;
+        line-height: 1.4 !important;
     }
 
     .highlight code {
         background-color: transparent !important;
         padding: 0;
+        line-height: 1.4 !important;
     }
 
-    /* Keyboard input styling to match inline code */
-    kbd {
-        font-family: var(--font-mono);
-        font-size: var(--font-size-code);
-        background-color: var(--code-bg);
-        color: var(--text-color);
-        padding: 0.2em 0.4em;
-        border-radius: 3px;
-        border: 1px solid var(--border-color);
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Chroma syntax highlighting styles - minimal theme colors */
-    .chroma .k,    /* keywords */
-    .chroma .kn,   /* keyword.namespace */
-    .chroma .kp,   /* keyword.pseudo */
-    .chroma .kr,   /* keyword.reserved */
-    .chroma .kt {
-        /* keyword.type */
+    /* Chroma syntax highlighting */
+    .chroma .k, .chroma .kn, .chroma .kp, .chroma .kr, .chroma .kt {
         color: #0066cc;
         font-weight: 500;
     }
 
-    .chroma .s,    /* string */
-    .chroma .sa,   /* string.affix */
-    .chroma .sb,   /* string.backtick */
-    .chroma .sc,   /* string.char */
-    .chroma .dl,   /* string.delimiter */
-    .chroma .sd,   /* string.doc */
-    .chroma .s2,   /* string.double */
-    .chroma .se,   /* string.escape */
-    .chroma .sh,   /* string.heredoc */
-    .chroma .si,   /* string.interpol */
-    .chroma .sx,   /* string.other */
-    .chroma .sr,   /* string.regex */
-    .chroma .s1,   /* string.single */
-    .chroma .ss {
-        /* string.symbol */
+    .chroma .s, .chroma .sa, .chroma .sb, .chroma .sc, .chroma .dl,
+    .chroma .sd, .chroma .s2, .chroma .se, .chroma .sh, .chroma .si,
+    .chroma .sx, .chroma .sr, .chroma .s1, .chroma .ss {
         color: #2c5aa0;
     }
 
-    .chroma .c,    /* comment */
-    .chroma .ch,   /* comment.hashbang */
-    .chroma .cm,   /* comment.multiline */
-    .chroma .c1,   /* comment.single */
-    .chroma .cs {
-        /* comment.special */
+    .chroma .c, .chroma .ch, .chroma .cm, .chroma .c1, .chroma .cs {
         color: var(--meta-color);
         font-style: italic;
     }
 
     .chroma .nt {
-        /* name.tag */
         color: #2c5aa0;
         font-weight: 500;
     }
 
     .chroma .na {
-        /* name.attribute */
         color: #0066cc;
     }
 
-    .chroma .nb,   /* name.builtin */
-    .chroma .bp {
-        /* name.builtin.pseudo */
+    .chroma .nb, .chroma .bp {
         color: #0066cc;
     }
 
-    .chroma .m,    /* literal.number */
-    .chroma .mb,   /* literal.number.bin */
-    .chroma .mf,   /* literal.number.float */
-    .chroma .mh,   /* literal.number.hex */
-    .chroma .mi,   /* literal.number.integer */
-    .chroma .il,   /* literal.number.integer.long */
-    .chroma .mo {
-        /* literal.number.oct */
+    .chroma .m, .chroma .mb, .chroma .mf, .chroma .mh, .chroma .mi,
+    .chroma .il, .chroma .mo {
         color: #d73e48;
     }
 
     /* Dark mode syntax highlighting */
     @media (prefers-color-scheme: dark) {
-        .chroma .k,
-        .chroma .kn,
-        .chroma .kp,
-        .chroma .kr,
-        .chroma .kt {
+        .chroma .k, .chroma .kn, .chroma .kp, .chroma .kr, .chroma .kt {
             color: #66b3ff;
         }
 
-        .chroma .s,
-        .chroma .sa,
-        .chroma .sb,
-        .chroma .sc,
-        .chroma .dl,
-        .chroma .sd,
-        .chroma .s2,
-        .chroma .se,
-        .chroma .sh,
-        .chroma .si,
-        .chroma .sx,
-        .chroma .sr,
-        .chroma .s1,
-        .chroma .ss {
+        .chroma .s, .chroma .sa, .chroma .sb, .chroma .sc, .chroma .dl,
+        .chroma .sd, .chroma .s2, .chroma .se, .chroma .sh, .chroma .si,
+        .chroma .sx, .chroma .sr, .chroma .s1, .chroma .ss {
             color: #a8cc8c;
         }
 
@@ -317,29 +183,19 @@
             color: #a8cc8c;
         }
 
-        .chroma .nb,
-        .chroma .bp {
+        .chroma .nb, .chroma .bp {
             color: #66b3ff;
         }
 
-        .chroma .m,
-        .chroma .mb,
-        .chroma .mf,
-        .chroma .mh,
-        .chroma .mi,
-        .chroma .il,
-        .chroma .mo {
+        .chroma .m, .chroma .mb, .chroma .mf, .chroma .mh, .chroma .mi,
+        .chroma .il, .chroma .mo {
             color: #ff7b7b;
         }
 
-        /* Ensure code text is readable in dark mode */
-        .highlight,
-        pre,
-        code {
+        .highlight, pre, code {
             color: #e6e6e6;
         }
 
-        /* Better contrast for inline code in dark mode */
         :not(pre) > code {
             background-color: #2a4a5a;
             color: #e6e6e6;
@@ -429,29 +285,20 @@
         color: var(--heading-color);
     }
 
-    /* Article content links with blue color */
-    .post-content a,
-    article.page a,
-    main > p a,
-    main > ul a,
-    .footnote-ref,
-    .footnote-backref {
+    .post-content a, article.page a, main > p a, main > ul a,
+    .footnote-ref, .footnote-backref {
         color: #0066cc;
         text-decoration: none;
     }
 
-    .post-content a:hover,
-    article.page a:hover,
-    main > p a:hover,
-    main > ul a:hover,
-    .footnote-ref:hover,
-    .footnote-backref:hover {
+    .post-content a:hover, article.page a:hover, main > p a:hover,
+    main > ul a:hover, .footnote-ref:hover, .footnote-backref:hover {
         color: #0052a3;
         text-decoration: underline;
         text-decoration-style: dotted;
     }
 
-    /* Footnote reference styling */
+    /* Footnotes */
     sup {
         margin-left: 0.2em;
     }
@@ -460,7 +307,6 @@
         margin-left: 0.1em;
     }
 
-    /* Footnote reference styling - just numbers */
     sup[id^="fnref:"] {
         vertical-align: super;
         font-size: 0.75em;
@@ -468,7 +314,6 @@
         line-height: 0;
     }
 
-    /* Footnotes section styling */
     .footnotes {
         margin-top: 3rem;
         padding-top: 1.5rem;
@@ -511,34 +356,33 @@
 
     /* Dark mode article links */
     @media (prefers-color-scheme: dark) {
-        .post-content a,
-        article.page a,
-        main > p a,
-        main > ul a,
-        .footnote-ref,
-        .footnote-backref {
+        .post-content a, article.page a, main > p a, main > ul a,
+        .footnote-ref, .footnote-backref {
             color: #4da6ff;
         }
 
-        .post-content a:hover,
-        article.page a:hover,
-        main > p a:hover,
-        main > ul a:hover,
-        .footnote-ref:hover,
-        .footnote-backref:hover {
+        .post-content a:hover, article.page a:hover, main > p a:hover,
+        main > ul a:hover, .footnote-ref:hover, .footnote-backref:hover {
             color: #66b3ff;
             text-decoration-style: dotted;
         }
     }
 
-    /* Blog list refinements */
+    /* Blog list styling */
     ul.blog-posts {
         list-style-type: none;
         padding: 0;
+        border-bottom: 2px dotted #333;
+        padding-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 
     ul.blog-posts li {
-        margin-bottom: 0.75rem;
+        display: flex;
+        align-items: baseline;
+        gap: 2.5rem;
+        padding-left: 0;
+        margin-bottom: 1.25rem;
         padding-bottom: 0;
     }
 
@@ -546,13 +390,46 @@
         margin-bottom: 0;
     }
 
-    ul.blog-posts li time {
-        font-family: var(--font-main);
-        font-size: var(--font-size-base);
-        color: var(--meta-color);
+    ul.blog-posts li span {
+        flex-shrink: 0;
+        width: 85px;
+        min-width: 85px;
+        padding-right: 1.5rem;
+        margin-right: 0.5rem;
     }
 
-    /* Header and navigation refinements */
+    ul.blog-posts li time,
+    ul.blog-posts li span,
+    ul.blog-posts li i {
+        font-family: var(--font-main);
+        font-size: var(--font-size-small);
+        color: var(--meta-color);
+        flex-shrink: 0;
+        min-width: 80px;
+    }
+
+    ul.blog-posts li a {
+        font-family: var(--font-main);
+        font-size: var(--font-size-small);
+        font-weight: 500;
+        color: var(--heading-color);
+        text-decoration: none;
+        flex: 1;
+    }
+
+    ul.blog-posts li a:hover {
+        color: var(--link-color);
+        text-decoration: underline;
+    }
+
+    /* Dark mode adjustment for the dotted line */
+    @media (prefers-color-scheme: dark) {
+        ul.blog-posts {
+            border-bottom-color: #ccc;
+        }
+    }
+
+    /* Header and navigation */
     .title {
         margin-bottom: 0.25rem;
     }
@@ -567,27 +444,22 @@
         flex-shrink: 0;
         color: var(--heading-color);
         align-self: flex-end;
-        margin-bottom: 1.9rem;
-        margin-top: 0.1rem;
+        margin-bottom: 1.65rem;
+        margin-top: 0.55rem;
     }
 
     .title h2 {
         margin: 0;
-        font-size: 2rem;
-        /* Anthropic-style blog title */
         font-family: var(--font-anthropic);
-        font-size: clamp(2.5rem, 2.0408163265306123rem + 1.9591836734693877vw, 4rem);
-        line-height: 0.9;
-        font-weight: 600;
-        letter-spacing: 0.04em;
-        margin-bottom: clamp(1.75rem, 1.6734693877551021rem + 0.326530612244898vw, 2rem);
-        margin-top: clamp(2rem, 1.846938775510204rem + 0.653061224489796vw, 2.5rem);
+        font-size: 3.2rem;
+        line-height: 0.95;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        margin-bottom: 1.75rem;
+        margin-top: 2rem;
         text-transform: none;
         text-wrap: balance;
         display: flow-root;
-        text-decoration: line-through;
-        text-decoration-color: currentColor;
-        text-decoration-thickness: 0.1em;
     }
 
     nav {
@@ -600,7 +472,7 @@
         padding: 0 4px;
         margin-right: 1.5rem;
         font-size: var(--font-size-base);
-        font-weight: 600;
+        font-weight: 400;
     }
 
     .nav-link svg {
@@ -611,7 +483,7 @@
     .nav-separator {
         padding: 0 2px;
         color: currentColor;
-        font-weight: 600;
+        font-weight: 400;
     }
 
     /* Table styling */
@@ -627,16 +499,13 @@
         white-space: nowrap;
     }
 
-    table thead,
-    table tbody,
-    table tr {
+    table thead, table tbody, table tr {
         display: table;
         width: 100%;
         table-layout: fixed;
     }
 
-    th,
-    td {
+    th, td {
         padding: 0.5rem 0.75rem;
         text-align: left;
         border-bottom: 1px solid var(--border-color);
@@ -655,10 +524,7 @@
         background-color: var(--tag-bg);
     }
 
-    /* Responsive table wrapper */
-    .post-content table,
-    article.page table,
-    main table {
+    .post-content table, article.page table, main table {
         display: table;
         width: fit-content;
         max-width: 85%;
@@ -666,29 +532,25 @@
         white-space: normal;
     }
 
-    /* On smaller screens, allow full width */
     @media (max-width: 600px) {
-        .post-content table,
-        article.page table,
-        main table {
+        .post-content table, article.page table, main table {
             max-width: 100%;
             font-size: 13px;
         }
 
-        th,
-        td {
+        th, td {
             padding: 0.4rem 0.6rem;
         }
     }
 
-    /* Footer refinements */
+    /* Footer */
     footer {
         margin-top: 3rem;
         color: var(--meta-color);
         font-size: var(--font-size-small);
     }
 
-    /* Audio Player Styling */
+    /* Audio Player */
     .audio-player-container {
         margin: 0.75rem 0;
         padding: 0;
@@ -700,7 +562,6 @@
         background: none;
     }
 
-    /* Plyr customizations to match theme */
     .plyr {
         border-radius: 6px;
         background: var(--tag-bg);
@@ -741,7 +602,6 @@
         font-size: 0.8rem;
     }
 
-    /* Dark mode adjustments */
     @media (prefers-color-scheme: dark) {
         .plyr--audio .plyr__controls {
             background: var(--tag-bg);
@@ -764,7 +624,7 @@
         }
     }
 
-    /* Comments Section Styling */
+    /* Comments Section */
     .comments-section {
         margin-top: 3rem;
         padding-top: 2rem;
@@ -824,17 +684,14 @@
         color: inherit;
     }
 
-    /* Disqus container styling */
     #disqus_thread {
         margin-top: 1rem;
     }
 
-    /* Override some Disqus default styles to match theme */
     #disqus_thread iframe {
         border-radius: 6px;
     }
 
-    /* Dark mode adjustments for comments */
     @media (prefers-color-scheme: dark) {
         .comments-noscript a {
             color: #4da6ff;
@@ -845,355 +702,7 @@
         }
     }
 
-    /* Fix for display:flex spans that cause font size issues */
-    .highlight span[style*="display:flex"],
-    .highlight span[style*="display: flex"] {
-        font-size: var(--font-size-code) !important;
-        line-height: 1.4 !important;
-        display: inline !important;
-    }
-
-    /* Override any problematic inline styles */
-    .highlight span[style] {
-        font-size: inherit !important;
-        line-height: inherit !important;
-    }
-
-    /* Ensure consistent font sizing across all code elements */
-    .highlight .chroma *,
-    .highlight .chroma *::before,
-    .highlight .chroma *::after {
-        font-size: inherit !important;
-        line-height: inherit !important;
-    }
-
-    /* Fix spacing between syntax-highlighted spans */
-    .highlight .chroma span[style*="display:flex"],
-    .highlight .chroma span[style*="display: flex"] {
-        margin: 0 !important;
-        padding: 0 !important;
-        line-height: 1.15 !important;
-    }
-
-    /* Reduce line spacing in syntax-highlighted code blocks */
-    .highlight .chroma {
-        line-height: 1.15 !important;
-    }
-
-    .highlight .chroma pre {
-        line-height: 1.15 !important;
-    }
-
-    /* Ensure minimal spacing between flex spans */
-    .highlight span[style*="display:flex"] + span[style*="display:flex"],
-    .highlight span[style*="display: flex"] + span[style*="display: flex"] {
-        margin-top: -0.1em !important;
-    }
-
-    /* More aggressive spacing fixes for Chroma */
-    .highlight .chroma span[style*="display:flex"] {
-        margin: 0 !important;
-        padding: 0 !important;
-        line-height: 1.15 !important;
-        display: block !important;
-    }
-
-    .highlight .chroma span[style*="display: flex"] {
-        margin: 0 !important;
-        padding: 0 !important;
-        line-height: 1.15 !important;
-        display: block !important;
-    }
-
-    /* Force tighter line spacing */
-    .highlight .chroma pre,
-    .highlight .chroma code {
-        line-height: 1.15 !important;
-    }
-
-    /* Override any margin/padding on flex spans */
-    .highlight span[style*="margin"] {
-        margin: 0 !important;
-    }
-
-    .highlight span[style*="padding"] {
-        padding: 0 !important;
-    }
-
-    /* GitHub highlight style overrides for Hugo */
-    .highlight .chroma {
-        line-height: 1.15 !important;
-    }
-
-    .highlight .chroma pre {
-        line-height: 1.15 !important;
-        margin: 0 !important;
-        padding: 0.5rem !important;
-    }
-
-    .highlight .chroma code {
-        line-height: 1.15 !important;
-    }
-
-    /* Target GitHub style specifically */
-    .highlight[class*="github"] .chroma {
-        line-height: 1.15 !important;
-    }
-
-    .highlight[class*="github"] .chroma pre {
-        line-height: 1.15 !important;
-    }
-
-    .highlight[class*="github"] .chroma code {
-        line-height: 1.15 !important;
-    }
-
-    /* Force compact spacing on all highlight elements */
-    .highlight,
-    .highlight pre,
-    .highlight code {
-        line-height: 1.15 !important;
-    }
-
-    /* Target specific Hugo Chroma inline styles */
-    .highlight span[style*="display:flex"],
-    .highlight span[style*="display: flex"] {
-        line-height: 1.15 !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-
-    /* Override Hugo's generated styles with maximum specificity */
-    .highlight .chroma span[style*="display:flex"] {
-        line-height: 1.15 !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        display: block !important;
-    }
-
-    .highlight .chroma span[style*="display: flex"] {
-        line-height: 1.15 !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        display: block !important;
-    }
-
-    /* Force all code block elements to have balanced spacing */
-    .highlight *,
-    .highlight *::before,
-    .highlight *::after {
-        line-height: 1.15 !important;
-    }
-
-    /* Comprehensive Hugo rendering safeguards */
-
-    /* 1. Override ALL possible Hugo-generated inline styles */
-    .highlight [style*="font-size"],
-    .highlight [style*="font-size:"] {
-        font-size: var(--font-size-code) !important;
-    }
-
-    .highlight [style*="line-height"],
-    .highlight [style*="line-height:"] {
-        line-height: 1.4 !important;
-    }
-
-    .highlight [style*="display"],
-    .highlight [style*="display:"] {
-        display: inline !important;
-    }
-
-    /* 2. Language-specific overrides for all programming languages */
-    .highlight[class*="language-"],
-    .highlight[class*="lang-"],
-    pre[class*="language-"],
-    pre[class*="lang-"] {
-        font-size: var(--font-size-code) !important;
-        line-height: 1.15 !important;
-    }
-
-    /* 3. Chroma-specific fixes for Hugo's syntax highlighter */
-    .chroma,
-    .chroma *,
-    .chroma *::before,
-    .chroma *::after {
-        font-size: inherit !important;
-        line-height: inherit !important;
-    }
-
-    /* 4. Override any future Hugo/Chroma updates */
-    .highlight *[style],
-    pre *[style],
-    code *[style] {
-        font-size: inherit !important;
-        line-height: inherit !important;
-    }
-
-    /* 5. Mobile-specific overrides for all devices */
-    @media (max-width: 768px) {
-        .highlight *,
-        pre *,
-        code *,
-        .chroma * {
-            font-size: 14px !important;
-            line-height: 1.15 !important;
-        }
-
-        /* Force consistent sizing on all mobile devices */
-        .highlight,
-        pre,
-        code,
-        .chroma {
-            font-size: 14px !important;
-            line-height: 1.15 !important;
-        }
-    }
-
-    /* 6. High DPI and retina display fixes */
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-        .highlight,
-        pre,
-        code {
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-    }
-
-    /* 7. Print media fixes */
-    @media print {
-        .highlight,
-        pre,
-        code {
-            font-size: 12px !important;
-            line-height: 1.15 !important;
-            page-break-inside: avoid;
-        }
-    }
-
-    /* 8. Proactive fixes for common Hugo rendering issues */
-
-    /* Table overflow protection */
-    .post-content table,
-    article.page table,
-    main table {
-        max-width: 100%;
-        overflow-x: auto;
-        display: block;
-        white-space: nowrap;
-    }
-
-    /* Image responsiveness without breaking layout */
-    .post-content img,
-    article.page img,
-    main img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 1rem auto;
-    }
-
-    /* Prevent Hugo shortcode conflicts */
-    .shortcode,
-    .shortcode * {
-        font-size: inherit !important;
-        line-height: inherit !important;
-    }
-
-    /* Fix potential list styling conflicts */
-    .post-content ul,
-    .post-content ol,
-    article.page ul,
-    article.page ol {
-        padding-left: 1.5rem;
-        margin: 1rem 0;
-    }
-
-    /* Prevent Hugo taxonomy conflicts */
-    .taxonomy-list,
-    .taxonomy-list * {
-        font-size: inherit !important;
-        line-height: inherit !important;
-    }
-
-    /* Fix potential blockquote conflicts */
-    .post-content blockquote,
-    article.page blockquote {
-        border-left: 3px solid var(--border-color);
-        padding-left: 1rem;
-        margin: 1rem 0;
-        font-style: italic;
-        color: var(--meta-color);
-    }
-
-    /* Prevent Hugo menu conflicts */
-    .menu,
-    .menu * {
-        font-size: inherit !important;
-        line-height: inherit !important;
-    }
-
-    /* Fix potential form element conflicts */
-    .post-content input,
-    .post-content textarea,
-    .post-content select,
-    article.page input,
-    article.page textarea,
-    article.page select {
-        font-family: var(--font-paragraph);
-        font-size: var(--font-size-base);
-        line-height: var(--line-height);
-    }
-
-    /* Prevent Hugo partial conflicts */
-    .partial,
-    .partial * {
-        font-size: inherit !important;
-        line-height: inherit !important;
-    }
-
-    /* Fix potential iframe conflicts */
-    .post-content iframe,
-    article.page iframe {
-        max-width: 100%;
-        border: none;
-        border-radius: 6px;
-    }
-
-    /* Prevent Hugo data conflicts */
-    [data-hugo],
-    [data-hugo] * {
-        font-size: inherit !important;
-        line-height: inherit !important;
-    }
-
-    /* Fix potential SVG conflicts */
-    .post-content svg,
-    article.page svg {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* Prevent Hugo template conflicts */
-    .template,
-    .template * {
-        font-size: inherit !important;
-        line-height: inherit !important;
-    }
-
-    /* Fix icon rendering and alignment issues */
-    .post-content img[src*="/icons/"],
-    article.page img[src*="/icons/"],
-    main img[src*="/icons/"] {
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 0.5rem;
-        width: auto;
-        height: auto;
-        max-width: none;
-        max-height: none;
-    }
-
-    /* Ensure proper icon sizing - only for icon images */
+    /* Icon styling */
     img[src*="/icons/"] {
         width: 17px !important;
         height: 17px !important;
@@ -1201,13 +710,12 @@
         margin: 0 6px 0 0 !important;
     }
 
-    /* Fix list item icon alignment - only for lists with icons */
     .post-content ul li:has(img[src*="/icons/"]),
     article.page ul li:has(img[src*="/icons/"]),
     main ul li:has(img[src*="/icons/"]) {
         display: flex;
         align-items: center;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.4rem;
     }
 
     .post-content ul li:has(img[src*="/icons/"]) img,
@@ -1223,11 +731,71 @@
         flex: 1;
     }
 
-    /* Ensure normal lists render correctly */
     .post-content ul:not(:has(img[src*="/icons/"])) li,
     article.page ul:not(:has(img[src*="/icons/"])) li,
     main ul:not(:has(img[src*="/icons/"])) li {
         display: list-item;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.4rem;
+    }
+
+    /* Mobile optimizations */
+    @media (max-width: 768px) {
+        .title h2 {
+            font-size: 2.2rem;
+        }
+
+        .highlight, pre, code {
+            font-size: 14px !important;
+            line-height: 1.15 !important;
+        }
+
+        .highlight pre, pre {
+            padding: 0.75rem;
+            margin: 0.75rem 0;
+        }
+
+        .highlight, pre {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+    }
+
+    /* Additional list styling */
+    .post-content ul,
+    .post-content ol,
+    article.page ul,
+    article.page ol,
+    main ul,
+    main ol {
+        padding-left: 1.5rem;
+        margin: 0.75rem 0;
+    }
+
+    .post-content li,
+    article.page li,
+    main li {
+        margin-bottom: 0.4rem;
+        line-height: 1.6;
+    }
+
+    /* Tags section styling */
+    .tags-section {
+        margin-top: 2rem;
+    }
+
+    .tag-link {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 8px;
+        text-decoration: none;
+        color: var(--link-color);
+    }
+
+    .tag-icon {
+        margin-right: 4px;
+    }
+
+    .tag-link:hover {
+        color: var(--heading-color);
     }
 </style>

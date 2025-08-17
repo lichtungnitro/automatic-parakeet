@@ -1,28 +1,30 @@
 {{ if ne .Site.Params.Footer.hideRSSAndEmail true }}
-<!-- Enable RSS and email exists -->
-{{ if and ( ne .Site.Params.RSS.enableRSS false ) .Site.Params.Author.email }}
-Subscribe via <a href="/index.xml">RSS</a> or just
-<a href="mailto:{{ .Site.Params.Author.email }}">say nihao</a>.
-<br />
-{{ end }}
-<!-- Enable RSS and email does not exists -->
-{{ if and ( ne .Site.Params.RSS.enableRSS false ) (not
-.Site.Params.Author.email) }} Subscribe via <a href="/index.xml">RSS</a>.
-<br />
-{{ end }}
-<!-- Do not enable RSS and email exists -->
-{{ if and ( ne .Site.Params.RSS.enableRSS true ) .Site.Params.Author.email }}
-Say nihao via <a href="mailto:{{ .Site.Params.Author.email }}">email</a>.
-<br />
-{{ end }} {{ end }}
+  {{ if and (ne .Site.Params.RSS.enableRSS false) .Site.Params.Author.email }}
+    Subscribe via <a href="/index.xml">RSS</a> or just
+    <a href="mailto:{{ .Site.Params.Author.email }}">say nihao</a>.
+    <br />
+  {{ end }}
 
-<!-- Made with line -->
-{{ if ne .Site.Params.Footer.hideMadeWithLine true }}Empowered by
-<a href="https://github.com/janraasch/hugo-bearblog/">Hugo ฅ՞•ﻌ•՞ฅ Bear</a>.
-<br />
+  {{ if and (ne .Site.Params.RSS.enableRSS false) (not .Site.Params.Author.email) }}
+    Subscribe via <a href="/index.xml">RSS</a>.
+    <br />
+  {{ end }}
+
+  {{ if and (ne .Site.Params.RSS.enableRSS true) .Site.Params.Author.email }}
+    Say nihao via <a href="mailto:{{ .Site.Params.Author.email }}">email</a>.
+    <br />
+  {{ end }}
 {{ end }}
 
-<!-- Copyright and Sitemap -->
-{{ if ne .Site.Params.Footer.hideCopyright true }}{{ .Site.Copyright }}{{ end
-}}{{ if ne .Site.Params.Footer.hideSitemap true }} See also
-<a href="/sitemap.xml">sitemap</a>.{{ end }}
+{{ if ne .Site.Params.Footer.hideMadeWithLine true }}
+  Empowered by <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ฅ՞•ﻌ•՞ฅ Bear</a>.
+  <br />
+{{ end }}
+
+{{ if ne .Site.Params.Footer.hideCopyright true }}
+  {{ .Site.Copyright }}
+{{ end }}
+
+{{ if ne .Site.Params.Footer.hideSitemap true }}
+  See also <a href="/sitemap.xml">sitemap</a>.
+{{ end }}

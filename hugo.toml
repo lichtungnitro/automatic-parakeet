@@ -1,7 +1,7 @@
 baseURL = "https://mandelbrotz.com"
 theme = 'hugo-bearblog'
 
-title = "MANDELBROT"
+title = "mandelbrot."
 author = "John Doe"
 copyright = "Copyright © 2023-2025, Mandelbrot."
 languageCode = "en-US"
@@ -19,9 +19,11 @@ tags = "/blog/:slug"
 description = "Maple world deep diver"
 favicon = "images/favicon.png"
 images = ["images/share.png"]
-title = "Hugo ฅ՞•ﻌ•՞ฅ Bear"
 hideMadeWithLine = false
 disqusShortname = "https-mandelbrotz-com"
+titleFormat = "{{ .Title }}"
+disableTitlePrefix = true
+pageTitle = "{{ .Title }}"
 
 [params.Author]
 email = "lichtung_nitro@outlook.com"

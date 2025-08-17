@@ -14,5 +14,5 @@ It makes it simple to publish content and grow an audience while keeping pages t
 
 <ul>
 <li><img src="/icons/web-application.svg" width="17" height="17" style="vertical-align:text-bottom;margin-right:6px;" /> <a href="https://bearblog.dev">https://bearblog.dev</a></li>
-<li><img src="/icons/github.svg" width="17" height="17" style="vertical-align:text-bottom;margin-right:6px;" /> <a href="https://github.com/janraasch/hugo-bearblog">https://github.com/janraasch/hugo-bearblog</a></li>
+<li><img src="/icons/github.svg" width="17" height="17" style="vertical-align:text-bottom;margin-right:6px;" /> <a href="https://github.com/janraasch/hugo-bearblog">janraasch/hugo-bearblog</a></li>
 </ul>

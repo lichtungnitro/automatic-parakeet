@@ -1,37 +1,27 @@
-# Hugo generated files
+# Hugo default ignores
 /public/
 /resources/_gen/
 /assets/jsconfig.json
 hugo_stats.json
-/.hugo_build.lock
 
-# Hugo executables
-hugo.exe
-hugo.darwin
-hugo.linux
+# Podcast content (not tracked by git)
+content/podcast/
 
-# Development tools
-.vscode/
-.cursor/
-CLAUDE.md
-
-# System files
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
 # Logs
 *.log
-
-# Temporary files
-*.tmp
-*.temp
-
-# Local environment files
-.env
-.env.local
-
-# Ensure static assets are not ignored
-!static/icons/
-!static/images/
-!static/audio/
-!**/icons/*.svg

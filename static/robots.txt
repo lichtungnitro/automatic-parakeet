@@ -1,0 +1,53 @@
+# Robots.txt for Vibe Blogging - AI Development Blog
+# Generated for Hugo static site generator
+
+User-agent: *
+Allow: /
+
+# Specific search engine configurations
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Block AI training crawlers (optional - you may want to allow these for broader reach)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+# Disallow crawling of sensitive areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /draft/
+Disallow: /content/podcast/
+Disallow: /_redirects
+Disallow: /netlify.toml
+
+# Allow crawling of main content areas
+Allow: /blog/
+Allow: /content/
+Allow: /static/images/
+Allow: /static/icons/
+Allow: /static/audio/
+
+# Sitemap location
+Sitemap: https://mandelbrotz.com/sitemap.xml
+
+# Additional sitemaps for better SEO
+Sitemap: https://mandelbrotz.com/blog/sitemap.xml
+Sitemap: https://mandelbrotz.com/tags/sitemap.xml
+
+# Crawl delay for respectful server usage
+Crawl-delay: 1

@@ -7,6 +7,13 @@ copyright = "Copyright © 2023-2025, Mandelbrot."
 languageCode = "en-US"
 
 enableRobotsTXT = true
+enableGitInfo = false
+
+# Sitemap configuration
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
 
 disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]

@@ -25,3 +25,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Coding assistant files
+CLAUDE.md
